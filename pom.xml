@@ -65,4 +65,12 @@
         </plugins>
     </build>
 
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>MruV-RP</name>
+            <url>https://maven.pkg.github.com/MruV-RP/mruv-pb-java</url>
+        </repository>
+    </distributionManagement>
+
 </project>
