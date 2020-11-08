@@ -3,9 +3,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>my.library</groupId>
-    <artifactId>my-library-parent</artifactId>
-    <version>1.0.0</version>
+    <groupId>mruv-protos</groupId>
+    <artifactId>mruv-pb-java</artifactId>
+    <version>0.1.0</version>
     <packaging>jar</packaging>
 
     <dependencies>
