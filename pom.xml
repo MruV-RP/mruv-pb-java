@@ -5,7 +5,7 @@
 
     <groupId>mruv-protos</groupId>
     <artifactId>mruv-pb-java</artifactId>
-    <version>0.1.4</version>
+    <version>0.1.5</version>
     <packaging>jar</packaging>
 
     <dependencies>
@@ -33,6 +33,13 @@
             <artifactId>grpc-core</artifactId>
             <version>1.33.1</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/io.grpc/grpc-netty -->
+        <dependency>
+            <groupId>io.grpc</groupId>
+            <artifactId>grpc-netty</artifactId>
+            <version>1.33.1</version>
+        </dependency>
+
 
     </dependencies>
 
