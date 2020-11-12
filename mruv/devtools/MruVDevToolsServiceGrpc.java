@@ -278,29 +278,29 @@ public final class MruVDevToolsServiceGrpc {
     return getSaveAnimationMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<mruv.Health.ServiceStatusRequest,
-      mruv.Health.ServiceStatusResponse> getGetServiceStatusMethod;
+  private static volatile io.grpc.MethodDescriptor<mruv.common.Health.ServiceStatusRequest,
+      mruv.common.Health.ServiceStatusResponse> getGetServiceStatusMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "GetServiceStatus",
-      requestType = mruv.Health.ServiceStatusRequest.class,
-      responseType = mruv.Health.ServiceStatusResponse.class,
+      requestType = mruv.common.Health.ServiceStatusRequest.class,
+      responseType = mruv.common.Health.ServiceStatusResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<mruv.Health.ServiceStatusRequest,
-      mruv.Health.ServiceStatusResponse> getGetServiceStatusMethod() {
-    io.grpc.MethodDescriptor<mruv.Health.ServiceStatusRequest, mruv.Health.ServiceStatusResponse> getGetServiceStatusMethod;
+  public static io.grpc.MethodDescriptor<mruv.common.Health.ServiceStatusRequest,
+      mruv.common.Health.ServiceStatusResponse> getGetServiceStatusMethod() {
+    io.grpc.MethodDescriptor<mruv.common.Health.ServiceStatusRequest, mruv.common.Health.ServiceStatusResponse> getGetServiceStatusMethod;
     if ((getGetServiceStatusMethod = MruVDevToolsServiceGrpc.getGetServiceStatusMethod) == null) {
       synchronized (MruVDevToolsServiceGrpc.class) {
         if ((getGetServiceStatusMethod = MruVDevToolsServiceGrpc.getGetServiceStatusMethod) == null) {
           MruVDevToolsServiceGrpc.getGetServiceStatusMethod = getGetServiceStatusMethod =
-              io.grpc.MethodDescriptor.<mruv.Health.ServiceStatusRequest, mruv.Health.ServiceStatusResponse>newBuilder()
+              io.grpc.MethodDescriptor.<mruv.common.Health.ServiceStatusRequest, mruv.common.Health.ServiceStatusResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "GetServiceStatus"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  mruv.Health.ServiceStatusRequest.getDefaultInstance()))
+                  mruv.common.Health.ServiceStatusRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  mruv.Health.ServiceStatusResponse.getDefaultInstance()))
+                  mruv.common.Health.ServiceStatusResponse.getDefaultInstance()))
               .setSchemaDescriptor(new MruVDevToolsServiceMethodDescriptorSupplier("GetServiceStatus"))
               .build();
         }
@@ -309,29 +309,29 @@ public final class MruVDevToolsServiceGrpc {
     return getGetServiceStatusMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<mruv.Health.VersionRequest,
-      mruv.Health.VersionResponse> getGetServiceVersionMethod;
+  private static volatile io.grpc.MethodDescriptor<mruv.common.Health.VersionRequest,
+      mruv.common.Health.VersionResponse> getGetServiceVersionMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "GetServiceVersion",
-      requestType = mruv.Health.VersionRequest.class,
-      responseType = mruv.Health.VersionResponse.class,
+      requestType = mruv.common.Health.VersionRequest.class,
+      responseType = mruv.common.Health.VersionResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<mruv.Health.VersionRequest,
-      mruv.Health.VersionResponse> getGetServiceVersionMethod() {
-    io.grpc.MethodDescriptor<mruv.Health.VersionRequest, mruv.Health.VersionResponse> getGetServiceVersionMethod;
+  public static io.grpc.MethodDescriptor<mruv.common.Health.VersionRequest,
+      mruv.common.Health.VersionResponse> getGetServiceVersionMethod() {
+    io.grpc.MethodDescriptor<mruv.common.Health.VersionRequest, mruv.common.Health.VersionResponse> getGetServiceVersionMethod;
     if ((getGetServiceVersionMethod = MruVDevToolsServiceGrpc.getGetServiceVersionMethod) == null) {
       synchronized (MruVDevToolsServiceGrpc.class) {
         if ((getGetServiceVersionMethod = MruVDevToolsServiceGrpc.getGetServiceVersionMethod) == null) {
           MruVDevToolsServiceGrpc.getGetServiceVersionMethod = getGetServiceVersionMethod =
-              io.grpc.MethodDescriptor.<mruv.Health.VersionRequest, mruv.Health.VersionResponse>newBuilder()
+              io.grpc.MethodDescriptor.<mruv.common.Health.VersionRequest, mruv.common.Health.VersionResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "GetServiceVersion"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  mruv.Health.VersionRequest.getDefaultInstance()))
+                  mruv.common.Health.VersionRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  mruv.Health.VersionResponse.getDefaultInstance()))
+                  mruv.common.Health.VersionResponse.getDefaultInstance()))
               .setSchemaDescriptor(new MruVDevToolsServiceMethodDescriptorSupplier("GetServiceVersion"))
               .build();
         }
@@ -476,8 +476,8 @@ public final class MruVDevToolsServiceGrpc {
      *Get service status.
      * </pre>
      */
-    public void getServiceStatus(mruv.Health.ServiceStatusRequest request,
-        io.grpc.stub.StreamObserver<mruv.Health.ServiceStatusResponse> responseObserver) {
+    public void getServiceStatus(mruv.common.Health.ServiceStatusRequest request,
+        io.grpc.stub.StreamObserver<mruv.common.Health.ServiceStatusResponse> responseObserver) {
       asyncUnimplementedUnaryCall(getGetServiceStatusMethod(), responseObserver);
     }
 
@@ -486,8 +486,8 @@ public final class MruVDevToolsServiceGrpc {
      *Get service version.
      * </pre>
      */
-    public void getServiceVersion(mruv.Health.VersionRequest request,
-        io.grpc.stub.StreamObserver<mruv.Health.VersionResponse> responseObserver) {
+    public void getServiceVersion(mruv.common.Health.VersionRequest request,
+        io.grpc.stub.StreamObserver<mruv.common.Health.VersionResponse> responseObserver) {
       asyncUnimplementedUnaryCall(getGetServiceVersionMethod(), responseObserver);
     }
 
@@ -553,15 +553,15 @@ public final class MruVDevToolsServiceGrpc {
             getGetServiceStatusMethod(),
             asyncUnaryCall(
               new MethodHandlers<
-                mruv.Health.ServiceStatusRequest,
-                mruv.Health.ServiceStatusResponse>(
+                mruv.common.Health.ServiceStatusRequest,
+                mruv.common.Health.ServiceStatusResponse>(
                   this, METHODID_GET_SERVICE_STATUS)))
           .addMethod(
             getGetServiceVersionMethod(),
             asyncUnaryCall(
               new MethodHandlers<
-                mruv.Health.VersionRequest,
-                mruv.Health.VersionResponse>(
+                mruv.common.Health.VersionRequest,
+                mruv.common.Health.VersionResponse>(
                   this, METHODID_GET_SERVICE_VERSION)))
           .build();
     }
@@ -677,8 +677,8 @@ public final class MruVDevToolsServiceGrpc {
      *Get service status.
      * </pre>
      */
-    public void getServiceStatus(mruv.Health.ServiceStatusRequest request,
-        io.grpc.stub.StreamObserver<mruv.Health.ServiceStatusResponse> responseObserver) {
+    public void getServiceStatus(mruv.common.Health.ServiceStatusRequest request,
+        io.grpc.stub.StreamObserver<mruv.common.Health.ServiceStatusResponse> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(getGetServiceStatusMethod(), getCallOptions()), request, responseObserver);
     }
@@ -688,8 +688,8 @@ public final class MruVDevToolsServiceGrpc {
      *Get service version.
      * </pre>
      */
-    public void getServiceVersion(mruv.Health.VersionRequest request,
-        io.grpc.stub.StreamObserver<mruv.Health.VersionResponse> responseObserver) {
+    public void getServiceVersion(mruv.common.Health.VersionRequest request,
+        io.grpc.stub.StreamObserver<mruv.common.Health.VersionResponse> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(getGetServiceVersionMethod(), getCallOptions()), request, responseObserver);
     }
@@ -797,7 +797,7 @@ public final class MruVDevToolsServiceGrpc {
      *Get service status.
      * </pre>
      */
-    public mruv.Health.ServiceStatusResponse getServiceStatus(mruv.Health.ServiceStatusRequest request) {
+    public mruv.common.Health.ServiceStatusResponse getServiceStatus(mruv.common.Health.ServiceStatusRequest request) {
       return blockingUnaryCall(
           getChannel(), getGetServiceStatusMethod(), getCallOptions(), request);
     }
@@ -807,7 +807,7 @@ public final class MruVDevToolsServiceGrpc {
      *Get service version.
      * </pre>
      */
-    public mruv.Health.VersionResponse getServiceVersion(mruv.Health.VersionRequest request) {
+    public mruv.common.Health.VersionResponse getServiceVersion(mruv.common.Health.VersionRequest request) {
       return blockingUnaryCall(
           getChannel(), getGetServiceVersionMethod(), getCallOptions(), request);
     }
@@ -923,8 +923,8 @@ public final class MruVDevToolsServiceGrpc {
      *Get service status.
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<mruv.Health.ServiceStatusResponse> getServiceStatus(
-        mruv.Health.ServiceStatusRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<mruv.common.Health.ServiceStatusResponse> getServiceStatus(
+        mruv.common.Health.ServiceStatusRequest request) {
       return futureUnaryCall(
           getChannel().newCall(getGetServiceStatusMethod(), getCallOptions()), request);
     }
@@ -934,8 +934,8 @@ public final class MruVDevToolsServiceGrpc {
      *Get service version.
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<mruv.Health.VersionResponse> getServiceVersion(
-        mruv.Health.VersionRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<mruv.common.Health.VersionResponse> getServiceVersion(
+        mruv.common.Health.VersionRequest request) {
       return futureUnaryCall(
           getChannel().newCall(getGetServiceVersionMethod(), getCallOptions()), request);
     }
@@ -1002,12 +1002,12 @@ public final class MruVDevToolsServiceGrpc {
               (io.grpc.stub.StreamObserver<mruv.devtools.Devtools.SaveAnimationResponse>) responseObserver);
           break;
         case METHODID_GET_SERVICE_STATUS:
-          serviceImpl.getServiceStatus((mruv.Health.ServiceStatusRequest) request,
-              (io.grpc.stub.StreamObserver<mruv.Health.ServiceStatusResponse>) responseObserver);
+          serviceImpl.getServiceStatus((mruv.common.Health.ServiceStatusRequest) request,
+              (io.grpc.stub.StreamObserver<mruv.common.Health.ServiceStatusResponse>) responseObserver);
           break;
         case METHODID_GET_SERVICE_VERSION:
-          serviceImpl.getServiceVersion((mruv.Health.VersionRequest) request,
-              (io.grpc.stub.StreamObserver<mruv.Health.VersionResponse>) responseObserver);
+          serviceImpl.getServiceVersion((mruv.common.Health.VersionRequest) request,
+              (io.grpc.stub.StreamObserver<mruv.common.Health.VersionResponse>) responseObserver);
           break;
         default:
           throw new AssertionError();

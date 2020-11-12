@@ -1,4 +1,4 @@
-package mruv;
+package mruv.accounts;
 
 import static io.grpc.MethodDescriptor.generateFullMethodName;
 import static io.grpc.stub.ClientCalls.asyncBidiStreamingCall;
@@ -28,32 +28,32 @@ public final class MruVAccountsServiceGrpc {
 
   private MruVAccountsServiceGrpc() {}
 
-  public static final String SERVICE_NAME = "mruv.MruVAccountsService";
+  public static final String SERVICE_NAME = "mruv.accounts.MruVAccountsService";
 
   // Static method descriptors that strictly reflect the proto.
-  private static volatile io.grpc.MethodDescriptor<mruv.Accounts.RegisterAccountRequest,
-      mruv.Accounts.RegisterAccountResponse> getRegisterAccountMethod;
+  private static volatile io.grpc.MethodDescriptor<mruv.accounts.Accounts.RegisterAccountRequest,
+      mruv.accounts.Accounts.RegisterAccountResponse> getRegisterAccountMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "RegisterAccount",
-      requestType = mruv.Accounts.RegisterAccountRequest.class,
-      responseType = mruv.Accounts.RegisterAccountResponse.class,
+      requestType = mruv.accounts.Accounts.RegisterAccountRequest.class,
+      responseType = mruv.accounts.Accounts.RegisterAccountResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<mruv.Accounts.RegisterAccountRequest,
-      mruv.Accounts.RegisterAccountResponse> getRegisterAccountMethod() {
-    io.grpc.MethodDescriptor<mruv.Accounts.RegisterAccountRequest, mruv.Accounts.RegisterAccountResponse> getRegisterAccountMethod;
+  public static io.grpc.MethodDescriptor<mruv.accounts.Accounts.RegisterAccountRequest,
+      mruv.accounts.Accounts.RegisterAccountResponse> getRegisterAccountMethod() {
+    io.grpc.MethodDescriptor<mruv.accounts.Accounts.RegisterAccountRequest, mruv.accounts.Accounts.RegisterAccountResponse> getRegisterAccountMethod;
     if ((getRegisterAccountMethod = MruVAccountsServiceGrpc.getRegisterAccountMethod) == null) {
       synchronized (MruVAccountsServiceGrpc.class) {
         if ((getRegisterAccountMethod = MruVAccountsServiceGrpc.getRegisterAccountMethod) == null) {
           MruVAccountsServiceGrpc.getRegisterAccountMethod = getRegisterAccountMethod =
-              io.grpc.MethodDescriptor.<mruv.Accounts.RegisterAccountRequest, mruv.Accounts.RegisterAccountResponse>newBuilder()
+              io.grpc.MethodDescriptor.<mruv.accounts.Accounts.RegisterAccountRequest, mruv.accounts.Accounts.RegisterAccountResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "RegisterAccount"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  mruv.Accounts.RegisterAccountRequest.getDefaultInstance()))
+                  mruv.accounts.Accounts.RegisterAccountRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  mruv.Accounts.RegisterAccountResponse.getDefaultInstance()))
+                  mruv.accounts.Accounts.RegisterAccountResponse.getDefaultInstance()))
               .setSchemaDescriptor(new MruVAccountsServiceMethodDescriptorSupplier("RegisterAccount"))
               .build();
         }
@@ -62,29 +62,29 @@ public final class MruVAccountsServiceGrpc {
     return getRegisterAccountMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<mruv.Accounts.LogInRequest,
-      mruv.Accounts.LogInResponse> getLogInMethod;
+  private static volatile io.grpc.MethodDescriptor<mruv.accounts.Accounts.LogInRequest,
+      mruv.accounts.Accounts.LogInResponse> getLogInMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "LogIn",
-      requestType = mruv.Accounts.LogInRequest.class,
-      responseType = mruv.Accounts.LogInResponse.class,
+      requestType = mruv.accounts.Accounts.LogInRequest.class,
+      responseType = mruv.accounts.Accounts.LogInResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<mruv.Accounts.LogInRequest,
-      mruv.Accounts.LogInResponse> getLogInMethod() {
-    io.grpc.MethodDescriptor<mruv.Accounts.LogInRequest, mruv.Accounts.LogInResponse> getLogInMethod;
+  public static io.grpc.MethodDescriptor<mruv.accounts.Accounts.LogInRequest,
+      mruv.accounts.Accounts.LogInResponse> getLogInMethod() {
+    io.grpc.MethodDescriptor<mruv.accounts.Accounts.LogInRequest, mruv.accounts.Accounts.LogInResponse> getLogInMethod;
     if ((getLogInMethod = MruVAccountsServiceGrpc.getLogInMethod) == null) {
       synchronized (MruVAccountsServiceGrpc.class) {
         if ((getLogInMethod = MruVAccountsServiceGrpc.getLogInMethod) == null) {
           MruVAccountsServiceGrpc.getLogInMethod = getLogInMethod =
-              io.grpc.MethodDescriptor.<mruv.Accounts.LogInRequest, mruv.Accounts.LogInResponse>newBuilder()
+              io.grpc.MethodDescriptor.<mruv.accounts.Accounts.LogInRequest, mruv.accounts.Accounts.LogInResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "LogIn"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  mruv.Accounts.LogInRequest.getDefaultInstance()))
+                  mruv.accounts.Accounts.LogInRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  mruv.Accounts.LogInResponse.getDefaultInstance()))
+                  mruv.accounts.Accounts.LogInResponse.getDefaultInstance()))
               .setSchemaDescriptor(new MruVAccountsServiceMethodDescriptorSupplier("LogIn"))
               .build();
         }
@@ -93,29 +93,29 @@ public final class MruVAccountsServiceGrpc {
     return getLogInMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<mruv.Accounts.IsAccountExistRequest,
-      mruv.Accounts.IsAccountExistResponse> getIsAccountExistMethod;
+  private static volatile io.grpc.MethodDescriptor<mruv.accounts.Accounts.IsAccountExistRequest,
+      mruv.accounts.Accounts.IsAccountExistResponse> getIsAccountExistMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "IsAccountExist",
-      requestType = mruv.Accounts.IsAccountExistRequest.class,
-      responseType = mruv.Accounts.IsAccountExistResponse.class,
+      requestType = mruv.accounts.Accounts.IsAccountExistRequest.class,
+      responseType = mruv.accounts.Accounts.IsAccountExistResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<mruv.Accounts.IsAccountExistRequest,
-      mruv.Accounts.IsAccountExistResponse> getIsAccountExistMethod() {
-    io.grpc.MethodDescriptor<mruv.Accounts.IsAccountExistRequest, mruv.Accounts.IsAccountExistResponse> getIsAccountExistMethod;
+  public static io.grpc.MethodDescriptor<mruv.accounts.Accounts.IsAccountExistRequest,
+      mruv.accounts.Accounts.IsAccountExistResponse> getIsAccountExistMethod() {
+    io.grpc.MethodDescriptor<mruv.accounts.Accounts.IsAccountExistRequest, mruv.accounts.Accounts.IsAccountExistResponse> getIsAccountExistMethod;
     if ((getIsAccountExistMethod = MruVAccountsServiceGrpc.getIsAccountExistMethod) == null) {
       synchronized (MruVAccountsServiceGrpc.class) {
         if ((getIsAccountExistMethod = MruVAccountsServiceGrpc.getIsAccountExistMethod) == null) {
           MruVAccountsServiceGrpc.getIsAccountExistMethod = getIsAccountExistMethod =
-              io.grpc.MethodDescriptor.<mruv.Accounts.IsAccountExistRequest, mruv.Accounts.IsAccountExistResponse>newBuilder()
+              io.grpc.MethodDescriptor.<mruv.accounts.Accounts.IsAccountExistRequest, mruv.accounts.Accounts.IsAccountExistResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "IsAccountExist"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  mruv.Accounts.IsAccountExistRequest.getDefaultInstance()))
+                  mruv.accounts.Accounts.IsAccountExistRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  mruv.Accounts.IsAccountExistResponse.getDefaultInstance()))
+                  mruv.accounts.Accounts.IsAccountExistResponse.getDefaultInstance()))
               .setSchemaDescriptor(new MruVAccountsServiceMethodDescriptorSupplier("IsAccountExist"))
               .build();
         }
@@ -124,29 +124,29 @@ public final class MruVAccountsServiceGrpc {
     return getIsAccountExistMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<mruv.Accounts.GetAccountRequest,
-      mruv.Accounts.GetAccountResponse> getGetAccountMethod;
+  private static volatile io.grpc.MethodDescriptor<mruv.accounts.Accounts.GetAccountRequest,
+      mruv.accounts.Accounts.GetAccountResponse> getGetAccountMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "GetAccount",
-      requestType = mruv.Accounts.GetAccountRequest.class,
-      responseType = mruv.Accounts.GetAccountResponse.class,
+      requestType = mruv.accounts.Accounts.GetAccountRequest.class,
+      responseType = mruv.accounts.Accounts.GetAccountResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<mruv.Accounts.GetAccountRequest,
-      mruv.Accounts.GetAccountResponse> getGetAccountMethod() {
-    io.grpc.MethodDescriptor<mruv.Accounts.GetAccountRequest, mruv.Accounts.GetAccountResponse> getGetAccountMethod;
+  public static io.grpc.MethodDescriptor<mruv.accounts.Accounts.GetAccountRequest,
+      mruv.accounts.Accounts.GetAccountResponse> getGetAccountMethod() {
+    io.grpc.MethodDescriptor<mruv.accounts.Accounts.GetAccountRequest, mruv.accounts.Accounts.GetAccountResponse> getGetAccountMethod;
     if ((getGetAccountMethod = MruVAccountsServiceGrpc.getGetAccountMethod) == null) {
       synchronized (MruVAccountsServiceGrpc.class) {
         if ((getGetAccountMethod = MruVAccountsServiceGrpc.getGetAccountMethod) == null) {
           MruVAccountsServiceGrpc.getGetAccountMethod = getGetAccountMethod =
-              io.grpc.MethodDescriptor.<mruv.Accounts.GetAccountRequest, mruv.Accounts.GetAccountResponse>newBuilder()
+              io.grpc.MethodDescriptor.<mruv.accounts.Accounts.GetAccountRequest, mruv.accounts.Accounts.GetAccountResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "GetAccount"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  mruv.Accounts.GetAccountRequest.getDefaultInstance()))
+                  mruv.accounts.Accounts.GetAccountRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  mruv.Accounts.GetAccountResponse.getDefaultInstance()))
+                  mruv.accounts.Accounts.GetAccountResponse.getDefaultInstance()))
               .setSchemaDescriptor(new MruVAccountsServiceMethodDescriptorSupplier("GetAccount"))
               .build();
         }
@@ -155,29 +155,29 @@ public final class MruVAccountsServiceGrpc {
     return getGetAccountMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<mruv.Accounts.GetAccountCharactersRequest,
-      mruv.Accounts.GetAccountCharactersResponse> getGetAccountCharactersMethod;
+  private static volatile io.grpc.MethodDescriptor<mruv.accounts.Accounts.GetAccountCharactersRequest,
+      mruv.accounts.Accounts.GetAccountCharactersResponse> getGetAccountCharactersMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "GetAccountCharacters",
-      requestType = mruv.Accounts.GetAccountCharactersRequest.class,
-      responseType = mruv.Accounts.GetAccountCharactersResponse.class,
+      requestType = mruv.accounts.Accounts.GetAccountCharactersRequest.class,
+      responseType = mruv.accounts.Accounts.GetAccountCharactersResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<mruv.Accounts.GetAccountCharactersRequest,
-      mruv.Accounts.GetAccountCharactersResponse> getGetAccountCharactersMethod() {
-    io.grpc.MethodDescriptor<mruv.Accounts.GetAccountCharactersRequest, mruv.Accounts.GetAccountCharactersResponse> getGetAccountCharactersMethod;
+  public static io.grpc.MethodDescriptor<mruv.accounts.Accounts.GetAccountCharactersRequest,
+      mruv.accounts.Accounts.GetAccountCharactersResponse> getGetAccountCharactersMethod() {
+    io.grpc.MethodDescriptor<mruv.accounts.Accounts.GetAccountCharactersRequest, mruv.accounts.Accounts.GetAccountCharactersResponse> getGetAccountCharactersMethod;
     if ((getGetAccountCharactersMethod = MruVAccountsServiceGrpc.getGetAccountCharactersMethod) == null) {
       synchronized (MruVAccountsServiceGrpc.class) {
         if ((getGetAccountCharactersMethod = MruVAccountsServiceGrpc.getGetAccountCharactersMethod) == null) {
           MruVAccountsServiceGrpc.getGetAccountCharactersMethod = getGetAccountCharactersMethod =
-              io.grpc.MethodDescriptor.<mruv.Accounts.GetAccountCharactersRequest, mruv.Accounts.GetAccountCharactersResponse>newBuilder()
+              io.grpc.MethodDescriptor.<mruv.accounts.Accounts.GetAccountCharactersRequest, mruv.accounts.Accounts.GetAccountCharactersResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "GetAccountCharacters"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  mruv.Accounts.GetAccountCharactersRequest.getDefaultInstance()))
+                  mruv.accounts.Accounts.GetAccountCharactersRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  mruv.Accounts.GetAccountCharactersResponse.getDefaultInstance()))
+                  mruv.accounts.Accounts.GetAccountCharactersResponse.getDefaultInstance()))
               .setSchemaDescriptor(new MruVAccountsServiceMethodDescriptorSupplier("GetAccountCharacters"))
               .build();
         }
@@ -243,8 +243,8 @@ public final class MruVAccountsServiceGrpc {
      * Register a new account.
      * </pre>
      */
-    public void registerAccount(mruv.Accounts.RegisterAccountRequest request,
-        io.grpc.stub.StreamObserver<mruv.Accounts.RegisterAccountResponse> responseObserver) {
+    public void registerAccount(mruv.accounts.Accounts.RegisterAccountRequest request,
+        io.grpc.stub.StreamObserver<mruv.accounts.Accounts.RegisterAccountResponse> responseObserver) {
       asyncUnimplementedUnaryCall(getRegisterAccountMethod(), responseObserver);
     }
 
@@ -253,8 +253,8 @@ public final class MruVAccountsServiceGrpc {
      * Sign into an existing account.
      * </pre>
      */
-    public void logIn(mruv.Accounts.LogInRequest request,
-        io.grpc.stub.StreamObserver<mruv.Accounts.LogInResponse> responseObserver) {
+    public void logIn(mruv.accounts.Accounts.LogInRequest request,
+        io.grpc.stub.StreamObserver<mruv.accounts.Accounts.LogInResponse> responseObserver) {
       asyncUnimplementedUnaryCall(getLogInMethod(), responseObserver);
     }
 
@@ -263,8 +263,8 @@ public final class MruVAccountsServiceGrpc {
      * Check, is account with specified login exist. If yes, it returns account id.
      * </pre>
      */
-    public void isAccountExist(mruv.Accounts.IsAccountExistRequest request,
-        io.grpc.stub.StreamObserver<mruv.Accounts.IsAccountExistResponse> responseObserver) {
+    public void isAccountExist(mruv.accounts.Accounts.IsAccountExistRequest request,
+        io.grpc.stub.StreamObserver<mruv.accounts.Accounts.IsAccountExistResponse> responseObserver) {
       asyncUnimplementedUnaryCall(getIsAccountExistMethod(), responseObserver);
     }
 
@@ -273,8 +273,8 @@ public final class MruVAccountsServiceGrpc {
      * Get an account.
      * </pre>
      */
-    public void getAccount(mruv.Accounts.GetAccountRequest request,
-        io.grpc.stub.StreamObserver<mruv.Accounts.GetAccountResponse> responseObserver) {
+    public void getAccount(mruv.accounts.Accounts.GetAccountRequest request,
+        io.grpc.stub.StreamObserver<mruv.accounts.Accounts.GetAccountResponse> responseObserver) {
       asyncUnimplementedUnaryCall(getGetAccountMethod(), responseObserver);
     }
 
@@ -283,8 +283,8 @@ public final class MruVAccountsServiceGrpc {
      * Get an account characters.
      * </pre>
      */
-    public void getAccountCharacters(mruv.Accounts.GetAccountCharactersRequest request,
-        io.grpc.stub.StreamObserver<mruv.Accounts.GetAccountCharactersResponse> responseObserver) {
+    public void getAccountCharacters(mruv.accounts.Accounts.GetAccountCharactersRequest request,
+        io.grpc.stub.StreamObserver<mruv.accounts.Accounts.GetAccountCharactersResponse> responseObserver) {
       asyncUnimplementedUnaryCall(getGetAccountCharactersMethod(), responseObserver);
     }
 
@@ -294,36 +294,36 @@ public final class MruVAccountsServiceGrpc {
             getRegisterAccountMethod(),
             asyncUnaryCall(
               new MethodHandlers<
-                mruv.Accounts.RegisterAccountRequest,
-                mruv.Accounts.RegisterAccountResponse>(
+                mruv.accounts.Accounts.RegisterAccountRequest,
+                mruv.accounts.Accounts.RegisterAccountResponse>(
                   this, METHODID_REGISTER_ACCOUNT)))
           .addMethod(
             getLogInMethod(),
             asyncUnaryCall(
               new MethodHandlers<
-                mruv.Accounts.LogInRequest,
-                mruv.Accounts.LogInResponse>(
+                mruv.accounts.Accounts.LogInRequest,
+                mruv.accounts.Accounts.LogInResponse>(
                   this, METHODID_LOG_IN)))
           .addMethod(
             getIsAccountExistMethod(),
             asyncUnaryCall(
               new MethodHandlers<
-                mruv.Accounts.IsAccountExistRequest,
-                mruv.Accounts.IsAccountExistResponse>(
+                mruv.accounts.Accounts.IsAccountExistRequest,
+                mruv.accounts.Accounts.IsAccountExistResponse>(
                   this, METHODID_IS_ACCOUNT_EXIST)))
           .addMethod(
             getGetAccountMethod(),
             asyncUnaryCall(
               new MethodHandlers<
-                mruv.Accounts.GetAccountRequest,
-                mruv.Accounts.GetAccountResponse>(
+                mruv.accounts.Accounts.GetAccountRequest,
+                mruv.accounts.Accounts.GetAccountResponse>(
                   this, METHODID_GET_ACCOUNT)))
           .addMethod(
             getGetAccountCharactersMethod(),
             asyncUnaryCall(
               new MethodHandlers<
-                mruv.Accounts.GetAccountCharactersRequest,
-                mruv.Accounts.GetAccountCharactersResponse>(
+                mruv.accounts.Accounts.GetAccountCharactersRequest,
+                mruv.accounts.Accounts.GetAccountCharactersResponse>(
                   this, METHODID_GET_ACCOUNT_CHARACTERS)))
           .build();
     }
@@ -352,8 +352,8 @@ public final class MruVAccountsServiceGrpc {
      * Register a new account.
      * </pre>
      */
-    public void registerAccount(mruv.Accounts.RegisterAccountRequest request,
-        io.grpc.stub.StreamObserver<mruv.Accounts.RegisterAccountResponse> responseObserver) {
+    public void registerAccount(mruv.accounts.Accounts.RegisterAccountRequest request,
+        io.grpc.stub.StreamObserver<mruv.accounts.Accounts.RegisterAccountResponse> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(getRegisterAccountMethod(), getCallOptions()), request, responseObserver);
     }
@@ -363,8 +363,8 @@ public final class MruVAccountsServiceGrpc {
      * Sign into an existing account.
      * </pre>
      */
-    public void logIn(mruv.Accounts.LogInRequest request,
-        io.grpc.stub.StreamObserver<mruv.Accounts.LogInResponse> responseObserver) {
+    public void logIn(mruv.accounts.Accounts.LogInRequest request,
+        io.grpc.stub.StreamObserver<mruv.accounts.Accounts.LogInResponse> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(getLogInMethod(), getCallOptions()), request, responseObserver);
     }
@@ -374,8 +374,8 @@ public final class MruVAccountsServiceGrpc {
      * Check, is account with specified login exist. If yes, it returns account id.
      * </pre>
      */
-    public void isAccountExist(mruv.Accounts.IsAccountExistRequest request,
-        io.grpc.stub.StreamObserver<mruv.Accounts.IsAccountExistResponse> responseObserver) {
+    public void isAccountExist(mruv.accounts.Accounts.IsAccountExistRequest request,
+        io.grpc.stub.StreamObserver<mruv.accounts.Accounts.IsAccountExistResponse> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(getIsAccountExistMethod(), getCallOptions()), request, responseObserver);
     }
@@ -385,8 +385,8 @@ public final class MruVAccountsServiceGrpc {
      * Get an account.
      * </pre>
      */
-    public void getAccount(mruv.Accounts.GetAccountRequest request,
-        io.grpc.stub.StreamObserver<mruv.Accounts.GetAccountResponse> responseObserver) {
+    public void getAccount(mruv.accounts.Accounts.GetAccountRequest request,
+        io.grpc.stub.StreamObserver<mruv.accounts.Accounts.GetAccountResponse> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(getGetAccountMethod(), getCallOptions()), request, responseObserver);
     }
@@ -396,8 +396,8 @@ public final class MruVAccountsServiceGrpc {
      * Get an account characters.
      * </pre>
      */
-    public void getAccountCharacters(mruv.Accounts.GetAccountCharactersRequest request,
-        io.grpc.stub.StreamObserver<mruv.Accounts.GetAccountCharactersResponse> responseObserver) {
+    public void getAccountCharacters(mruv.accounts.Accounts.GetAccountCharactersRequest request,
+        io.grpc.stub.StreamObserver<mruv.accounts.Accounts.GetAccountCharactersResponse> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(getGetAccountCharactersMethod(), getCallOptions()), request, responseObserver);
     }
@@ -426,7 +426,7 @@ public final class MruVAccountsServiceGrpc {
      * Register a new account.
      * </pre>
      */
-    public mruv.Accounts.RegisterAccountResponse registerAccount(mruv.Accounts.RegisterAccountRequest request) {
+    public mruv.accounts.Accounts.RegisterAccountResponse registerAccount(mruv.accounts.Accounts.RegisterAccountRequest request) {
       return blockingUnaryCall(
           getChannel(), getRegisterAccountMethod(), getCallOptions(), request);
     }
@@ -436,7 +436,7 @@ public final class MruVAccountsServiceGrpc {
      * Sign into an existing account.
      * </pre>
      */
-    public mruv.Accounts.LogInResponse logIn(mruv.Accounts.LogInRequest request) {
+    public mruv.accounts.Accounts.LogInResponse logIn(mruv.accounts.Accounts.LogInRequest request) {
       return blockingUnaryCall(
           getChannel(), getLogInMethod(), getCallOptions(), request);
     }
@@ -446,7 +446,7 @@ public final class MruVAccountsServiceGrpc {
      * Check, is account with specified login exist. If yes, it returns account id.
      * </pre>
      */
-    public mruv.Accounts.IsAccountExistResponse isAccountExist(mruv.Accounts.IsAccountExistRequest request) {
+    public mruv.accounts.Accounts.IsAccountExistResponse isAccountExist(mruv.accounts.Accounts.IsAccountExistRequest request) {
       return blockingUnaryCall(
           getChannel(), getIsAccountExistMethod(), getCallOptions(), request);
     }
@@ -456,7 +456,7 @@ public final class MruVAccountsServiceGrpc {
      * Get an account.
      * </pre>
      */
-    public mruv.Accounts.GetAccountResponse getAccount(mruv.Accounts.GetAccountRequest request) {
+    public mruv.accounts.Accounts.GetAccountResponse getAccount(mruv.accounts.Accounts.GetAccountRequest request) {
       return blockingUnaryCall(
           getChannel(), getGetAccountMethod(), getCallOptions(), request);
     }
@@ -466,7 +466,7 @@ public final class MruVAccountsServiceGrpc {
      * Get an account characters.
      * </pre>
      */
-    public mruv.Accounts.GetAccountCharactersResponse getAccountCharacters(mruv.Accounts.GetAccountCharactersRequest request) {
+    public mruv.accounts.Accounts.GetAccountCharactersResponse getAccountCharacters(mruv.accounts.Accounts.GetAccountCharactersRequest request) {
       return blockingUnaryCall(
           getChannel(), getGetAccountCharactersMethod(), getCallOptions(), request);
     }
@@ -495,8 +495,8 @@ public final class MruVAccountsServiceGrpc {
      * Register a new account.
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<mruv.Accounts.RegisterAccountResponse> registerAccount(
-        mruv.Accounts.RegisterAccountRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<mruv.accounts.Accounts.RegisterAccountResponse> registerAccount(
+        mruv.accounts.Accounts.RegisterAccountRequest request) {
       return futureUnaryCall(
           getChannel().newCall(getRegisterAccountMethod(), getCallOptions()), request);
     }
@@ -506,8 +506,8 @@ public final class MruVAccountsServiceGrpc {
      * Sign into an existing account.
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<mruv.Accounts.LogInResponse> logIn(
-        mruv.Accounts.LogInRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<mruv.accounts.Accounts.LogInResponse> logIn(
+        mruv.accounts.Accounts.LogInRequest request) {
       return futureUnaryCall(
           getChannel().newCall(getLogInMethod(), getCallOptions()), request);
     }
@@ -517,8 +517,8 @@ public final class MruVAccountsServiceGrpc {
      * Check, is account with specified login exist. If yes, it returns account id.
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<mruv.Accounts.IsAccountExistResponse> isAccountExist(
-        mruv.Accounts.IsAccountExistRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<mruv.accounts.Accounts.IsAccountExistResponse> isAccountExist(
+        mruv.accounts.Accounts.IsAccountExistRequest request) {
       return futureUnaryCall(
           getChannel().newCall(getIsAccountExistMethod(), getCallOptions()), request);
     }
@@ -528,8 +528,8 @@ public final class MruVAccountsServiceGrpc {
      * Get an account.
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<mruv.Accounts.GetAccountResponse> getAccount(
-        mruv.Accounts.GetAccountRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<mruv.accounts.Accounts.GetAccountResponse> getAccount(
+        mruv.accounts.Accounts.GetAccountRequest request) {
       return futureUnaryCall(
           getChannel().newCall(getGetAccountMethod(), getCallOptions()), request);
     }
@@ -539,8 +539,8 @@ public final class MruVAccountsServiceGrpc {
      * Get an account characters.
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<mruv.Accounts.GetAccountCharactersResponse> getAccountCharacters(
-        mruv.Accounts.GetAccountCharactersRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<mruv.accounts.Accounts.GetAccountCharactersResponse> getAccountCharacters(
+        mruv.accounts.Accounts.GetAccountCharactersRequest request) {
       return futureUnaryCall(
           getChannel().newCall(getGetAccountCharactersMethod(), getCallOptions()), request);
     }
@@ -570,24 +570,24 @@ public final class MruVAccountsServiceGrpc {
     public void invoke(Req request, io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
         case METHODID_REGISTER_ACCOUNT:
-          serviceImpl.registerAccount((mruv.Accounts.RegisterAccountRequest) request,
-              (io.grpc.stub.StreamObserver<mruv.Accounts.RegisterAccountResponse>) responseObserver);
+          serviceImpl.registerAccount((mruv.accounts.Accounts.RegisterAccountRequest) request,
+              (io.grpc.stub.StreamObserver<mruv.accounts.Accounts.RegisterAccountResponse>) responseObserver);
           break;
         case METHODID_LOG_IN:
-          serviceImpl.logIn((mruv.Accounts.LogInRequest) request,
-              (io.grpc.stub.StreamObserver<mruv.Accounts.LogInResponse>) responseObserver);
+          serviceImpl.logIn((mruv.accounts.Accounts.LogInRequest) request,
+              (io.grpc.stub.StreamObserver<mruv.accounts.Accounts.LogInResponse>) responseObserver);
           break;
         case METHODID_IS_ACCOUNT_EXIST:
-          serviceImpl.isAccountExist((mruv.Accounts.IsAccountExistRequest) request,
-              (io.grpc.stub.StreamObserver<mruv.Accounts.IsAccountExistResponse>) responseObserver);
+          serviceImpl.isAccountExist((mruv.accounts.Accounts.IsAccountExistRequest) request,
+              (io.grpc.stub.StreamObserver<mruv.accounts.Accounts.IsAccountExistResponse>) responseObserver);
           break;
         case METHODID_GET_ACCOUNT:
-          serviceImpl.getAccount((mruv.Accounts.GetAccountRequest) request,
-              (io.grpc.stub.StreamObserver<mruv.Accounts.GetAccountResponse>) responseObserver);
+          serviceImpl.getAccount((mruv.accounts.Accounts.GetAccountRequest) request,
+              (io.grpc.stub.StreamObserver<mruv.accounts.Accounts.GetAccountResponse>) responseObserver);
           break;
         case METHODID_GET_ACCOUNT_CHARACTERS:
-          serviceImpl.getAccountCharacters((mruv.Accounts.GetAccountCharactersRequest) request,
-              (io.grpc.stub.StreamObserver<mruv.Accounts.GetAccountCharactersResponse>) responseObserver);
+          serviceImpl.getAccountCharacters((mruv.accounts.Accounts.GetAccountCharactersRequest) request,
+              (io.grpc.stub.StreamObserver<mruv.accounts.Accounts.GetAccountCharactersResponse>) responseObserver);
           break;
         default:
           throw new AssertionError();
@@ -611,7 +611,7 @@ public final class MruVAccountsServiceGrpc {
 
     @java.lang.Override
     public com.google.protobuf.Descriptors.FileDescriptor getFileDescriptor() {
-      return mruv.Accounts.getDescriptor();
+      return mruv.accounts.Accounts.getDescriptor();
     }
 
     @java.lang.Override

@@ -43,27 +43,27 @@ public final class Plots {
         getDescriptionBytes();
 
     /**
-     * <code>repeated .mruv.Position points = 3;</code>
+     * <code>repeated .mruv.common.Position points = 3;</code>
      */
-    java.util.List<mruv.Spatial.Position> 
+    java.util.List<mruv.common.Spatial.Position> 
         getPointsList();
     /**
-     * <code>repeated .mruv.Position points = 3;</code>
+     * <code>repeated .mruv.common.Position points = 3;</code>
      */
-    mruv.Spatial.Position getPoints(int index);
+    mruv.common.Spatial.Position getPoints(int index);
     /**
-     * <code>repeated .mruv.Position points = 3;</code>
+     * <code>repeated .mruv.common.Position points = 3;</code>
      */
     int getPointsCount();
     /**
-     * <code>repeated .mruv.Position points = 3;</code>
+     * <code>repeated .mruv.common.Position points = 3;</code>
      */
-    java.util.List<? extends mruv.Spatial.PositionOrBuilder> 
+    java.util.List<? extends mruv.common.Spatial.PositionOrBuilder> 
         getPointsOrBuilderList();
     /**
-     * <code>repeated .mruv.Position points = 3;</code>
+     * <code>repeated .mruv.common.Position points = 3;</code>
      */
-    mruv.Spatial.PositionOrBuilder getPointsOrBuilder(
+    mruv.common.Spatial.PositionOrBuilder getPointsOrBuilder(
         int index);
   }
   /**
@@ -129,11 +129,11 @@ public final class Plots {
             }
             case 26: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                points_ = new java.util.ArrayList<mruv.Spatial.Position>();
+                points_ = new java.util.ArrayList<mruv.common.Spatial.Position>();
                 mutable_bitField0_ |= 0x00000001;
               }
               points_.add(
-                  input.readMessage(mruv.Spatial.Position.parser(), extensionRegistry));
+                  input.readMessage(mruv.common.Spatial.Position.parser(), extensionRegistry));
               break;
             }
             default: {
@@ -248,41 +248,41 @@ public final class Plots {
     }
 
     public static final int POINTS_FIELD_NUMBER = 3;
-    private java.util.List<mruv.Spatial.Position> points_;
+    private java.util.List<mruv.common.Spatial.Position> points_;
     /**
-     * <code>repeated .mruv.Position points = 3;</code>
+     * <code>repeated .mruv.common.Position points = 3;</code>
      */
     @java.lang.Override
-    public java.util.List<mruv.Spatial.Position> getPointsList() {
+    public java.util.List<mruv.common.Spatial.Position> getPointsList() {
       return points_;
     }
     /**
-     * <code>repeated .mruv.Position points = 3;</code>
+     * <code>repeated .mruv.common.Position points = 3;</code>
      */
     @java.lang.Override
-    public java.util.List<? extends mruv.Spatial.PositionOrBuilder> 
+    public java.util.List<? extends mruv.common.Spatial.PositionOrBuilder> 
         getPointsOrBuilderList() {
       return points_;
     }
     /**
-     * <code>repeated .mruv.Position points = 3;</code>
+     * <code>repeated .mruv.common.Position points = 3;</code>
      */
     @java.lang.Override
     public int getPointsCount() {
       return points_.size();
     }
     /**
-     * <code>repeated .mruv.Position points = 3;</code>
+     * <code>repeated .mruv.common.Position points = 3;</code>
      */
     @java.lang.Override
-    public mruv.Spatial.Position getPoints(int index) {
+    public mruv.common.Spatial.Position getPoints(int index) {
       return points_.get(index);
     }
     /**
-     * <code>repeated .mruv.Position points = 3;</code>
+     * <code>repeated .mruv.common.Position points = 3;</code>
      */
     @java.lang.Override
-    public mruv.Spatial.PositionOrBuilder getPointsOrBuilder(
+    public mruv.common.Spatial.PositionOrBuilder getPointsOrBuilder(
         int index) {
       return points_.get(index);
     }
@@ -815,22 +815,22 @@ public final class Plots {
         return this;
       }
 
-      private java.util.List<mruv.Spatial.Position> points_ =
+      private java.util.List<mruv.common.Spatial.Position> points_ =
         java.util.Collections.emptyList();
       private void ensurePointsIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          points_ = new java.util.ArrayList<mruv.Spatial.Position>(points_);
+          points_ = new java.util.ArrayList<mruv.common.Spatial.Position>(points_);
           bitField0_ |= 0x00000001;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          mruv.Spatial.Position, mruv.Spatial.Position.Builder, mruv.Spatial.PositionOrBuilder> pointsBuilder_;
+          mruv.common.Spatial.Position, mruv.common.Spatial.Position.Builder, mruv.common.Spatial.PositionOrBuilder> pointsBuilder_;
 
       /**
-       * <code>repeated .mruv.Position points = 3;</code>
+       * <code>repeated .mruv.common.Position points = 3;</code>
        */
-      public java.util.List<mruv.Spatial.Position> getPointsList() {
+      public java.util.List<mruv.common.Spatial.Position> getPointsList() {
         if (pointsBuilder_ == null) {
           return java.util.Collections.unmodifiableList(points_);
         } else {
@@ -838,7 +838,7 @@ public final class Plots {
         }
       }
       /**
-       * <code>repeated .mruv.Position points = 3;</code>
+       * <code>repeated .mruv.common.Position points = 3;</code>
        */
       public int getPointsCount() {
         if (pointsBuilder_ == null) {
@@ -848,9 +848,9 @@ public final class Plots {
         }
       }
       /**
-       * <code>repeated .mruv.Position points = 3;</code>
+       * <code>repeated .mruv.common.Position points = 3;</code>
        */
-      public mruv.Spatial.Position getPoints(int index) {
+      public mruv.common.Spatial.Position getPoints(int index) {
         if (pointsBuilder_ == null) {
           return points_.get(index);
         } else {
@@ -858,10 +858,10 @@ public final class Plots {
         }
       }
       /**
-       * <code>repeated .mruv.Position points = 3;</code>
+       * <code>repeated .mruv.common.Position points = 3;</code>
        */
       public Builder setPoints(
-          int index, mruv.Spatial.Position value) {
+          int index, mruv.common.Spatial.Position value) {
         if (pointsBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -875,10 +875,10 @@ public final class Plots {
         return this;
       }
       /**
-       * <code>repeated .mruv.Position points = 3;</code>
+       * <code>repeated .mruv.common.Position points = 3;</code>
        */
       public Builder setPoints(
-          int index, mruv.Spatial.Position.Builder builderForValue) {
+          int index, mruv.common.Spatial.Position.Builder builderForValue) {
         if (pointsBuilder_ == null) {
           ensurePointsIsMutable();
           points_.set(index, builderForValue.build());
@@ -889,9 +889,9 @@ public final class Plots {
         return this;
       }
       /**
-       * <code>repeated .mruv.Position points = 3;</code>
+       * <code>repeated .mruv.common.Position points = 3;</code>
        */
-      public Builder addPoints(mruv.Spatial.Position value) {
+      public Builder addPoints(mruv.common.Spatial.Position value) {
         if (pointsBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -905,10 +905,10 @@ public final class Plots {
         return this;
       }
       /**
-       * <code>repeated .mruv.Position points = 3;</code>
+       * <code>repeated .mruv.common.Position points = 3;</code>
        */
       public Builder addPoints(
-          int index, mruv.Spatial.Position value) {
+          int index, mruv.common.Spatial.Position value) {
         if (pointsBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -922,10 +922,10 @@ public final class Plots {
         return this;
       }
       /**
-       * <code>repeated .mruv.Position points = 3;</code>
+       * <code>repeated .mruv.common.Position points = 3;</code>
        */
       public Builder addPoints(
-          mruv.Spatial.Position.Builder builderForValue) {
+          mruv.common.Spatial.Position.Builder builderForValue) {
         if (pointsBuilder_ == null) {
           ensurePointsIsMutable();
           points_.add(builderForValue.build());
@@ -936,10 +936,10 @@ public final class Plots {
         return this;
       }
       /**
-       * <code>repeated .mruv.Position points = 3;</code>
+       * <code>repeated .mruv.common.Position points = 3;</code>
        */
       public Builder addPoints(
-          int index, mruv.Spatial.Position.Builder builderForValue) {
+          int index, mruv.common.Spatial.Position.Builder builderForValue) {
         if (pointsBuilder_ == null) {
           ensurePointsIsMutable();
           points_.add(index, builderForValue.build());
@@ -950,10 +950,10 @@ public final class Plots {
         return this;
       }
       /**
-       * <code>repeated .mruv.Position points = 3;</code>
+       * <code>repeated .mruv.common.Position points = 3;</code>
        */
       public Builder addAllPoints(
-          java.lang.Iterable<? extends mruv.Spatial.Position> values) {
+          java.lang.Iterable<? extends mruv.common.Spatial.Position> values) {
         if (pointsBuilder_ == null) {
           ensurePointsIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -965,7 +965,7 @@ public final class Plots {
         return this;
       }
       /**
-       * <code>repeated .mruv.Position points = 3;</code>
+       * <code>repeated .mruv.common.Position points = 3;</code>
        */
       public Builder clearPoints() {
         if (pointsBuilder_ == null) {
@@ -978,7 +978,7 @@ public final class Plots {
         return this;
       }
       /**
-       * <code>repeated .mruv.Position points = 3;</code>
+       * <code>repeated .mruv.common.Position points = 3;</code>
        */
       public Builder removePoints(int index) {
         if (pointsBuilder_ == null) {
@@ -991,16 +991,16 @@ public final class Plots {
         return this;
       }
       /**
-       * <code>repeated .mruv.Position points = 3;</code>
+       * <code>repeated .mruv.common.Position points = 3;</code>
        */
-      public mruv.Spatial.Position.Builder getPointsBuilder(
+      public mruv.common.Spatial.Position.Builder getPointsBuilder(
           int index) {
         return getPointsFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .mruv.Position points = 3;</code>
+       * <code>repeated .mruv.common.Position points = 3;</code>
        */
-      public mruv.Spatial.PositionOrBuilder getPointsOrBuilder(
+      public mruv.common.Spatial.PositionOrBuilder getPointsOrBuilder(
           int index) {
         if (pointsBuilder_ == null) {
           return points_.get(index);  } else {
@@ -1008,9 +1008,9 @@ public final class Plots {
         }
       }
       /**
-       * <code>repeated .mruv.Position points = 3;</code>
+       * <code>repeated .mruv.common.Position points = 3;</code>
        */
-      public java.util.List<? extends mruv.Spatial.PositionOrBuilder> 
+      public java.util.List<? extends mruv.common.Spatial.PositionOrBuilder> 
            getPointsOrBuilderList() {
         if (pointsBuilder_ != null) {
           return pointsBuilder_.getMessageOrBuilderList();
@@ -1019,33 +1019,33 @@ public final class Plots {
         }
       }
       /**
-       * <code>repeated .mruv.Position points = 3;</code>
+       * <code>repeated .mruv.common.Position points = 3;</code>
        */
-      public mruv.Spatial.Position.Builder addPointsBuilder() {
+      public mruv.common.Spatial.Position.Builder addPointsBuilder() {
         return getPointsFieldBuilder().addBuilder(
-            mruv.Spatial.Position.getDefaultInstance());
+            mruv.common.Spatial.Position.getDefaultInstance());
       }
       /**
-       * <code>repeated .mruv.Position points = 3;</code>
+       * <code>repeated .mruv.common.Position points = 3;</code>
        */
-      public mruv.Spatial.Position.Builder addPointsBuilder(
+      public mruv.common.Spatial.Position.Builder addPointsBuilder(
           int index) {
         return getPointsFieldBuilder().addBuilder(
-            index, mruv.Spatial.Position.getDefaultInstance());
+            index, mruv.common.Spatial.Position.getDefaultInstance());
       }
       /**
-       * <code>repeated .mruv.Position points = 3;</code>
+       * <code>repeated .mruv.common.Position points = 3;</code>
        */
-      public java.util.List<mruv.Spatial.Position.Builder> 
+      public java.util.List<mruv.common.Spatial.Position.Builder> 
            getPointsBuilderList() {
         return getPointsFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          mruv.Spatial.Position, mruv.Spatial.Position.Builder, mruv.Spatial.PositionOrBuilder> 
+          mruv.common.Spatial.Position, mruv.common.Spatial.Position.Builder, mruv.common.Spatial.PositionOrBuilder> 
           getPointsFieldBuilder() {
         if (pointsBuilder_ == null) {
           pointsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              mruv.Spatial.Position, mruv.Spatial.Position.Builder, mruv.Spatial.PositionOrBuilder>(
+              mruv.common.Spatial.Position, mruv.common.Spatial.Position.Builder, mruv.common.Spatial.PositionOrBuilder>(
                   points_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
@@ -1136,27 +1136,27 @@ public final class Plots {
         getDescriptionBytes();
 
     /**
-     * <code>repeated .mruv.Position points = 3;</code>
+     * <code>repeated .mruv.common.Position points = 3;</code>
      */
-    java.util.List<mruv.Spatial.Position> 
+    java.util.List<mruv.common.Spatial.Position> 
         getPointsList();
     /**
-     * <code>repeated .mruv.Position points = 3;</code>
+     * <code>repeated .mruv.common.Position points = 3;</code>
      */
-    mruv.Spatial.Position getPoints(int index);
+    mruv.common.Spatial.Position getPoints(int index);
     /**
-     * <code>repeated .mruv.Position points = 3;</code>
+     * <code>repeated .mruv.common.Position points = 3;</code>
      */
     int getPointsCount();
     /**
-     * <code>repeated .mruv.Position points = 3;</code>
+     * <code>repeated .mruv.common.Position points = 3;</code>
      */
-    java.util.List<? extends mruv.Spatial.PositionOrBuilder> 
+    java.util.List<? extends mruv.common.Spatial.PositionOrBuilder> 
         getPointsOrBuilderList();
     /**
-     * <code>repeated .mruv.Position points = 3;</code>
+     * <code>repeated .mruv.common.Position points = 3;</code>
      */
-    mruv.Spatial.PositionOrBuilder getPointsOrBuilder(
+    mruv.common.Spatial.PositionOrBuilder getPointsOrBuilder(
         int index);
   }
   /**
@@ -1226,11 +1226,11 @@ public final class Plots {
             }
             case 26: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                points_ = new java.util.ArrayList<mruv.Spatial.Position>();
+                points_ = new java.util.ArrayList<mruv.common.Spatial.Position>();
                 mutable_bitField0_ |= 0x00000001;
               }
               points_.add(
-                  input.readMessage(mruv.Spatial.Position.parser(), extensionRegistry));
+                  input.readMessage(mruv.common.Spatial.Position.parser(), extensionRegistry));
               break;
             }
             default: {
@@ -1345,41 +1345,41 @@ public final class Plots {
     }
 
     public static final int POINTS_FIELD_NUMBER = 3;
-    private java.util.List<mruv.Spatial.Position> points_;
+    private java.util.List<mruv.common.Spatial.Position> points_;
     /**
-     * <code>repeated .mruv.Position points = 3;</code>
+     * <code>repeated .mruv.common.Position points = 3;</code>
      */
     @java.lang.Override
-    public java.util.List<mruv.Spatial.Position> getPointsList() {
+    public java.util.List<mruv.common.Spatial.Position> getPointsList() {
       return points_;
     }
     /**
-     * <code>repeated .mruv.Position points = 3;</code>
+     * <code>repeated .mruv.common.Position points = 3;</code>
      */
     @java.lang.Override
-    public java.util.List<? extends mruv.Spatial.PositionOrBuilder> 
+    public java.util.List<? extends mruv.common.Spatial.PositionOrBuilder> 
         getPointsOrBuilderList() {
       return points_;
     }
     /**
-     * <code>repeated .mruv.Position points = 3;</code>
+     * <code>repeated .mruv.common.Position points = 3;</code>
      */
     @java.lang.Override
     public int getPointsCount() {
       return points_.size();
     }
     /**
-     * <code>repeated .mruv.Position points = 3;</code>
+     * <code>repeated .mruv.common.Position points = 3;</code>
      */
     @java.lang.Override
-    public mruv.Spatial.Position getPoints(int index) {
+    public mruv.common.Spatial.Position getPoints(int index) {
       return points_.get(index);
     }
     /**
-     * <code>repeated .mruv.Position points = 3;</code>
+     * <code>repeated .mruv.common.Position points = 3;</code>
      */
     @java.lang.Override
-    public mruv.Spatial.PositionOrBuilder getPointsOrBuilder(
+    public mruv.common.Spatial.PositionOrBuilder getPointsOrBuilder(
         int index) {
       return points_.get(index);
     }
@@ -1916,22 +1916,22 @@ public final class Plots {
         return this;
       }
 
-      private java.util.List<mruv.Spatial.Position> points_ =
+      private java.util.List<mruv.common.Spatial.Position> points_ =
         java.util.Collections.emptyList();
       private void ensurePointsIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          points_ = new java.util.ArrayList<mruv.Spatial.Position>(points_);
+          points_ = new java.util.ArrayList<mruv.common.Spatial.Position>(points_);
           bitField0_ |= 0x00000001;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          mruv.Spatial.Position, mruv.Spatial.Position.Builder, mruv.Spatial.PositionOrBuilder> pointsBuilder_;
+          mruv.common.Spatial.Position, mruv.common.Spatial.Position.Builder, mruv.common.Spatial.PositionOrBuilder> pointsBuilder_;
 
       /**
-       * <code>repeated .mruv.Position points = 3;</code>
+       * <code>repeated .mruv.common.Position points = 3;</code>
        */
-      public java.util.List<mruv.Spatial.Position> getPointsList() {
+      public java.util.List<mruv.common.Spatial.Position> getPointsList() {
         if (pointsBuilder_ == null) {
           return java.util.Collections.unmodifiableList(points_);
         } else {
@@ -1939,7 +1939,7 @@ public final class Plots {
         }
       }
       /**
-       * <code>repeated .mruv.Position points = 3;</code>
+       * <code>repeated .mruv.common.Position points = 3;</code>
        */
       public int getPointsCount() {
         if (pointsBuilder_ == null) {
@@ -1949,9 +1949,9 @@ public final class Plots {
         }
       }
       /**
-       * <code>repeated .mruv.Position points = 3;</code>
+       * <code>repeated .mruv.common.Position points = 3;</code>
        */
-      public mruv.Spatial.Position getPoints(int index) {
+      public mruv.common.Spatial.Position getPoints(int index) {
         if (pointsBuilder_ == null) {
           return points_.get(index);
         } else {
@@ -1959,10 +1959,10 @@ public final class Plots {
         }
       }
       /**
-       * <code>repeated .mruv.Position points = 3;</code>
+       * <code>repeated .mruv.common.Position points = 3;</code>
        */
       public Builder setPoints(
-          int index, mruv.Spatial.Position value) {
+          int index, mruv.common.Spatial.Position value) {
         if (pointsBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -1976,10 +1976,10 @@ public final class Plots {
         return this;
       }
       /**
-       * <code>repeated .mruv.Position points = 3;</code>
+       * <code>repeated .mruv.common.Position points = 3;</code>
        */
       public Builder setPoints(
-          int index, mruv.Spatial.Position.Builder builderForValue) {
+          int index, mruv.common.Spatial.Position.Builder builderForValue) {
         if (pointsBuilder_ == null) {
           ensurePointsIsMutable();
           points_.set(index, builderForValue.build());
@@ -1990,9 +1990,9 @@ public final class Plots {
         return this;
       }
       /**
-       * <code>repeated .mruv.Position points = 3;</code>
+       * <code>repeated .mruv.common.Position points = 3;</code>
        */
-      public Builder addPoints(mruv.Spatial.Position value) {
+      public Builder addPoints(mruv.common.Spatial.Position value) {
         if (pointsBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -2006,10 +2006,10 @@ public final class Plots {
         return this;
       }
       /**
-       * <code>repeated .mruv.Position points = 3;</code>
+       * <code>repeated .mruv.common.Position points = 3;</code>
        */
       public Builder addPoints(
-          int index, mruv.Spatial.Position value) {
+          int index, mruv.common.Spatial.Position value) {
         if (pointsBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -2023,10 +2023,10 @@ public final class Plots {
         return this;
       }
       /**
-       * <code>repeated .mruv.Position points = 3;</code>
+       * <code>repeated .mruv.common.Position points = 3;</code>
        */
       public Builder addPoints(
-          mruv.Spatial.Position.Builder builderForValue) {
+          mruv.common.Spatial.Position.Builder builderForValue) {
         if (pointsBuilder_ == null) {
           ensurePointsIsMutable();
           points_.add(builderForValue.build());
@@ -2037,10 +2037,10 @@ public final class Plots {
         return this;
       }
       /**
-       * <code>repeated .mruv.Position points = 3;</code>
+       * <code>repeated .mruv.common.Position points = 3;</code>
        */
       public Builder addPoints(
-          int index, mruv.Spatial.Position.Builder builderForValue) {
+          int index, mruv.common.Spatial.Position.Builder builderForValue) {
         if (pointsBuilder_ == null) {
           ensurePointsIsMutable();
           points_.add(index, builderForValue.build());
@@ -2051,10 +2051,10 @@ public final class Plots {
         return this;
       }
       /**
-       * <code>repeated .mruv.Position points = 3;</code>
+       * <code>repeated .mruv.common.Position points = 3;</code>
        */
       public Builder addAllPoints(
-          java.lang.Iterable<? extends mruv.Spatial.Position> values) {
+          java.lang.Iterable<? extends mruv.common.Spatial.Position> values) {
         if (pointsBuilder_ == null) {
           ensurePointsIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -2066,7 +2066,7 @@ public final class Plots {
         return this;
       }
       /**
-       * <code>repeated .mruv.Position points = 3;</code>
+       * <code>repeated .mruv.common.Position points = 3;</code>
        */
       public Builder clearPoints() {
         if (pointsBuilder_ == null) {
@@ -2079,7 +2079,7 @@ public final class Plots {
         return this;
       }
       /**
-       * <code>repeated .mruv.Position points = 3;</code>
+       * <code>repeated .mruv.common.Position points = 3;</code>
        */
       public Builder removePoints(int index) {
         if (pointsBuilder_ == null) {
@@ -2092,16 +2092,16 @@ public final class Plots {
         return this;
       }
       /**
-       * <code>repeated .mruv.Position points = 3;</code>
+       * <code>repeated .mruv.common.Position points = 3;</code>
        */
-      public mruv.Spatial.Position.Builder getPointsBuilder(
+      public mruv.common.Spatial.Position.Builder getPointsBuilder(
           int index) {
         return getPointsFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .mruv.Position points = 3;</code>
+       * <code>repeated .mruv.common.Position points = 3;</code>
        */
-      public mruv.Spatial.PositionOrBuilder getPointsOrBuilder(
+      public mruv.common.Spatial.PositionOrBuilder getPointsOrBuilder(
           int index) {
         if (pointsBuilder_ == null) {
           return points_.get(index);  } else {
@@ -2109,9 +2109,9 @@ public final class Plots {
         }
       }
       /**
-       * <code>repeated .mruv.Position points = 3;</code>
+       * <code>repeated .mruv.common.Position points = 3;</code>
        */
-      public java.util.List<? extends mruv.Spatial.PositionOrBuilder> 
+      public java.util.List<? extends mruv.common.Spatial.PositionOrBuilder> 
            getPointsOrBuilderList() {
         if (pointsBuilder_ != null) {
           return pointsBuilder_.getMessageOrBuilderList();
@@ -2120,33 +2120,33 @@ public final class Plots {
         }
       }
       /**
-       * <code>repeated .mruv.Position points = 3;</code>
+       * <code>repeated .mruv.common.Position points = 3;</code>
        */
-      public mruv.Spatial.Position.Builder addPointsBuilder() {
+      public mruv.common.Spatial.Position.Builder addPointsBuilder() {
         return getPointsFieldBuilder().addBuilder(
-            mruv.Spatial.Position.getDefaultInstance());
+            mruv.common.Spatial.Position.getDefaultInstance());
       }
       /**
-       * <code>repeated .mruv.Position points = 3;</code>
+       * <code>repeated .mruv.common.Position points = 3;</code>
        */
-      public mruv.Spatial.Position.Builder addPointsBuilder(
+      public mruv.common.Spatial.Position.Builder addPointsBuilder(
           int index) {
         return getPointsFieldBuilder().addBuilder(
-            index, mruv.Spatial.Position.getDefaultInstance());
+            index, mruv.common.Spatial.Position.getDefaultInstance());
       }
       /**
-       * <code>repeated .mruv.Position points = 3;</code>
+       * <code>repeated .mruv.common.Position points = 3;</code>
        */
-      public java.util.List<mruv.Spatial.Position.Builder> 
+      public java.util.List<mruv.common.Spatial.Position.Builder> 
            getPointsBuilderList() {
         return getPointsFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          mruv.Spatial.Position, mruv.Spatial.Position.Builder, mruv.Spatial.PositionOrBuilder> 
+          mruv.common.Spatial.Position, mruv.common.Spatial.Position.Builder, mruv.common.Spatial.PositionOrBuilder> 
           getPointsFieldBuilder() {
         if (pointsBuilder_ == null) {
           pointsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              mruv.Spatial.Position, mruv.Spatial.Position.Builder, mruv.Spatial.PositionOrBuilder>(
+              mruv.common.Spatial.Position, mruv.common.Spatial.Position.Builder, mruv.common.Spatial.PositionOrBuilder>(
                   points_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
@@ -3229,27 +3229,27 @@ public final class Plots {
         getDescriptionBytes();
 
     /**
-     * <code>repeated .mruv.Position points = 3;</code>
+     * <code>repeated .mruv.common.Position points = 3;</code>
      */
-    java.util.List<mruv.Spatial.Position> 
+    java.util.List<mruv.common.Spatial.Position> 
         getPointsList();
     /**
-     * <code>repeated .mruv.Position points = 3;</code>
+     * <code>repeated .mruv.common.Position points = 3;</code>
      */
-    mruv.Spatial.Position getPoints(int index);
+    mruv.common.Spatial.Position getPoints(int index);
     /**
-     * <code>repeated .mruv.Position points = 3;</code>
+     * <code>repeated .mruv.common.Position points = 3;</code>
      */
     int getPointsCount();
     /**
-     * <code>repeated .mruv.Position points = 3;</code>
+     * <code>repeated .mruv.common.Position points = 3;</code>
      */
-    java.util.List<? extends mruv.Spatial.PositionOrBuilder> 
+    java.util.List<? extends mruv.common.Spatial.PositionOrBuilder> 
         getPointsOrBuilderList();
     /**
-     * <code>repeated .mruv.Position points = 3;</code>
+     * <code>repeated .mruv.common.Position points = 3;</code>
      */
-    mruv.Spatial.PositionOrBuilder getPointsOrBuilder(
+    mruv.common.Spatial.PositionOrBuilder getPointsOrBuilder(
         int index);
 
     /**
@@ -3325,11 +3325,11 @@ public final class Plots {
             }
             case 26: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                points_ = new java.util.ArrayList<mruv.Spatial.Position>();
+                points_ = new java.util.ArrayList<mruv.common.Spatial.Position>();
                 mutable_bitField0_ |= 0x00000001;
               }
               points_.add(
-                  input.readMessage(mruv.Spatial.Position.parser(), extensionRegistry));
+                  input.readMessage(mruv.common.Spatial.Position.parser(), extensionRegistry));
               break;
             }
             case 33: {
@@ -3449,41 +3449,41 @@ public final class Plots {
     }
 
     public static final int POINTS_FIELD_NUMBER = 3;
-    private java.util.List<mruv.Spatial.Position> points_;
+    private java.util.List<mruv.common.Spatial.Position> points_;
     /**
-     * <code>repeated .mruv.Position points = 3;</code>
+     * <code>repeated .mruv.common.Position points = 3;</code>
      */
     @java.lang.Override
-    public java.util.List<mruv.Spatial.Position> getPointsList() {
+    public java.util.List<mruv.common.Spatial.Position> getPointsList() {
       return points_;
     }
     /**
-     * <code>repeated .mruv.Position points = 3;</code>
+     * <code>repeated .mruv.common.Position points = 3;</code>
      */
     @java.lang.Override
-    public java.util.List<? extends mruv.Spatial.PositionOrBuilder> 
+    public java.util.List<? extends mruv.common.Spatial.PositionOrBuilder> 
         getPointsOrBuilderList() {
       return points_;
     }
     /**
-     * <code>repeated .mruv.Position points = 3;</code>
+     * <code>repeated .mruv.common.Position points = 3;</code>
      */
     @java.lang.Override
     public int getPointsCount() {
       return points_.size();
     }
     /**
-     * <code>repeated .mruv.Position points = 3;</code>
+     * <code>repeated .mruv.common.Position points = 3;</code>
      */
     @java.lang.Override
-    public mruv.Spatial.Position getPoints(int index) {
+    public mruv.common.Spatial.Position getPoints(int index) {
       return points_.get(index);
     }
     /**
-     * <code>repeated .mruv.Position points = 3;</code>
+     * <code>repeated .mruv.common.Position points = 3;</code>
      */
     @java.lang.Override
-    public mruv.Spatial.PositionOrBuilder getPointsOrBuilder(
+    public mruv.common.Spatial.PositionOrBuilder getPointsOrBuilder(
         int index) {
       return points_.get(index);
     }
@@ -4050,22 +4050,22 @@ public final class Plots {
         return this;
       }
 
-      private java.util.List<mruv.Spatial.Position> points_ =
+      private java.util.List<mruv.common.Spatial.Position> points_ =
         java.util.Collections.emptyList();
       private void ensurePointsIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          points_ = new java.util.ArrayList<mruv.Spatial.Position>(points_);
+          points_ = new java.util.ArrayList<mruv.common.Spatial.Position>(points_);
           bitField0_ |= 0x00000001;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          mruv.Spatial.Position, mruv.Spatial.Position.Builder, mruv.Spatial.PositionOrBuilder> pointsBuilder_;
+          mruv.common.Spatial.Position, mruv.common.Spatial.Position.Builder, mruv.common.Spatial.PositionOrBuilder> pointsBuilder_;
 
       /**
-       * <code>repeated .mruv.Position points = 3;</code>
+       * <code>repeated .mruv.common.Position points = 3;</code>
        */
-      public java.util.List<mruv.Spatial.Position> getPointsList() {
+      public java.util.List<mruv.common.Spatial.Position> getPointsList() {
         if (pointsBuilder_ == null) {
           return java.util.Collections.unmodifiableList(points_);
         } else {
@@ -4073,7 +4073,7 @@ public final class Plots {
         }
       }
       /**
-       * <code>repeated .mruv.Position points = 3;</code>
+       * <code>repeated .mruv.common.Position points = 3;</code>
        */
       public int getPointsCount() {
         if (pointsBuilder_ == null) {
@@ -4083,9 +4083,9 @@ public final class Plots {
         }
       }
       /**
-       * <code>repeated .mruv.Position points = 3;</code>
+       * <code>repeated .mruv.common.Position points = 3;</code>
        */
-      public mruv.Spatial.Position getPoints(int index) {
+      public mruv.common.Spatial.Position getPoints(int index) {
         if (pointsBuilder_ == null) {
           return points_.get(index);
         } else {
@@ -4093,10 +4093,10 @@ public final class Plots {
         }
       }
       /**
-       * <code>repeated .mruv.Position points = 3;</code>
+       * <code>repeated .mruv.common.Position points = 3;</code>
        */
       public Builder setPoints(
-          int index, mruv.Spatial.Position value) {
+          int index, mruv.common.Spatial.Position value) {
         if (pointsBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -4110,10 +4110,10 @@ public final class Plots {
         return this;
       }
       /**
-       * <code>repeated .mruv.Position points = 3;</code>
+       * <code>repeated .mruv.common.Position points = 3;</code>
        */
       public Builder setPoints(
-          int index, mruv.Spatial.Position.Builder builderForValue) {
+          int index, mruv.common.Spatial.Position.Builder builderForValue) {
         if (pointsBuilder_ == null) {
           ensurePointsIsMutable();
           points_.set(index, builderForValue.build());
@@ -4124,9 +4124,9 @@ public final class Plots {
         return this;
       }
       /**
-       * <code>repeated .mruv.Position points = 3;</code>
+       * <code>repeated .mruv.common.Position points = 3;</code>
        */
-      public Builder addPoints(mruv.Spatial.Position value) {
+      public Builder addPoints(mruv.common.Spatial.Position value) {
         if (pointsBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -4140,10 +4140,10 @@ public final class Plots {
         return this;
       }
       /**
-       * <code>repeated .mruv.Position points = 3;</code>
+       * <code>repeated .mruv.common.Position points = 3;</code>
        */
       public Builder addPoints(
-          int index, mruv.Spatial.Position value) {
+          int index, mruv.common.Spatial.Position value) {
         if (pointsBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -4157,10 +4157,10 @@ public final class Plots {
         return this;
       }
       /**
-       * <code>repeated .mruv.Position points = 3;</code>
+       * <code>repeated .mruv.common.Position points = 3;</code>
        */
       public Builder addPoints(
-          mruv.Spatial.Position.Builder builderForValue) {
+          mruv.common.Spatial.Position.Builder builderForValue) {
         if (pointsBuilder_ == null) {
           ensurePointsIsMutable();
           points_.add(builderForValue.build());
@@ -4171,10 +4171,10 @@ public final class Plots {
         return this;
       }
       /**
-       * <code>repeated .mruv.Position points = 3;</code>
+       * <code>repeated .mruv.common.Position points = 3;</code>
        */
       public Builder addPoints(
-          int index, mruv.Spatial.Position.Builder builderForValue) {
+          int index, mruv.common.Spatial.Position.Builder builderForValue) {
         if (pointsBuilder_ == null) {
           ensurePointsIsMutable();
           points_.add(index, builderForValue.build());
@@ -4185,10 +4185,10 @@ public final class Plots {
         return this;
       }
       /**
-       * <code>repeated .mruv.Position points = 3;</code>
+       * <code>repeated .mruv.common.Position points = 3;</code>
        */
       public Builder addAllPoints(
-          java.lang.Iterable<? extends mruv.Spatial.Position> values) {
+          java.lang.Iterable<? extends mruv.common.Spatial.Position> values) {
         if (pointsBuilder_ == null) {
           ensurePointsIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -4200,7 +4200,7 @@ public final class Plots {
         return this;
       }
       /**
-       * <code>repeated .mruv.Position points = 3;</code>
+       * <code>repeated .mruv.common.Position points = 3;</code>
        */
       public Builder clearPoints() {
         if (pointsBuilder_ == null) {
@@ -4213,7 +4213,7 @@ public final class Plots {
         return this;
       }
       /**
-       * <code>repeated .mruv.Position points = 3;</code>
+       * <code>repeated .mruv.common.Position points = 3;</code>
        */
       public Builder removePoints(int index) {
         if (pointsBuilder_ == null) {
@@ -4226,16 +4226,16 @@ public final class Plots {
         return this;
       }
       /**
-       * <code>repeated .mruv.Position points = 3;</code>
+       * <code>repeated .mruv.common.Position points = 3;</code>
        */
-      public mruv.Spatial.Position.Builder getPointsBuilder(
+      public mruv.common.Spatial.Position.Builder getPointsBuilder(
           int index) {
         return getPointsFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .mruv.Position points = 3;</code>
+       * <code>repeated .mruv.common.Position points = 3;</code>
        */
-      public mruv.Spatial.PositionOrBuilder getPointsOrBuilder(
+      public mruv.common.Spatial.PositionOrBuilder getPointsOrBuilder(
           int index) {
         if (pointsBuilder_ == null) {
           return points_.get(index);  } else {
@@ -4243,9 +4243,9 @@ public final class Plots {
         }
       }
       /**
-       * <code>repeated .mruv.Position points = 3;</code>
+       * <code>repeated .mruv.common.Position points = 3;</code>
        */
-      public java.util.List<? extends mruv.Spatial.PositionOrBuilder> 
+      public java.util.List<? extends mruv.common.Spatial.PositionOrBuilder> 
            getPointsOrBuilderList() {
         if (pointsBuilder_ != null) {
           return pointsBuilder_.getMessageOrBuilderList();
@@ -4254,33 +4254,33 @@ public final class Plots {
         }
       }
       /**
-       * <code>repeated .mruv.Position points = 3;</code>
+       * <code>repeated .mruv.common.Position points = 3;</code>
        */
-      public mruv.Spatial.Position.Builder addPointsBuilder() {
+      public mruv.common.Spatial.Position.Builder addPointsBuilder() {
         return getPointsFieldBuilder().addBuilder(
-            mruv.Spatial.Position.getDefaultInstance());
+            mruv.common.Spatial.Position.getDefaultInstance());
       }
       /**
-       * <code>repeated .mruv.Position points = 3;</code>
+       * <code>repeated .mruv.common.Position points = 3;</code>
        */
-      public mruv.Spatial.Position.Builder addPointsBuilder(
+      public mruv.common.Spatial.Position.Builder addPointsBuilder(
           int index) {
         return getPointsFieldBuilder().addBuilder(
-            index, mruv.Spatial.Position.getDefaultInstance());
+            index, mruv.common.Spatial.Position.getDefaultInstance());
       }
       /**
-       * <code>repeated .mruv.Position points = 3;</code>
+       * <code>repeated .mruv.common.Position points = 3;</code>
        */
-      public java.util.List<mruv.Spatial.Position.Builder> 
+      public java.util.List<mruv.common.Spatial.Position.Builder> 
            getPointsBuilderList() {
         return getPointsFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          mruv.Spatial.Position, mruv.Spatial.Position.Builder, mruv.Spatial.PositionOrBuilder> 
+          mruv.common.Spatial.Position, mruv.common.Spatial.Position.Builder, mruv.common.Spatial.PositionOrBuilder> 
           getPointsFieldBuilder() {
         if (pointsBuilder_ == null) {
           pointsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              mruv.Spatial.Position, mruv.Spatial.Position.Builder, mruv.Spatial.PositionOrBuilder>(
+              mruv.common.Spatial.Position, mruv.common.Spatial.Position.Builder, mruv.common.Spatial.PositionOrBuilder>(
                   points_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
@@ -6573,36 +6573,36 @@ public final class Plots {
     java.lang.String[] descriptorData = {
       "\n\021plots/plots.proto\022\nmruv.plots\032\034google/" +
       "api/annotations.proto\032\024common/spatial.pr" +
-      "oto\"I\n\004Plot\022\014\n\004name\030\001 \001(\t\022\023\n\013description" +
-      "\030\002 \001(\t\022\036\n\006points\030\003 \003(\0132\016.mruv.Position\"V" +
-      "\n\021CreatePlotRequest\022\014\n\004name\030\001 \001(\t\022\023\n\013des" +
-      "cription\030\002 \001(\t\022\036\n\006points\030\003 \003(\0132\016.mruv.Po" +
-      "sition\" \n\022CreatePlotResponse\022\n\n\002id\030\001 \001(\r" +
-      "\"\034\n\016GetPlotRequest\022\n\n\002id\030\001 \001(\r\"b\n\017GetPlo" +
-      "tResponse\022\014\n\004name\030\001 \001(\t\022\023\n\013description\030\002" +
-      " \001(\t\022\036\n\006points\030\003 \003(\0132\016.mruv.Position\022\014\n\004" +
-      "area\030\004 \001(\001\"B\n\021UpdatePlotRequest\022\n\n\002id\030\001 " +
-      "\001(\r\022\014\n\004name\030\002 \001(\t\022\023\n\013description\030\003 \001(\t\"\024" +
-      "\n\022UpdatePlotResponse\"\037\n\021DeletePlotReques" +
-      "t\022\n\n\002id\030\001 \001(\r\"\024\n\022DeletePlotResponse2\230\003\n\020" +
-      "MruVPlotsService\022^\n\nCreatePlot\022\035.mruv.pl" +
-      "ots.CreatePlotRequest\032\036.mruv.plots.Creat" +
-      "ePlotResponse\"\021\202\323\344\223\002\013\"\t/v1/plots\022Z\n\007GetP" +
-      "lot\022\032.mruv.plots.GetPlotRequest\032\033.mruv.p" +
-      "lots.GetPlotResponse\"\026\202\323\344\223\002\020\022\016/v1/plots/" +
-      "{id}\022c\n\nUpdatePlot\022\035.mruv.plots.UpdatePl" +
-      "otRequest\032\036.mruv.plots.UpdatePlotRespons" +
-      "e\"\026\202\323\344\223\002\0202\016/v1/plots/{id}\022c\n\nDeletePlot\022" +
-      "\035.mruv.plots.DeletePlotRequest\032\036.mruv.pl" +
-      "ots.DeletePlotResponse\"\026\202\323\344\223\002\020*\016/v1/plot" +
-      "s/{id}B%Z#github.com/MruV-RP/mruv-pb-go/" +
-      "plotsb\006proto3"
+      "oto\"P\n\004Plot\022\014\n\004name\030\001 \001(\t\022\023\n\013description" +
+      "\030\002 \001(\t\022%\n\006points\030\003 \003(\0132\025.mruv.common.Pos" +
+      "ition\"]\n\021CreatePlotRequest\022\014\n\004name\030\001 \001(\t" +
+      "\022\023\n\013description\030\002 \001(\t\022%\n\006points\030\003 \003(\0132\025." +
+      "mruv.common.Position\" \n\022CreatePlotRespon" +
+      "se\022\n\n\002id\030\001 \001(\r\"\034\n\016GetPlotRequest\022\n\n\002id\030\001" +
+      " \001(\r\"i\n\017GetPlotResponse\022\014\n\004name\030\001 \001(\t\022\023\n" +
+      "\013description\030\002 \001(\t\022%\n\006points\030\003 \003(\0132\025.mru" +
+      "v.common.Position\022\014\n\004area\030\004 \001(\001\"B\n\021Updat" +
+      "ePlotRequest\022\n\n\002id\030\001 \001(\r\022\014\n\004name\030\002 \001(\t\022\023" +
+      "\n\013description\030\003 \001(\t\"\024\n\022UpdatePlotRespons" +
+      "e\"\037\n\021DeletePlotRequest\022\n\n\002id\030\001 \001(\r\"\024\n\022De" +
+      "letePlotResponse2\230\003\n\020MruVPlotsService\022^\n" +
+      "\nCreatePlot\022\035.mruv.plots.CreatePlotReque" +
+      "st\032\036.mruv.plots.CreatePlotResponse\"\021\202\323\344\223" +
+      "\002\013\"\t/v1/plots\022Z\n\007GetPlot\022\032.mruv.plots.Ge" +
+      "tPlotRequest\032\033.mruv.plots.GetPlotRespons" +
+      "e\"\026\202\323\344\223\002\020\022\016/v1/plots/{id}\022c\n\nUpdatePlot\022" +
+      "\035.mruv.plots.UpdatePlotRequest\032\036.mruv.pl" +
+      "ots.UpdatePlotResponse\"\026\202\323\344\223\002\0202\016/v1/plot" +
+      "s/{id}\022c\n\nDeletePlot\022\035.mruv.plots.Delete" +
+      "PlotRequest\032\036.mruv.plots.DeletePlotRespo" +
+      "nse\"\026\202\323\344\223\002\020*\016/v1/plots/{id}B%Z#github.co" +
+      "m/MruV-RP/mruv-pb-go/plotsb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
           com.google.api.AnnotationsProto.getDescriptor(),
-          mruv.Spatial.getDescriptor(),
+          mruv.common.Spatial.getDescriptor(),
         });
     internal_static_mruv_plots_Plot_descriptor =
       getDescriptor().getMessageTypes().get(0);
@@ -6664,7 +6664,7 @@ public final class Plots {
     com.google.protobuf.Descriptors.FileDescriptor
         .internalUpdateFileDescriptor(descriptor, registry);
     com.google.api.AnnotationsProto.getDescriptor();
-    mruv.Spatial.getDescriptor();
+    mruv.common.Spatial.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

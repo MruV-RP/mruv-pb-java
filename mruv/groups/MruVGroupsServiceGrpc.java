@@ -1,4 +1,4 @@
-package mruv;
+package mruv.groups;
 
 import static io.grpc.MethodDescriptor.generateFullMethodName;
 import static io.grpc.stub.ClientCalls.asyncBidiStreamingCall;
@@ -27,32 +27,32 @@ public final class MruVGroupsServiceGrpc {
 
   private MruVGroupsServiceGrpc() {}
 
-  public static final String SERVICE_NAME = "mruv.MruVGroupsService";
+  public static final String SERVICE_NAME = "mruv.groups.MruVGroupsService";
 
   // Static method descriptors that strictly reflect the proto.
-  private static volatile io.grpc.MethodDescriptor<mruv.Groups.CreateGroupRequest,
-      mruv.Groups.CreateGroupResponse> getCreateGroupMethod;
+  private static volatile io.grpc.MethodDescriptor<mruv.groups.Groups.CreateGroupRequest,
+      mruv.groups.Groups.CreateGroupResponse> getCreateGroupMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "CreateGroup",
-      requestType = mruv.Groups.CreateGroupRequest.class,
-      responseType = mruv.Groups.CreateGroupResponse.class,
+      requestType = mruv.groups.Groups.CreateGroupRequest.class,
+      responseType = mruv.groups.Groups.CreateGroupResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<mruv.Groups.CreateGroupRequest,
-      mruv.Groups.CreateGroupResponse> getCreateGroupMethod() {
-    io.grpc.MethodDescriptor<mruv.Groups.CreateGroupRequest, mruv.Groups.CreateGroupResponse> getCreateGroupMethod;
+  public static io.grpc.MethodDescriptor<mruv.groups.Groups.CreateGroupRequest,
+      mruv.groups.Groups.CreateGroupResponse> getCreateGroupMethod() {
+    io.grpc.MethodDescriptor<mruv.groups.Groups.CreateGroupRequest, mruv.groups.Groups.CreateGroupResponse> getCreateGroupMethod;
     if ((getCreateGroupMethod = MruVGroupsServiceGrpc.getCreateGroupMethod) == null) {
       synchronized (MruVGroupsServiceGrpc.class) {
         if ((getCreateGroupMethod = MruVGroupsServiceGrpc.getCreateGroupMethod) == null) {
           MruVGroupsServiceGrpc.getCreateGroupMethod = getCreateGroupMethod =
-              io.grpc.MethodDescriptor.<mruv.Groups.CreateGroupRequest, mruv.Groups.CreateGroupResponse>newBuilder()
+              io.grpc.MethodDescriptor.<mruv.groups.Groups.CreateGroupRequest, mruv.groups.Groups.CreateGroupResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "CreateGroup"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  mruv.Groups.CreateGroupRequest.getDefaultInstance()))
+                  mruv.groups.Groups.CreateGroupRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  mruv.Groups.CreateGroupResponse.getDefaultInstance()))
+                  mruv.groups.Groups.CreateGroupResponse.getDefaultInstance()))
               .setSchemaDescriptor(new MruVGroupsServiceMethodDescriptorSupplier("CreateGroup"))
               .build();
         }
@@ -61,29 +61,29 @@ public final class MruVGroupsServiceGrpc {
     return getCreateGroupMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<mruv.Groups.GetGroupRequest,
-      mruv.Groups.GetGroupResponse> getGetGroupMethod;
+  private static volatile io.grpc.MethodDescriptor<mruv.groups.Groups.GetGroupRequest,
+      mruv.groups.Groups.GetGroupResponse> getGetGroupMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "GetGroup",
-      requestType = mruv.Groups.GetGroupRequest.class,
-      responseType = mruv.Groups.GetGroupResponse.class,
+      requestType = mruv.groups.Groups.GetGroupRequest.class,
+      responseType = mruv.groups.Groups.GetGroupResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<mruv.Groups.GetGroupRequest,
-      mruv.Groups.GetGroupResponse> getGetGroupMethod() {
-    io.grpc.MethodDescriptor<mruv.Groups.GetGroupRequest, mruv.Groups.GetGroupResponse> getGetGroupMethod;
+  public static io.grpc.MethodDescriptor<mruv.groups.Groups.GetGroupRequest,
+      mruv.groups.Groups.GetGroupResponse> getGetGroupMethod() {
+    io.grpc.MethodDescriptor<mruv.groups.Groups.GetGroupRequest, mruv.groups.Groups.GetGroupResponse> getGetGroupMethod;
     if ((getGetGroupMethod = MruVGroupsServiceGrpc.getGetGroupMethod) == null) {
       synchronized (MruVGroupsServiceGrpc.class) {
         if ((getGetGroupMethod = MruVGroupsServiceGrpc.getGetGroupMethod) == null) {
           MruVGroupsServiceGrpc.getGetGroupMethod = getGetGroupMethod =
-              io.grpc.MethodDescriptor.<mruv.Groups.GetGroupRequest, mruv.Groups.GetGroupResponse>newBuilder()
+              io.grpc.MethodDescriptor.<mruv.groups.Groups.GetGroupRequest, mruv.groups.Groups.GetGroupResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "GetGroup"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  mruv.Groups.GetGroupRequest.getDefaultInstance()))
+                  mruv.groups.Groups.GetGroupRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  mruv.Groups.GetGroupResponse.getDefaultInstance()))
+                  mruv.groups.Groups.GetGroupResponse.getDefaultInstance()))
               .setSchemaDescriptor(new MruVGroupsServiceMethodDescriptorSupplier("GetGroup"))
               .build();
         }
@@ -92,29 +92,29 @@ public final class MruVGroupsServiceGrpc {
     return getGetGroupMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<mruv.Groups.UpdateGroupRequest,
-      mruv.Groups.UpdateGroupResponse> getUpdateGroupMethod;
+  private static volatile io.grpc.MethodDescriptor<mruv.groups.Groups.UpdateGroupRequest,
+      mruv.groups.Groups.UpdateGroupResponse> getUpdateGroupMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "UpdateGroup",
-      requestType = mruv.Groups.UpdateGroupRequest.class,
-      responseType = mruv.Groups.UpdateGroupResponse.class,
+      requestType = mruv.groups.Groups.UpdateGroupRequest.class,
+      responseType = mruv.groups.Groups.UpdateGroupResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<mruv.Groups.UpdateGroupRequest,
-      mruv.Groups.UpdateGroupResponse> getUpdateGroupMethod() {
-    io.grpc.MethodDescriptor<mruv.Groups.UpdateGroupRequest, mruv.Groups.UpdateGroupResponse> getUpdateGroupMethod;
+  public static io.grpc.MethodDescriptor<mruv.groups.Groups.UpdateGroupRequest,
+      mruv.groups.Groups.UpdateGroupResponse> getUpdateGroupMethod() {
+    io.grpc.MethodDescriptor<mruv.groups.Groups.UpdateGroupRequest, mruv.groups.Groups.UpdateGroupResponse> getUpdateGroupMethod;
     if ((getUpdateGroupMethod = MruVGroupsServiceGrpc.getUpdateGroupMethod) == null) {
       synchronized (MruVGroupsServiceGrpc.class) {
         if ((getUpdateGroupMethod = MruVGroupsServiceGrpc.getUpdateGroupMethod) == null) {
           MruVGroupsServiceGrpc.getUpdateGroupMethod = getUpdateGroupMethod =
-              io.grpc.MethodDescriptor.<mruv.Groups.UpdateGroupRequest, mruv.Groups.UpdateGroupResponse>newBuilder()
+              io.grpc.MethodDescriptor.<mruv.groups.Groups.UpdateGroupRequest, mruv.groups.Groups.UpdateGroupResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "UpdateGroup"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  mruv.Groups.UpdateGroupRequest.getDefaultInstance()))
+                  mruv.groups.Groups.UpdateGroupRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  mruv.Groups.UpdateGroupResponse.getDefaultInstance()))
+                  mruv.groups.Groups.UpdateGroupResponse.getDefaultInstance()))
               .setSchemaDescriptor(new MruVGroupsServiceMethodDescriptorSupplier("UpdateGroup"))
               .build();
         }
@@ -123,29 +123,29 @@ public final class MruVGroupsServiceGrpc {
     return getUpdateGroupMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<mruv.Groups.DeleteGroupRequest,
-      mruv.Groups.DeleteGroupResponse> getDeleteGroupMethod;
+  private static volatile io.grpc.MethodDescriptor<mruv.groups.Groups.DeleteGroupRequest,
+      mruv.groups.Groups.DeleteGroupResponse> getDeleteGroupMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "DeleteGroup",
-      requestType = mruv.Groups.DeleteGroupRequest.class,
-      responseType = mruv.Groups.DeleteGroupResponse.class,
+      requestType = mruv.groups.Groups.DeleteGroupRequest.class,
+      responseType = mruv.groups.Groups.DeleteGroupResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<mruv.Groups.DeleteGroupRequest,
-      mruv.Groups.DeleteGroupResponse> getDeleteGroupMethod() {
-    io.grpc.MethodDescriptor<mruv.Groups.DeleteGroupRequest, mruv.Groups.DeleteGroupResponse> getDeleteGroupMethod;
+  public static io.grpc.MethodDescriptor<mruv.groups.Groups.DeleteGroupRequest,
+      mruv.groups.Groups.DeleteGroupResponse> getDeleteGroupMethod() {
+    io.grpc.MethodDescriptor<mruv.groups.Groups.DeleteGroupRequest, mruv.groups.Groups.DeleteGroupResponse> getDeleteGroupMethod;
     if ((getDeleteGroupMethod = MruVGroupsServiceGrpc.getDeleteGroupMethod) == null) {
       synchronized (MruVGroupsServiceGrpc.class) {
         if ((getDeleteGroupMethod = MruVGroupsServiceGrpc.getDeleteGroupMethod) == null) {
           MruVGroupsServiceGrpc.getDeleteGroupMethod = getDeleteGroupMethod =
-              io.grpc.MethodDescriptor.<mruv.Groups.DeleteGroupRequest, mruv.Groups.DeleteGroupResponse>newBuilder()
+              io.grpc.MethodDescriptor.<mruv.groups.Groups.DeleteGroupRequest, mruv.groups.Groups.DeleteGroupResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "DeleteGroup"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  mruv.Groups.DeleteGroupRequest.getDefaultInstance()))
+                  mruv.groups.Groups.DeleteGroupRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  mruv.Groups.DeleteGroupResponse.getDefaultInstance()))
+                  mruv.groups.Groups.DeleteGroupResponse.getDefaultInstance()))
               .setSchemaDescriptor(new MruVGroupsServiceMethodDescriptorSupplier("DeleteGroup"))
               .build();
         }
@@ -154,29 +154,29 @@ public final class MruVGroupsServiceGrpc {
     return getDeleteGroupMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<mruv.Groups.GetGroupsRequest,
-      mruv.Groups.GetGroupsResponse> getGetGroupsMethod;
+  private static volatile io.grpc.MethodDescriptor<mruv.groups.Groups.GetGroupsRequest,
+      mruv.groups.Groups.GetGroupsResponse> getGetGroupsMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "GetGroups",
-      requestType = mruv.Groups.GetGroupsRequest.class,
-      responseType = mruv.Groups.GetGroupsResponse.class,
+      requestType = mruv.groups.Groups.GetGroupsRequest.class,
+      responseType = mruv.groups.Groups.GetGroupsResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<mruv.Groups.GetGroupsRequest,
-      mruv.Groups.GetGroupsResponse> getGetGroupsMethod() {
-    io.grpc.MethodDescriptor<mruv.Groups.GetGroupsRequest, mruv.Groups.GetGroupsResponse> getGetGroupsMethod;
+  public static io.grpc.MethodDescriptor<mruv.groups.Groups.GetGroupsRequest,
+      mruv.groups.Groups.GetGroupsResponse> getGetGroupsMethod() {
+    io.grpc.MethodDescriptor<mruv.groups.Groups.GetGroupsRequest, mruv.groups.Groups.GetGroupsResponse> getGetGroupsMethod;
     if ((getGetGroupsMethod = MruVGroupsServiceGrpc.getGetGroupsMethod) == null) {
       synchronized (MruVGroupsServiceGrpc.class) {
         if ((getGetGroupsMethod = MruVGroupsServiceGrpc.getGetGroupsMethod) == null) {
           MruVGroupsServiceGrpc.getGetGroupsMethod = getGetGroupsMethod =
-              io.grpc.MethodDescriptor.<mruv.Groups.GetGroupsRequest, mruv.Groups.GetGroupsResponse>newBuilder()
+              io.grpc.MethodDescriptor.<mruv.groups.Groups.GetGroupsRequest, mruv.groups.Groups.GetGroupsResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "GetGroups"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  mruv.Groups.GetGroupsRequest.getDefaultInstance()))
+                  mruv.groups.Groups.GetGroupsRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  mruv.Groups.GetGroupsResponse.getDefaultInstance()))
+                  mruv.groups.Groups.GetGroupsResponse.getDefaultInstance()))
               .setSchemaDescriptor(new MruVGroupsServiceMethodDescriptorSupplier("GetGroups"))
               .build();
         }
@@ -185,29 +185,29 @@ public final class MruVGroupsServiceGrpc {
     return getGetGroupsMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<mruv.Groups.AssignOwnerRequest,
-      mruv.Groups.AssignOwnerResponse> getAssignOwnerMethod;
+  private static volatile io.grpc.MethodDescriptor<mruv.groups.Groups.AssignOwnerRequest,
+      mruv.groups.Groups.AssignOwnerResponse> getAssignOwnerMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "AssignOwner",
-      requestType = mruv.Groups.AssignOwnerRequest.class,
-      responseType = mruv.Groups.AssignOwnerResponse.class,
+      requestType = mruv.groups.Groups.AssignOwnerRequest.class,
+      responseType = mruv.groups.Groups.AssignOwnerResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<mruv.Groups.AssignOwnerRequest,
-      mruv.Groups.AssignOwnerResponse> getAssignOwnerMethod() {
-    io.grpc.MethodDescriptor<mruv.Groups.AssignOwnerRequest, mruv.Groups.AssignOwnerResponse> getAssignOwnerMethod;
+  public static io.grpc.MethodDescriptor<mruv.groups.Groups.AssignOwnerRequest,
+      mruv.groups.Groups.AssignOwnerResponse> getAssignOwnerMethod() {
+    io.grpc.MethodDescriptor<mruv.groups.Groups.AssignOwnerRequest, mruv.groups.Groups.AssignOwnerResponse> getAssignOwnerMethod;
     if ((getAssignOwnerMethod = MruVGroupsServiceGrpc.getAssignOwnerMethod) == null) {
       synchronized (MruVGroupsServiceGrpc.class) {
         if ((getAssignOwnerMethod = MruVGroupsServiceGrpc.getAssignOwnerMethod) == null) {
           MruVGroupsServiceGrpc.getAssignOwnerMethod = getAssignOwnerMethod =
-              io.grpc.MethodDescriptor.<mruv.Groups.AssignOwnerRequest, mruv.Groups.AssignOwnerResponse>newBuilder()
+              io.grpc.MethodDescriptor.<mruv.groups.Groups.AssignOwnerRequest, mruv.groups.Groups.AssignOwnerResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "AssignOwner"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  mruv.Groups.AssignOwnerRequest.getDefaultInstance()))
+                  mruv.groups.Groups.AssignOwnerRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  mruv.Groups.AssignOwnerResponse.getDefaultInstance()))
+                  mruv.groups.Groups.AssignOwnerResponse.getDefaultInstance()))
               .setSchemaDescriptor(new MruVGroupsServiceMethodDescriptorSupplier("AssignOwner"))
               .build();
         }
@@ -216,29 +216,29 @@ public final class MruVGroupsServiceGrpc {
     return getAssignOwnerMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<mruv.Groups.GetOwnerRequest,
-      mruv.Groups.GetOwnerResponse> getGetOwnerMethod;
+  private static volatile io.grpc.MethodDescriptor<mruv.groups.Groups.GetOwnerRequest,
+      mruv.groups.Groups.GetOwnerResponse> getGetOwnerMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "GetOwner",
-      requestType = mruv.Groups.GetOwnerRequest.class,
-      responseType = mruv.Groups.GetOwnerResponse.class,
+      requestType = mruv.groups.Groups.GetOwnerRequest.class,
+      responseType = mruv.groups.Groups.GetOwnerResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<mruv.Groups.GetOwnerRequest,
-      mruv.Groups.GetOwnerResponse> getGetOwnerMethod() {
-    io.grpc.MethodDescriptor<mruv.Groups.GetOwnerRequest, mruv.Groups.GetOwnerResponse> getGetOwnerMethod;
+  public static io.grpc.MethodDescriptor<mruv.groups.Groups.GetOwnerRequest,
+      mruv.groups.Groups.GetOwnerResponse> getGetOwnerMethod() {
+    io.grpc.MethodDescriptor<mruv.groups.Groups.GetOwnerRequest, mruv.groups.Groups.GetOwnerResponse> getGetOwnerMethod;
     if ((getGetOwnerMethod = MruVGroupsServiceGrpc.getGetOwnerMethod) == null) {
       synchronized (MruVGroupsServiceGrpc.class) {
         if ((getGetOwnerMethod = MruVGroupsServiceGrpc.getGetOwnerMethod) == null) {
           MruVGroupsServiceGrpc.getGetOwnerMethod = getGetOwnerMethod =
-              io.grpc.MethodDescriptor.<mruv.Groups.GetOwnerRequest, mruv.Groups.GetOwnerResponse>newBuilder()
+              io.grpc.MethodDescriptor.<mruv.groups.Groups.GetOwnerRequest, mruv.groups.Groups.GetOwnerResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "GetOwner"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  mruv.Groups.GetOwnerRequest.getDefaultInstance()))
+                  mruv.groups.Groups.GetOwnerRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  mruv.Groups.GetOwnerResponse.getDefaultInstance()))
+                  mruv.groups.Groups.GetOwnerResponse.getDefaultInstance()))
               .setSchemaDescriptor(new MruVGroupsServiceMethodDescriptorSupplier("GetOwner"))
               .build();
         }
@@ -247,29 +247,29 @@ public final class MruVGroupsServiceGrpc {
     return getGetOwnerMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<mruv.Groups.AddMemberRequest,
-      mruv.Groups.AddMemberResponse> getAddMemberMethod;
+  private static volatile io.grpc.MethodDescriptor<mruv.groups.Groups.AddMemberRequest,
+      mruv.groups.Groups.AddMemberResponse> getAddMemberMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "AddMember",
-      requestType = mruv.Groups.AddMemberRequest.class,
-      responseType = mruv.Groups.AddMemberResponse.class,
+      requestType = mruv.groups.Groups.AddMemberRequest.class,
+      responseType = mruv.groups.Groups.AddMemberResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<mruv.Groups.AddMemberRequest,
-      mruv.Groups.AddMemberResponse> getAddMemberMethod() {
-    io.grpc.MethodDescriptor<mruv.Groups.AddMemberRequest, mruv.Groups.AddMemberResponse> getAddMemberMethod;
+  public static io.grpc.MethodDescriptor<mruv.groups.Groups.AddMemberRequest,
+      mruv.groups.Groups.AddMemberResponse> getAddMemberMethod() {
+    io.grpc.MethodDescriptor<mruv.groups.Groups.AddMemberRequest, mruv.groups.Groups.AddMemberResponse> getAddMemberMethod;
     if ((getAddMemberMethod = MruVGroupsServiceGrpc.getAddMemberMethod) == null) {
       synchronized (MruVGroupsServiceGrpc.class) {
         if ((getAddMemberMethod = MruVGroupsServiceGrpc.getAddMemberMethod) == null) {
           MruVGroupsServiceGrpc.getAddMemberMethod = getAddMemberMethod =
-              io.grpc.MethodDescriptor.<mruv.Groups.AddMemberRequest, mruv.Groups.AddMemberResponse>newBuilder()
+              io.grpc.MethodDescriptor.<mruv.groups.Groups.AddMemberRequest, mruv.groups.Groups.AddMemberResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "AddMember"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  mruv.Groups.AddMemberRequest.getDefaultInstance()))
+                  mruv.groups.Groups.AddMemberRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  mruv.Groups.AddMemberResponse.getDefaultInstance()))
+                  mruv.groups.Groups.AddMemberResponse.getDefaultInstance()))
               .setSchemaDescriptor(new MruVGroupsServiceMethodDescriptorSupplier("AddMember"))
               .build();
         }
@@ -278,29 +278,29 @@ public final class MruVGroupsServiceGrpc {
     return getAddMemberMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<mruv.Groups.GetMembersRequest,
-      mruv.Groups.GetMembersResponse> getGetMembersMethod;
+  private static volatile io.grpc.MethodDescriptor<mruv.groups.Groups.GetMembersRequest,
+      mruv.groups.Groups.GetMembersResponse> getGetMembersMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "GetMembers",
-      requestType = mruv.Groups.GetMembersRequest.class,
-      responseType = mruv.Groups.GetMembersResponse.class,
+      requestType = mruv.groups.Groups.GetMembersRequest.class,
+      responseType = mruv.groups.Groups.GetMembersResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<mruv.Groups.GetMembersRequest,
-      mruv.Groups.GetMembersResponse> getGetMembersMethod() {
-    io.grpc.MethodDescriptor<mruv.Groups.GetMembersRequest, mruv.Groups.GetMembersResponse> getGetMembersMethod;
+  public static io.grpc.MethodDescriptor<mruv.groups.Groups.GetMembersRequest,
+      mruv.groups.Groups.GetMembersResponse> getGetMembersMethod() {
+    io.grpc.MethodDescriptor<mruv.groups.Groups.GetMembersRequest, mruv.groups.Groups.GetMembersResponse> getGetMembersMethod;
     if ((getGetMembersMethod = MruVGroupsServiceGrpc.getGetMembersMethod) == null) {
       synchronized (MruVGroupsServiceGrpc.class) {
         if ((getGetMembersMethod = MruVGroupsServiceGrpc.getGetMembersMethod) == null) {
           MruVGroupsServiceGrpc.getGetMembersMethod = getGetMembersMethod =
-              io.grpc.MethodDescriptor.<mruv.Groups.GetMembersRequest, mruv.Groups.GetMembersResponse>newBuilder()
+              io.grpc.MethodDescriptor.<mruv.groups.Groups.GetMembersRequest, mruv.groups.Groups.GetMembersResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "GetMembers"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  mruv.Groups.GetMembersRequest.getDefaultInstance()))
+                  mruv.groups.Groups.GetMembersRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  mruv.Groups.GetMembersResponse.getDefaultInstance()))
+                  mruv.groups.Groups.GetMembersResponse.getDefaultInstance()))
               .setSchemaDescriptor(new MruVGroupsServiceMethodDescriptorSupplier("GetMembers"))
               .build();
         }
@@ -309,29 +309,29 @@ public final class MruVGroupsServiceGrpc {
     return getGetMembersMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<mruv.Groups.RemoveMemberRequest,
-      mruv.Groups.RemoveMemberResponse> getRemoveMemberMethod;
+  private static volatile io.grpc.MethodDescriptor<mruv.groups.Groups.RemoveMemberRequest,
+      mruv.groups.Groups.RemoveMemberResponse> getRemoveMemberMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "RemoveMember",
-      requestType = mruv.Groups.RemoveMemberRequest.class,
-      responseType = mruv.Groups.RemoveMemberResponse.class,
+      requestType = mruv.groups.Groups.RemoveMemberRequest.class,
+      responseType = mruv.groups.Groups.RemoveMemberResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<mruv.Groups.RemoveMemberRequest,
-      mruv.Groups.RemoveMemberResponse> getRemoveMemberMethod() {
-    io.grpc.MethodDescriptor<mruv.Groups.RemoveMemberRequest, mruv.Groups.RemoveMemberResponse> getRemoveMemberMethod;
+  public static io.grpc.MethodDescriptor<mruv.groups.Groups.RemoveMemberRequest,
+      mruv.groups.Groups.RemoveMemberResponse> getRemoveMemberMethod() {
+    io.grpc.MethodDescriptor<mruv.groups.Groups.RemoveMemberRequest, mruv.groups.Groups.RemoveMemberResponse> getRemoveMemberMethod;
     if ((getRemoveMemberMethod = MruVGroupsServiceGrpc.getRemoveMemberMethod) == null) {
       synchronized (MruVGroupsServiceGrpc.class) {
         if ((getRemoveMemberMethod = MruVGroupsServiceGrpc.getRemoveMemberMethod) == null) {
           MruVGroupsServiceGrpc.getRemoveMemberMethod = getRemoveMemberMethod =
-              io.grpc.MethodDescriptor.<mruv.Groups.RemoveMemberRequest, mruv.Groups.RemoveMemberResponse>newBuilder()
+              io.grpc.MethodDescriptor.<mruv.groups.Groups.RemoveMemberRequest, mruv.groups.Groups.RemoveMemberResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "RemoveMember"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  mruv.Groups.RemoveMemberRequest.getDefaultInstance()))
+                  mruv.groups.Groups.RemoveMemberRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  mruv.Groups.RemoveMemberResponse.getDefaultInstance()))
+                  mruv.groups.Groups.RemoveMemberResponse.getDefaultInstance()))
               .setSchemaDescriptor(new MruVGroupsServiceMethodDescriptorSupplier("RemoveMember"))
               .build();
         }
@@ -340,29 +340,29 @@ public final class MruVGroupsServiceGrpc {
     return getRemoveMemberMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<mruv.Groups.AddPermissionRequest,
-      mruv.Groups.AddPermissionResponse> getAddPermissionMethod;
+  private static volatile io.grpc.MethodDescriptor<mruv.groups.Groups.AddPermissionRequest,
+      mruv.groups.Groups.AddPermissionResponse> getAddPermissionMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "AddPermission",
-      requestType = mruv.Groups.AddPermissionRequest.class,
-      responseType = mruv.Groups.AddPermissionResponse.class,
+      requestType = mruv.groups.Groups.AddPermissionRequest.class,
+      responseType = mruv.groups.Groups.AddPermissionResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<mruv.Groups.AddPermissionRequest,
-      mruv.Groups.AddPermissionResponse> getAddPermissionMethod() {
-    io.grpc.MethodDescriptor<mruv.Groups.AddPermissionRequest, mruv.Groups.AddPermissionResponse> getAddPermissionMethod;
+  public static io.grpc.MethodDescriptor<mruv.groups.Groups.AddPermissionRequest,
+      mruv.groups.Groups.AddPermissionResponse> getAddPermissionMethod() {
+    io.grpc.MethodDescriptor<mruv.groups.Groups.AddPermissionRequest, mruv.groups.Groups.AddPermissionResponse> getAddPermissionMethod;
     if ((getAddPermissionMethod = MruVGroupsServiceGrpc.getAddPermissionMethod) == null) {
       synchronized (MruVGroupsServiceGrpc.class) {
         if ((getAddPermissionMethod = MruVGroupsServiceGrpc.getAddPermissionMethod) == null) {
           MruVGroupsServiceGrpc.getAddPermissionMethod = getAddPermissionMethod =
-              io.grpc.MethodDescriptor.<mruv.Groups.AddPermissionRequest, mruv.Groups.AddPermissionResponse>newBuilder()
+              io.grpc.MethodDescriptor.<mruv.groups.Groups.AddPermissionRequest, mruv.groups.Groups.AddPermissionResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "AddPermission"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  mruv.Groups.AddPermissionRequest.getDefaultInstance()))
+                  mruv.groups.Groups.AddPermissionRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  mruv.Groups.AddPermissionResponse.getDefaultInstance()))
+                  mruv.groups.Groups.AddPermissionResponse.getDefaultInstance()))
               .setSchemaDescriptor(new MruVGroupsServiceMethodDescriptorSupplier("AddPermission"))
               .build();
         }
@@ -371,29 +371,29 @@ public final class MruVGroupsServiceGrpc {
     return getAddPermissionMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<mruv.Groups.GetPermissionsRequest,
-      mruv.Groups.GetPermissionsResponse> getGetPermissionsMethod;
+  private static volatile io.grpc.MethodDescriptor<mruv.groups.Groups.GetPermissionsRequest,
+      mruv.groups.Groups.GetPermissionsResponse> getGetPermissionsMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "GetPermissions",
-      requestType = mruv.Groups.GetPermissionsRequest.class,
-      responseType = mruv.Groups.GetPermissionsResponse.class,
+      requestType = mruv.groups.Groups.GetPermissionsRequest.class,
+      responseType = mruv.groups.Groups.GetPermissionsResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<mruv.Groups.GetPermissionsRequest,
-      mruv.Groups.GetPermissionsResponse> getGetPermissionsMethod() {
-    io.grpc.MethodDescriptor<mruv.Groups.GetPermissionsRequest, mruv.Groups.GetPermissionsResponse> getGetPermissionsMethod;
+  public static io.grpc.MethodDescriptor<mruv.groups.Groups.GetPermissionsRequest,
+      mruv.groups.Groups.GetPermissionsResponse> getGetPermissionsMethod() {
+    io.grpc.MethodDescriptor<mruv.groups.Groups.GetPermissionsRequest, mruv.groups.Groups.GetPermissionsResponse> getGetPermissionsMethod;
     if ((getGetPermissionsMethod = MruVGroupsServiceGrpc.getGetPermissionsMethod) == null) {
       synchronized (MruVGroupsServiceGrpc.class) {
         if ((getGetPermissionsMethod = MruVGroupsServiceGrpc.getGetPermissionsMethod) == null) {
           MruVGroupsServiceGrpc.getGetPermissionsMethod = getGetPermissionsMethod =
-              io.grpc.MethodDescriptor.<mruv.Groups.GetPermissionsRequest, mruv.Groups.GetPermissionsResponse>newBuilder()
+              io.grpc.MethodDescriptor.<mruv.groups.Groups.GetPermissionsRequest, mruv.groups.Groups.GetPermissionsResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "GetPermissions"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  mruv.Groups.GetPermissionsRequest.getDefaultInstance()))
+                  mruv.groups.Groups.GetPermissionsRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  mruv.Groups.GetPermissionsResponse.getDefaultInstance()))
+                  mruv.groups.Groups.GetPermissionsResponse.getDefaultInstance()))
               .setSchemaDescriptor(new MruVGroupsServiceMethodDescriptorSupplier("GetPermissions"))
               .build();
         }
@@ -402,29 +402,29 @@ public final class MruVGroupsServiceGrpc {
     return getGetPermissionsMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<mruv.Groups.RemovePermissionRequest,
-      mruv.Groups.RemovePermissionResponse> getRemovePermissionMethod;
+  private static volatile io.grpc.MethodDescriptor<mruv.groups.Groups.RemovePermissionRequest,
+      mruv.groups.Groups.RemovePermissionResponse> getRemovePermissionMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "RemovePermission",
-      requestType = mruv.Groups.RemovePermissionRequest.class,
-      responseType = mruv.Groups.RemovePermissionResponse.class,
+      requestType = mruv.groups.Groups.RemovePermissionRequest.class,
+      responseType = mruv.groups.Groups.RemovePermissionResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<mruv.Groups.RemovePermissionRequest,
-      mruv.Groups.RemovePermissionResponse> getRemovePermissionMethod() {
-    io.grpc.MethodDescriptor<mruv.Groups.RemovePermissionRequest, mruv.Groups.RemovePermissionResponse> getRemovePermissionMethod;
+  public static io.grpc.MethodDescriptor<mruv.groups.Groups.RemovePermissionRequest,
+      mruv.groups.Groups.RemovePermissionResponse> getRemovePermissionMethod() {
+    io.grpc.MethodDescriptor<mruv.groups.Groups.RemovePermissionRequest, mruv.groups.Groups.RemovePermissionResponse> getRemovePermissionMethod;
     if ((getRemovePermissionMethod = MruVGroupsServiceGrpc.getRemovePermissionMethod) == null) {
       synchronized (MruVGroupsServiceGrpc.class) {
         if ((getRemovePermissionMethod = MruVGroupsServiceGrpc.getRemovePermissionMethod) == null) {
           MruVGroupsServiceGrpc.getRemovePermissionMethod = getRemovePermissionMethod =
-              io.grpc.MethodDescriptor.<mruv.Groups.RemovePermissionRequest, mruv.Groups.RemovePermissionResponse>newBuilder()
+              io.grpc.MethodDescriptor.<mruv.groups.Groups.RemovePermissionRequest, mruv.groups.Groups.RemovePermissionResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "RemovePermission"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  mruv.Groups.RemovePermissionRequest.getDefaultInstance()))
+                  mruv.groups.Groups.RemovePermissionRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  mruv.Groups.RemovePermissionResponse.getDefaultInstance()))
+                  mruv.groups.Groups.RemovePermissionResponse.getDefaultInstance()))
               .setSchemaDescriptor(new MruVGroupsServiceMethodDescriptorSupplier("RemovePermission"))
               .build();
         }
@@ -433,29 +433,29 @@ public final class MruVGroupsServiceGrpc {
     return getRemovePermissionMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<mruv.Groups.AddSubgroupRequest,
-      mruv.Groups.AddSubgroupResponse> getAddSubgroupMethod;
+  private static volatile io.grpc.MethodDescriptor<mruv.groups.Groups.AddSubgroupRequest,
+      mruv.groups.Groups.AddSubgroupResponse> getAddSubgroupMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "AddSubgroup",
-      requestType = mruv.Groups.AddSubgroupRequest.class,
-      responseType = mruv.Groups.AddSubgroupResponse.class,
+      requestType = mruv.groups.Groups.AddSubgroupRequest.class,
+      responseType = mruv.groups.Groups.AddSubgroupResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<mruv.Groups.AddSubgroupRequest,
-      mruv.Groups.AddSubgroupResponse> getAddSubgroupMethod() {
-    io.grpc.MethodDescriptor<mruv.Groups.AddSubgroupRequest, mruv.Groups.AddSubgroupResponse> getAddSubgroupMethod;
+  public static io.grpc.MethodDescriptor<mruv.groups.Groups.AddSubgroupRequest,
+      mruv.groups.Groups.AddSubgroupResponse> getAddSubgroupMethod() {
+    io.grpc.MethodDescriptor<mruv.groups.Groups.AddSubgroupRequest, mruv.groups.Groups.AddSubgroupResponse> getAddSubgroupMethod;
     if ((getAddSubgroupMethod = MruVGroupsServiceGrpc.getAddSubgroupMethod) == null) {
       synchronized (MruVGroupsServiceGrpc.class) {
         if ((getAddSubgroupMethod = MruVGroupsServiceGrpc.getAddSubgroupMethod) == null) {
           MruVGroupsServiceGrpc.getAddSubgroupMethod = getAddSubgroupMethod =
-              io.grpc.MethodDescriptor.<mruv.Groups.AddSubgroupRequest, mruv.Groups.AddSubgroupResponse>newBuilder()
+              io.grpc.MethodDescriptor.<mruv.groups.Groups.AddSubgroupRequest, mruv.groups.Groups.AddSubgroupResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "AddSubgroup"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  mruv.Groups.AddSubgroupRequest.getDefaultInstance()))
+                  mruv.groups.Groups.AddSubgroupRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  mruv.Groups.AddSubgroupResponse.getDefaultInstance()))
+                  mruv.groups.Groups.AddSubgroupResponse.getDefaultInstance()))
               .setSchemaDescriptor(new MruVGroupsServiceMethodDescriptorSupplier("AddSubgroup"))
               .build();
         }
@@ -464,29 +464,29 @@ public final class MruVGroupsServiceGrpc {
     return getAddSubgroupMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<mruv.Groups.GetSubgroupsRequest,
-      mruv.Groups.GetSubgroupsResponse> getGetSubgroupsMethod;
+  private static volatile io.grpc.MethodDescriptor<mruv.groups.Groups.GetSubgroupsRequest,
+      mruv.groups.Groups.GetSubgroupsResponse> getGetSubgroupsMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "GetSubgroups",
-      requestType = mruv.Groups.GetSubgroupsRequest.class,
-      responseType = mruv.Groups.GetSubgroupsResponse.class,
+      requestType = mruv.groups.Groups.GetSubgroupsRequest.class,
+      responseType = mruv.groups.Groups.GetSubgroupsResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<mruv.Groups.GetSubgroupsRequest,
-      mruv.Groups.GetSubgroupsResponse> getGetSubgroupsMethod() {
-    io.grpc.MethodDescriptor<mruv.Groups.GetSubgroupsRequest, mruv.Groups.GetSubgroupsResponse> getGetSubgroupsMethod;
+  public static io.grpc.MethodDescriptor<mruv.groups.Groups.GetSubgroupsRequest,
+      mruv.groups.Groups.GetSubgroupsResponse> getGetSubgroupsMethod() {
+    io.grpc.MethodDescriptor<mruv.groups.Groups.GetSubgroupsRequest, mruv.groups.Groups.GetSubgroupsResponse> getGetSubgroupsMethod;
     if ((getGetSubgroupsMethod = MruVGroupsServiceGrpc.getGetSubgroupsMethod) == null) {
       synchronized (MruVGroupsServiceGrpc.class) {
         if ((getGetSubgroupsMethod = MruVGroupsServiceGrpc.getGetSubgroupsMethod) == null) {
           MruVGroupsServiceGrpc.getGetSubgroupsMethod = getGetSubgroupsMethod =
-              io.grpc.MethodDescriptor.<mruv.Groups.GetSubgroupsRequest, mruv.Groups.GetSubgroupsResponse>newBuilder()
+              io.grpc.MethodDescriptor.<mruv.groups.Groups.GetSubgroupsRequest, mruv.groups.Groups.GetSubgroupsResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "GetSubgroups"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  mruv.Groups.GetSubgroupsRequest.getDefaultInstance()))
+                  mruv.groups.Groups.GetSubgroupsRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  mruv.Groups.GetSubgroupsResponse.getDefaultInstance()))
+                  mruv.groups.Groups.GetSubgroupsResponse.getDefaultInstance()))
               .setSchemaDescriptor(new MruVGroupsServiceMethodDescriptorSupplier("GetSubgroups"))
               .build();
         }
@@ -495,29 +495,29 @@ public final class MruVGroupsServiceGrpc {
     return getGetSubgroupsMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<mruv.Groups.RemoveSubgroupRequest,
-      mruv.Groups.RemoveSubgroupResponse> getRemoveSubgroupMethod;
+  private static volatile io.grpc.MethodDescriptor<mruv.groups.Groups.RemoveSubgroupRequest,
+      mruv.groups.Groups.RemoveSubgroupResponse> getRemoveSubgroupMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "RemoveSubgroup",
-      requestType = mruv.Groups.RemoveSubgroupRequest.class,
-      responseType = mruv.Groups.RemoveSubgroupResponse.class,
+      requestType = mruv.groups.Groups.RemoveSubgroupRequest.class,
+      responseType = mruv.groups.Groups.RemoveSubgroupResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<mruv.Groups.RemoveSubgroupRequest,
-      mruv.Groups.RemoveSubgroupResponse> getRemoveSubgroupMethod() {
-    io.grpc.MethodDescriptor<mruv.Groups.RemoveSubgroupRequest, mruv.Groups.RemoveSubgroupResponse> getRemoveSubgroupMethod;
+  public static io.grpc.MethodDescriptor<mruv.groups.Groups.RemoveSubgroupRequest,
+      mruv.groups.Groups.RemoveSubgroupResponse> getRemoveSubgroupMethod() {
+    io.grpc.MethodDescriptor<mruv.groups.Groups.RemoveSubgroupRequest, mruv.groups.Groups.RemoveSubgroupResponse> getRemoveSubgroupMethod;
     if ((getRemoveSubgroupMethod = MruVGroupsServiceGrpc.getRemoveSubgroupMethod) == null) {
       synchronized (MruVGroupsServiceGrpc.class) {
         if ((getRemoveSubgroupMethod = MruVGroupsServiceGrpc.getRemoveSubgroupMethod) == null) {
           MruVGroupsServiceGrpc.getRemoveSubgroupMethod = getRemoveSubgroupMethod =
-              io.grpc.MethodDescriptor.<mruv.Groups.RemoveSubgroupRequest, mruv.Groups.RemoveSubgroupResponse>newBuilder()
+              io.grpc.MethodDescriptor.<mruv.groups.Groups.RemoveSubgroupRequest, mruv.groups.Groups.RemoveSubgroupResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "RemoveSubgroup"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  mruv.Groups.RemoveSubgroupRequest.getDefaultInstance()))
+                  mruv.groups.Groups.RemoveSubgroupRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  mruv.Groups.RemoveSubgroupResponse.getDefaultInstance()))
+                  mruv.groups.Groups.RemoveSubgroupResponse.getDefaultInstance()))
               .setSchemaDescriptor(new MruVGroupsServiceMethodDescriptorSupplier("RemoveSubgroup"))
               .build();
         }
@@ -526,29 +526,29 @@ public final class MruVGroupsServiceGrpc {
     return getRemoveSubgroupMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<mruv.Groups.IsPermittedRequest,
-      mruv.Groups.IsPermittedResponse> getIsPermittedMethod;
+  private static volatile io.grpc.MethodDescriptor<mruv.groups.Groups.IsPermittedRequest,
+      mruv.groups.Groups.IsPermittedResponse> getIsPermittedMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "IsPermitted",
-      requestType = mruv.Groups.IsPermittedRequest.class,
-      responseType = mruv.Groups.IsPermittedResponse.class,
+      requestType = mruv.groups.Groups.IsPermittedRequest.class,
+      responseType = mruv.groups.Groups.IsPermittedResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<mruv.Groups.IsPermittedRequest,
-      mruv.Groups.IsPermittedResponse> getIsPermittedMethod() {
-    io.grpc.MethodDescriptor<mruv.Groups.IsPermittedRequest, mruv.Groups.IsPermittedResponse> getIsPermittedMethod;
+  public static io.grpc.MethodDescriptor<mruv.groups.Groups.IsPermittedRequest,
+      mruv.groups.Groups.IsPermittedResponse> getIsPermittedMethod() {
+    io.grpc.MethodDescriptor<mruv.groups.Groups.IsPermittedRequest, mruv.groups.Groups.IsPermittedResponse> getIsPermittedMethod;
     if ((getIsPermittedMethod = MruVGroupsServiceGrpc.getIsPermittedMethod) == null) {
       synchronized (MruVGroupsServiceGrpc.class) {
         if ((getIsPermittedMethod = MruVGroupsServiceGrpc.getIsPermittedMethod) == null) {
           MruVGroupsServiceGrpc.getIsPermittedMethod = getIsPermittedMethod =
-              io.grpc.MethodDescriptor.<mruv.Groups.IsPermittedRequest, mruv.Groups.IsPermittedResponse>newBuilder()
+              io.grpc.MethodDescriptor.<mruv.groups.Groups.IsPermittedRequest, mruv.groups.Groups.IsPermittedResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "IsPermitted"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  mruv.Groups.IsPermittedRequest.getDefaultInstance()))
+                  mruv.groups.Groups.IsPermittedRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  mruv.Groups.IsPermittedResponse.getDefaultInstance()))
+                  mruv.groups.Groups.IsPermittedResponse.getDefaultInstance()))
               .setSchemaDescriptor(new MruVGroupsServiceMethodDescriptorSupplier("IsPermitted"))
               .build();
         }
@@ -557,29 +557,29 @@ public final class MruVGroupsServiceGrpc {
     return getIsPermittedMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<mruv.Health.ServiceStatusRequest,
-      mruv.Health.ServiceStatusResponse> getGetServiceStatusMethod;
+  private static volatile io.grpc.MethodDescriptor<mruv.common.Health.ServiceStatusRequest,
+      mruv.common.Health.ServiceStatusResponse> getGetServiceStatusMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "GetServiceStatus",
-      requestType = mruv.Health.ServiceStatusRequest.class,
-      responseType = mruv.Health.ServiceStatusResponse.class,
+      requestType = mruv.common.Health.ServiceStatusRequest.class,
+      responseType = mruv.common.Health.ServiceStatusResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<mruv.Health.ServiceStatusRequest,
-      mruv.Health.ServiceStatusResponse> getGetServiceStatusMethod() {
-    io.grpc.MethodDescriptor<mruv.Health.ServiceStatusRequest, mruv.Health.ServiceStatusResponse> getGetServiceStatusMethod;
+  public static io.grpc.MethodDescriptor<mruv.common.Health.ServiceStatusRequest,
+      mruv.common.Health.ServiceStatusResponse> getGetServiceStatusMethod() {
+    io.grpc.MethodDescriptor<mruv.common.Health.ServiceStatusRequest, mruv.common.Health.ServiceStatusResponse> getGetServiceStatusMethod;
     if ((getGetServiceStatusMethod = MruVGroupsServiceGrpc.getGetServiceStatusMethod) == null) {
       synchronized (MruVGroupsServiceGrpc.class) {
         if ((getGetServiceStatusMethod = MruVGroupsServiceGrpc.getGetServiceStatusMethod) == null) {
           MruVGroupsServiceGrpc.getGetServiceStatusMethod = getGetServiceStatusMethod =
-              io.grpc.MethodDescriptor.<mruv.Health.ServiceStatusRequest, mruv.Health.ServiceStatusResponse>newBuilder()
+              io.grpc.MethodDescriptor.<mruv.common.Health.ServiceStatusRequest, mruv.common.Health.ServiceStatusResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "GetServiceStatus"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  mruv.Health.ServiceStatusRequest.getDefaultInstance()))
+                  mruv.common.Health.ServiceStatusRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  mruv.Health.ServiceStatusResponse.getDefaultInstance()))
+                  mruv.common.Health.ServiceStatusResponse.getDefaultInstance()))
               .setSchemaDescriptor(new MruVGroupsServiceMethodDescriptorSupplier("GetServiceStatus"))
               .build();
         }
@@ -588,29 +588,29 @@ public final class MruVGroupsServiceGrpc {
     return getGetServiceStatusMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<mruv.Health.VersionRequest,
-      mruv.Health.VersionResponse> getGetServiceVersionMethod;
+  private static volatile io.grpc.MethodDescriptor<mruv.common.Health.VersionRequest,
+      mruv.common.Health.VersionResponse> getGetServiceVersionMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "GetServiceVersion",
-      requestType = mruv.Health.VersionRequest.class,
-      responseType = mruv.Health.VersionResponse.class,
+      requestType = mruv.common.Health.VersionRequest.class,
+      responseType = mruv.common.Health.VersionResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<mruv.Health.VersionRequest,
-      mruv.Health.VersionResponse> getGetServiceVersionMethod() {
-    io.grpc.MethodDescriptor<mruv.Health.VersionRequest, mruv.Health.VersionResponse> getGetServiceVersionMethod;
+  public static io.grpc.MethodDescriptor<mruv.common.Health.VersionRequest,
+      mruv.common.Health.VersionResponse> getGetServiceVersionMethod() {
+    io.grpc.MethodDescriptor<mruv.common.Health.VersionRequest, mruv.common.Health.VersionResponse> getGetServiceVersionMethod;
     if ((getGetServiceVersionMethod = MruVGroupsServiceGrpc.getGetServiceVersionMethod) == null) {
       synchronized (MruVGroupsServiceGrpc.class) {
         if ((getGetServiceVersionMethod = MruVGroupsServiceGrpc.getGetServiceVersionMethod) == null) {
           MruVGroupsServiceGrpc.getGetServiceVersionMethod = getGetServiceVersionMethod =
-              io.grpc.MethodDescriptor.<mruv.Health.VersionRequest, mruv.Health.VersionResponse>newBuilder()
+              io.grpc.MethodDescriptor.<mruv.common.Health.VersionRequest, mruv.common.Health.VersionResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "GetServiceVersion"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  mruv.Health.VersionRequest.getDefaultInstance()))
+                  mruv.common.Health.VersionRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  mruv.Health.VersionResponse.getDefaultInstance()))
+                  mruv.common.Health.VersionResponse.getDefaultInstance()))
               .setSchemaDescriptor(new MruVGroupsServiceMethodDescriptorSupplier("GetServiceVersion"))
               .build();
         }
@@ -675,8 +675,8 @@ public final class MruVGroupsServiceGrpc {
      * Create a group.
      * </pre>
      */
-    public void createGroup(mruv.Groups.CreateGroupRequest request,
-        io.grpc.stub.StreamObserver<mruv.Groups.CreateGroupResponse> responseObserver) {
+    public void createGroup(mruv.groups.Groups.CreateGroupRequest request,
+        io.grpc.stub.StreamObserver<mruv.groups.Groups.CreateGroupResponse> responseObserver) {
       asyncUnimplementedUnaryCall(getCreateGroupMethod(), responseObserver);
     }
 
@@ -685,8 +685,8 @@ public final class MruVGroupsServiceGrpc {
      * Get a  group.
      * </pre>
      */
-    public void getGroup(mruv.Groups.GetGroupRequest request,
-        io.grpc.stub.StreamObserver<mruv.Groups.GetGroupResponse> responseObserver) {
+    public void getGroup(mruv.groups.Groups.GetGroupRequest request,
+        io.grpc.stub.StreamObserver<mruv.groups.Groups.GetGroupResponse> responseObserver) {
       asyncUnimplementedUnaryCall(getGetGroupMethod(), responseObserver);
     }
 
@@ -695,8 +695,8 @@ public final class MruVGroupsServiceGrpc {
      * Update a group.
      * </pre>
      */
-    public void updateGroup(mruv.Groups.UpdateGroupRequest request,
-        io.grpc.stub.StreamObserver<mruv.Groups.UpdateGroupResponse> responseObserver) {
+    public void updateGroup(mruv.groups.Groups.UpdateGroupRequest request,
+        io.grpc.stub.StreamObserver<mruv.groups.Groups.UpdateGroupResponse> responseObserver) {
       asyncUnimplementedUnaryCall(getUpdateGroupMethod(), responseObserver);
     }
 
@@ -705,8 +705,8 @@ public final class MruVGroupsServiceGrpc {
      * Delete a group.
      * </pre>
      */
-    public void deleteGroup(mruv.Groups.DeleteGroupRequest request,
-        io.grpc.stub.StreamObserver<mruv.Groups.DeleteGroupResponse> responseObserver) {
+    public void deleteGroup(mruv.groups.Groups.DeleteGroupRequest request,
+        io.grpc.stub.StreamObserver<mruv.groups.Groups.DeleteGroupResponse> responseObserver) {
       asyncUnimplementedUnaryCall(getDeleteGroupMethod(), responseObserver);
     }
 
@@ -715,8 +715,8 @@ public final class MruVGroupsServiceGrpc {
      * Get all groups.
      * </pre>
      */
-    public void getGroups(mruv.Groups.GetGroupsRequest request,
-        io.grpc.stub.StreamObserver<mruv.Groups.GetGroupsResponse> responseObserver) {
+    public void getGroups(mruv.groups.Groups.GetGroupsRequest request,
+        io.grpc.stub.StreamObserver<mruv.groups.Groups.GetGroupsResponse> responseObserver) {
       asyncUnimplementedUnaryCall(getGetGroupsMethod(), responseObserver);
     }
 
@@ -725,8 +725,8 @@ public final class MruVGroupsServiceGrpc {
      * Assign an owner. Group can have only one owner. Owner can be a player, a group or an account.
      * </pre>
      */
-    public void assignOwner(mruv.Groups.AssignOwnerRequest request,
-        io.grpc.stub.StreamObserver<mruv.Groups.AssignOwnerResponse> responseObserver) {
+    public void assignOwner(mruv.groups.Groups.AssignOwnerRequest request,
+        io.grpc.stub.StreamObserver<mruv.groups.Groups.AssignOwnerResponse> responseObserver) {
       asyncUnimplementedUnaryCall(getAssignOwnerMethod(), responseObserver);
     }
 
@@ -735,8 +735,8 @@ public final class MruVGroupsServiceGrpc {
      * Get group owner.
      * </pre>
      */
-    public void getOwner(mruv.Groups.GetOwnerRequest request,
-        io.grpc.stub.StreamObserver<mruv.Groups.GetOwnerResponse> responseObserver) {
+    public void getOwner(mruv.groups.Groups.GetOwnerRequest request,
+        io.grpc.stub.StreamObserver<mruv.groups.Groups.GetOwnerResponse> responseObserver) {
       asyncUnimplementedUnaryCall(getGetOwnerMethod(), responseObserver);
     }
 
@@ -745,8 +745,8 @@ public final class MruVGroupsServiceGrpc {
      * Add a group member.
      * </pre>
      */
-    public void addMember(mruv.Groups.AddMemberRequest request,
-        io.grpc.stub.StreamObserver<mruv.Groups.AddMemberResponse> responseObserver) {
+    public void addMember(mruv.groups.Groups.AddMemberRequest request,
+        io.grpc.stub.StreamObserver<mruv.groups.Groups.AddMemberResponse> responseObserver) {
       asyncUnimplementedUnaryCall(getAddMemberMethod(), responseObserver);
     }
 
@@ -755,8 +755,8 @@ public final class MruVGroupsServiceGrpc {
      * Get a group member.
      * </pre>
      */
-    public void getMembers(mruv.Groups.GetMembersRequest request,
-        io.grpc.stub.StreamObserver<mruv.Groups.GetMembersResponse> responseObserver) {
+    public void getMembers(mruv.groups.Groups.GetMembersRequest request,
+        io.grpc.stub.StreamObserver<mruv.groups.Groups.GetMembersResponse> responseObserver) {
       asyncUnimplementedUnaryCall(getGetMembersMethod(), responseObserver);
     }
 
@@ -765,8 +765,8 @@ public final class MruVGroupsServiceGrpc {
      * Remove a group member.
      * </pre>
      */
-    public void removeMember(mruv.Groups.RemoveMemberRequest request,
-        io.grpc.stub.StreamObserver<mruv.Groups.RemoveMemberResponse> responseObserver) {
+    public void removeMember(mruv.groups.Groups.RemoveMemberRequest request,
+        io.grpc.stub.StreamObserver<mruv.groups.Groups.RemoveMemberResponse> responseObserver) {
       asyncUnimplementedUnaryCall(getRemoveMemberMethod(), responseObserver);
     }
 
@@ -775,8 +775,8 @@ public final class MruVGroupsServiceGrpc {
      * Add a permission to a group.
      * </pre>
      */
-    public void addPermission(mruv.Groups.AddPermissionRequest request,
-        io.grpc.stub.StreamObserver<mruv.Groups.AddPermissionResponse> responseObserver) {
+    public void addPermission(mruv.groups.Groups.AddPermissionRequest request,
+        io.grpc.stub.StreamObserver<mruv.groups.Groups.AddPermissionResponse> responseObserver) {
       asyncUnimplementedUnaryCall(getAddPermissionMethod(), responseObserver);
     }
 
@@ -785,8 +785,8 @@ public final class MruVGroupsServiceGrpc {
      * Get all group permissions.
      * </pre>
      */
-    public void getPermissions(mruv.Groups.GetPermissionsRequest request,
-        io.grpc.stub.StreamObserver<mruv.Groups.GetPermissionsResponse> responseObserver) {
+    public void getPermissions(mruv.groups.Groups.GetPermissionsRequest request,
+        io.grpc.stub.StreamObserver<mruv.groups.Groups.GetPermissionsResponse> responseObserver) {
       asyncUnimplementedUnaryCall(getGetPermissionsMethod(), responseObserver);
     }
 
@@ -795,8 +795,8 @@ public final class MruVGroupsServiceGrpc {
      * Remove group permission.
      * </pre>
      */
-    public void removePermission(mruv.Groups.RemovePermissionRequest request,
-        io.grpc.stub.StreamObserver<mruv.Groups.RemovePermissionResponse> responseObserver) {
+    public void removePermission(mruv.groups.Groups.RemovePermissionRequest request,
+        io.grpc.stub.StreamObserver<mruv.groups.Groups.RemovePermissionResponse> responseObserver) {
       asyncUnimplementedUnaryCall(getRemovePermissionMethod(), responseObserver);
     }
 
@@ -805,8 +805,8 @@ public final class MruVGroupsServiceGrpc {
      * Add a subgroup to a group.
      * </pre>
      */
-    public void addSubgroup(mruv.Groups.AddSubgroupRequest request,
-        io.grpc.stub.StreamObserver<mruv.Groups.AddSubgroupResponse> responseObserver) {
+    public void addSubgroup(mruv.groups.Groups.AddSubgroupRequest request,
+        io.grpc.stub.StreamObserver<mruv.groups.Groups.AddSubgroupResponse> responseObserver) {
       asyncUnimplementedUnaryCall(getAddSubgroupMethod(), responseObserver);
     }
 
@@ -815,8 +815,8 @@ public final class MruVGroupsServiceGrpc {
      * Get all subgroups.
      * </pre>
      */
-    public void getSubgroups(mruv.Groups.GetSubgroupsRequest request,
-        io.grpc.stub.StreamObserver<mruv.Groups.GetSubgroupsResponse> responseObserver) {
+    public void getSubgroups(mruv.groups.Groups.GetSubgroupsRequest request,
+        io.grpc.stub.StreamObserver<mruv.groups.Groups.GetSubgroupsResponse> responseObserver) {
       asyncUnimplementedUnaryCall(getGetSubgroupsMethod(), responseObserver);
     }
 
@@ -825,8 +825,8 @@ public final class MruVGroupsServiceGrpc {
      * Remove a subgroup from group.
      * </pre>
      */
-    public void removeSubgroup(mruv.Groups.RemoveSubgroupRequest request,
-        io.grpc.stub.StreamObserver<mruv.Groups.RemoveSubgroupResponse> responseObserver) {
+    public void removeSubgroup(mruv.groups.Groups.RemoveSubgroupRequest request,
+        io.grpc.stub.StreamObserver<mruv.groups.Groups.RemoveSubgroupResponse> responseObserver) {
       asyncUnimplementedUnaryCall(getRemoveSubgroupMethod(), responseObserver);
     }
 
@@ -835,8 +835,8 @@ public final class MruVGroupsServiceGrpc {
      * Check is member of a group is permitted to do specific action.
      * </pre>
      */
-    public void isPermitted(mruv.Groups.IsPermittedRequest request,
-        io.grpc.stub.StreamObserver<mruv.Groups.IsPermittedResponse> responseObserver) {
+    public void isPermitted(mruv.groups.Groups.IsPermittedRequest request,
+        io.grpc.stub.StreamObserver<mruv.groups.Groups.IsPermittedResponse> responseObserver) {
       asyncUnimplementedUnaryCall(getIsPermittedMethod(), responseObserver);
     }
 
@@ -845,15 +845,15 @@ public final class MruVGroupsServiceGrpc {
      *Service status
      * </pre>
      */
-    public void getServiceStatus(mruv.Health.ServiceStatusRequest request,
-        io.grpc.stub.StreamObserver<mruv.Health.ServiceStatusResponse> responseObserver) {
+    public void getServiceStatus(mruv.common.Health.ServiceStatusRequest request,
+        io.grpc.stub.StreamObserver<mruv.common.Health.ServiceStatusResponse> responseObserver) {
       asyncUnimplementedUnaryCall(getGetServiceStatusMethod(), responseObserver);
     }
 
     /**
      */
-    public void getServiceVersion(mruv.Health.VersionRequest request,
-        io.grpc.stub.StreamObserver<mruv.Health.VersionResponse> responseObserver) {
+    public void getServiceVersion(mruv.common.Health.VersionRequest request,
+        io.grpc.stub.StreamObserver<mruv.common.Health.VersionResponse> responseObserver) {
       asyncUnimplementedUnaryCall(getGetServiceVersionMethod(), responseObserver);
     }
 
@@ -863,134 +863,134 @@ public final class MruVGroupsServiceGrpc {
             getCreateGroupMethod(),
             asyncUnaryCall(
               new MethodHandlers<
-                mruv.Groups.CreateGroupRequest,
-                mruv.Groups.CreateGroupResponse>(
+                mruv.groups.Groups.CreateGroupRequest,
+                mruv.groups.Groups.CreateGroupResponse>(
                   this, METHODID_CREATE_GROUP)))
           .addMethod(
             getGetGroupMethod(),
             asyncUnaryCall(
               new MethodHandlers<
-                mruv.Groups.GetGroupRequest,
-                mruv.Groups.GetGroupResponse>(
+                mruv.groups.Groups.GetGroupRequest,
+                mruv.groups.Groups.GetGroupResponse>(
                   this, METHODID_GET_GROUP)))
           .addMethod(
             getUpdateGroupMethod(),
             asyncUnaryCall(
               new MethodHandlers<
-                mruv.Groups.UpdateGroupRequest,
-                mruv.Groups.UpdateGroupResponse>(
+                mruv.groups.Groups.UpdateGroupRequest,
+                mruv.groups.Groups.UpdateGroupResponse>(
                   this, METHODID_UPDATE_GROUP)))
           .addMethod(
             getDeleteGroupMethod(),
             asyncUnaryCall(
               new MethodHandlers<
-                mruv.Groups.DeleteGroupRequest,
-                mruv.Groups.DeleteGroupResponse>(
+                mruv.groups.Groups.DeleteGroupRequest,
+                mruv.groups.Groups.DeleteGroupResponse>(
                   this, METHODID_DELETE_GROUP)))
           .addMethod(
             getGetGroupsMethod(),
             asyncUnaryCall(
               new MethodHandlers<
-                mruv.Groups.GetGroupsRequest,
-                mruv.Groups.GetGroupsResponse>(
+                mruv.groups.Groups.GetGroupsRequest,
+                mruv.groups.Groups.GetGroupsResponse>(
                   this, METHODID_GET_GROUPS)))
           .addMethod(
             getAssignOwnerMethod(),
             asyncUnaryCall(
               new MethodHandlers<
-                mruv.Groups.AssignOwnerRequest,
-                mruv.Groups.AssignOwnerResponse>(
+                mruv.groups.Groups.AssignOwnerRequest,
+                mruv.groups.Groups.AssignOwnerResponse>(
                   this, METHODID_ASSIGN_OWNER)))
           .addMethod(
             getGetOwnerMethod(),
             asyncUnaryCall(
               new MethodHandlers<
-                mruv.Groups.GetOwnerRequest,
-                mruv.Groups.GetOwnerResponse>(
+                mruv.groups.Groups.GetOwnerRequest,
+                mruv.groups.Groups.GetOwnerResponse>(
                   this, METHODID_GET_OWNER)))
           .addMethod(
             getAddMemberMethod(),
             asyncUnaryCall(
               new MethodHandlers<
-                mruv.Groups.AddMemberRequest,
-                mruv.Groups.AddMemberResponse>(
+                mruv.groups.Groups.AddMemberRequest,
+                mruv.groups.Groups.AddMemberResponse>(
                   this, METHODID_ADD_MEMBER)))
           .addMethod(
             getGetMembersMethod(),
             asyncUnaryCall(
               new MethodHandlers<
-                mruv.Groups.GetMembersRequest,
-                mruv.Groups.GetMembersResponse>(
+                mruv.groups.Groups.GetMembersRequest,
+                mruv.groups.Groups.GetMembersResponse>(
                   this, METHODID_GET_MEMBERS)))
           .addMethod(
             getRemoveMemberMethod(),
             asyncUnaryCall(
               new MethodHandlers<
-                mruv.Groups.RemoveMemberRequest,
-                mruv.Groups.RemoveMemberResponse>(
+                mruv.groups.Groups.RemoveMemberRequest,
+                mruv.groups.Groups.RemoveMemberResponse>(
                   this, METHODID_REMOVE_MEMBER)))
           .addMethod(
             getAddPermissionMethod(),
             asyncUnaryCall(
               new MethodHandlers<
-                mruv.Groups.AddPermissionRequest,
-                mruv.Groups.AddPermissionResponse>(
+                mruv.groups.Groups.AddPermissionRequest,
+                mruv.groups.Groups.AddPermissionResponse>(
                   this, METHODID_ADD_PERMISSION)))
           .addMethod(
             getGetPermissionsMethod(),
             asyncUnaryCall(
               new MethodHandlers<
-                mruv.Groups.GetPermissionsRequest,
-                mruv.Groups.GetPermissionsResponse>(
+                mruv.groups.Groups.GetPermissionsRequest,
+                mruv.groups.Groups.GetPermissionsResponse>(
                   this, METHODID_GET_PERMISSIONS)))
           .addMethod(
             getRemovePermissionMethod(),
             asyncUnaryCall(
               new MethodHandlers<
-                mruv.Groups.RemovePermissionRequest,
-                mruv.Groups.RemovePermissionResponse>(
+                mruv.groups.Groups.RemovePermissionRequest,
+                mruv.groups.Groups.RemovePermissionResponse>(
                   this, METHODID_REMOVE_PERMISSION)))
           .addMethod(
             getAddSubgroupMethod(),
             asyncUnaryCall(
               new MethodHandlers<
-                mruv.Groups.AddSubgroupRequest,
-                mruv.Groups.AddSubgroupResponse>(
+                mruv.groups.Groups.AddSubgroupRequest,
+                mruv.groups.Groups.AddSubgroupResponse>(
                   this, METHODID_ADD_SUBGROUP)))
           .addMethod(
             getGetSubgroupsMethod(),
             asyncUnaryCall(
               new MethodHandlers<
-                mruv.Groups.GetSubgroupsRequest,
-                mruv.Groups.GetSubgroupsResponse>(
+                mruv.groups.Groups.GetSubgroupsRequest,
+                mruv.groups.Groups.GetSubgroupsResponse>(
                   this, METHODID_GET_SUBGROUPS)))
           .addMethod(
             getRemoveSubgroupMethod(),
             asyncUnaryCall(
               new MethodHandlers<
-                mruv.Groups.RemoveSubgroupRequest,
-                mruv.Groups.RemoveSubgroupResponse>(
+                mruv.groups.Groups.RemoveSubgroupRequest,
+                mruv.groups.Groups.RemoveSubgroupResponse>(
                   this, METHODID_REMOVE_SUBGROUP)))
           .addMethod(
             getIsPermittedMethod(),
             asyncUnaryCall(
               new MethodHandlers<
-                mruv.Groups.IsPermittedRequest,
-                mruv.Groups.IsPermittedResponse>(
+                mruv.groups.Groups.IsPermittedRequest,
+                mruv.groups.Groups.IsPermittedResponse>(
                   this, METHODID_IS_PERMITTED)))
           .addMethod(
             getGetServiceStatusMethod(),
             asyncUnaryCall(
               new MethodHandlers<
-                mruv.Health.ServiceStatusRequest,
-                mruv.Health.ServiceStatusResponse>(
+                mruv.common.Health.ServiceStatusRequest,
+                mruv.common.Health.ServiceStatusResponse>(
                   this, METHODID_GET_SERVICE_STATUS)))
           .addMethod(
             getGetServiceVersionMethod(),
             asyncUnaryCall(
               new MethodHandlers<
-                mruv.Health.VersionRequest,
-                mruv.Health.VersionResponse>(
+                mruv.common.Health.VersionRequest,
+                mruv.common.Health.VersionResponse>(
                   this, METHODID_GET_SERVICE_VERSION)))
           .build();
     }
@@ -1018,8 +1018,8 @@ public final class MruVGroupsServiceGrpc {
      * Create a group.
      * </pre>
      */
-    public void createGroup(mruv.Groups.CreateGroupRequest request,
-        io.grpc.stub.StreamObserver<mruv.Groups.CreateGroupResponse> responseObserver) {
+    public void createGroup(mruv.groups.Groups.CreateGroupRequest request,
+        io.grpc.stub.StreamObserver<mruv.groups.Groups.CreateGroupResponse> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(getCreateGroupMethod(), getCallOptions()), request, responseObserver);
     }
@@ -1029,8 +1029,8 @@ public final class MruVGroupsServiceGrpc {
      * Get a  group.
      * </pre>
      */
-    public void getGroup(mruv.Groups.GetGroupRequest request,
-        io.grpc.stub.StreamObserver<mruv.Groups.GetGroupResponse> responseObserver) {
+    public void getGroup(mruv.groups.Groups.GetGroupRequest request,
+        io.grpc.stub.StreamObserver<mruv.groups.Groups.GetGroupResponse> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(getGetGroupMethod(), getCallOptions()), request, responseObserver);
     }
@@ -1040,8 +1040,8 @@ public final class MruVGroupsServiceGrpc {
      * Update a group.
      * </pre>
      */
-    public void updateGroup(mruv.Groups.UpdateGroupRequest request,
-        io.grpc.stub.StreamObserver<mruv.Groups.UpdateGroupResponse> responseObserver) {
+    public void updateGroup(mruv.groups.Groups.UpdateGroupRequest request,
+        io.grpc.stub.StreamObserver<mruv.groups.Groups.UpdateGroupResponse> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(getUpdateGroupMethod(), getCallOptions()), request, responseObserver);
     }
@@ -1051,8 +1051,8 @@ public final class MruVGroupsServiceGrpc {
      * Delete a group.
      * </pre>
      */
-    public void deleteGroup(mruv.Groups.DeleteGroupRequest request,
-        io.grpc.stub.StreamObserver<mruv.Groups.DeleteGroupResponse> responseObserver) {
+    public void deleteGroup(mruv.groups.Groups.DeleteGroupRequest request,
+        io.grpc.stub.StreamObserver<mruv.groups.Groups.DeleteGroupResponse> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(getDeleteGroupMethod(), getCallOptions()), request, responseObserver);
     }
@@ -1062,8 +1062,8 @@ public final class MruVGroupsServiceGrpc {
      * Get all groups.
      * </pre>
      */
-    public void getGroups(mruv.Groups.GetGroupsRequest request,
-        io.grpc.stub.StreamObserver<mruv.Groups.GetGroupsResponse> responseObserver) {
+    public void getGroups(mruv.groups.Groups.GetGroupsRequest request,
+        io.grpc.stub.StreamObserver<mruv.groups.Groups.GetGroupsResponse> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(getGetGroupsMethod(), getCallOptions()), request, responseObserver);
     }
@@ -1073,8 +1073,8 @@ public final class MruVGroupsServiceGrpc {
      * Assign an owner. Group can have only one owner. Owner can be a player, a group or an account.
      * </pre>
      */
-    public void assignOwner(mruv.Groups.AssignOwnerRequest request,
-        io.grpc.stub.StreamObserver<mruv.Groups.AssignOwnerResponse> responseObserver) {
+    public void assignOwner(mruv.groups.Groups.AssignOwnerRequest request,
+        io.grpc.stub.StreamObserver<mruv.groups.Groups.AssignOwnerResponse> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(getAssignOwnerMethod(), getCallOptions()), request, responseObserver);
     }
@@ -1084,8 +1084,8 @@ public final class MruVGroupsServiceGrpc {
      * Get group owner.
      * </pre>
      */
-    public void getOwner(mruv.Groups.GetOwnerRequest request,
-        io.grpc.stub.StreamObserver<mruv.Groups.GetOwnerResponse> responseObserver) {
+    public void getOwner(mruv.groups.Groups.GetOwnerRequest request,
+        io.grpc.stub.StreamObserver<mruv.groups.Groups.GetOwnerResponse> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(getGetOwnerMethod(), getCallOptions()), request, responseObserver);
     }
@@ -1095,8 +1095,8 @@ public final class MruVGroupsServiceGrpc {
      * Add a group member.
      * </pre>
      */
-    public void addMember(mruv.Groups.AddMemberRequest request,
-        io.grpc.stub.StreamObserver<mruv.Groups.AddMemberResponse> responseObserver) {
+    public void addMember(mruv.groups.Groups.AddMemberRequest request,
+        io.grpc.stub.StreamObserver<mruv.groups.Groups.AddMemberResponse> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(getAddMemberMethod(), getCallOptions()), request, responseObserver);
     }
@@ -1106,8 +1106,8 @@ public final class MruVGroupsServiceGrpc {
      * Get a group member.
      * </pre>
      */
-    public void getMembers(mruv.Groups.GetMembersRequest request,
-        io.grpc.stub.StreamObserver<mruv.Groups.GetMembersResponse> responseObserver) {
+    public void getMembers(mruv.groups.Groups.GetMembersRequest request,
+        io.grpc.stub.StreamObserver<mruv.groups.Groups.GetMembersResponse> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(getGetMembersMethod(), getCallOptions()), request, responseObserver);
     }
@@ -1117,8 +1117,8 @@ public final class MruVGroupsServiceGrpc {
      * Remove a group member.
      * </pre>
      */
-    public void removeMember(mruv.Groups.RemoveMemberRequest request,
-        io.grpc.stub.StreamObserver<mruv.Groups.RemoveMemberResponse> responseObserver) {
+    public void removeMember(mruv.groups.Groups.RemoveMemberRequest request,
+        io.grpc.stub.StreamObserver<mruv.groups.Groups.RemoveMemberResponse> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(getRemoveMemberMethod(), getCallOptions()), request, responseObserver);
     }
@@ -1128,8 +1128,8 @@ public final class MruVGroupsServiceGrpc {
      * Add a permission to a group.
      * </pre>
      */
-    public void addPermission(mruv.Groups.AddPermissionRequest request,
-        io.grpc.stub.StreamObserver<mruv.Groups.AddPermissionResponse> responseObserver) {
+    public void addPermission(mruv.groups.Groups.AddPermissionRequest request,
+        io.grpc.stub.StreamObserver<mruv.groups.Groups.AddPermissionResponse> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(getAddPermissionMethod(), getCallOptions()), request, responseObserver);
     }
@@ -1139,8 +1139,8 @@ public final class MruVGroupsServiceGrpc {
      * Get all group permissions.
      * </pre>
      */
-    public void getPermissions(mruv.Groups.GetPermissionsRequest request,
-        io.grpc.stub.StreamObserver<mruv.Groups.GetPermissionsResponse> responseObserver) {
+    public void getPermissions(mruv.groups.Groups.GetPermissionsRequest request,
+        io.grpc.stub.StreamObserver<mruv.groups.Groups.GetPermissionsResponse> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(getGetPermissionsMethod(), getCallOptions()), request, responseObserver);
     }
@@ -1150,8 +1150,8 @@ public final class MruVGroupsServiceGrpc {
      * Remove group permission.
      * </pre>
      */
-    public void removePermission(mruv.Groups.RemovePermissionRequest request,
-        io.grpc.stub.StreamObserver<mruv.Groups.RemovePermissionResponse> responseObserver) {
+    public void removePermission(mruv.groups.Groups.RemovePermissionRequest request,
+        io.grpc.stub.StreamObserver<mruv.groups.Groups.RemovePermissionResponse> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(getRemovePermissionMethod(), getCallOptions()), request, responseObserver);
     }
@@ -1161,8 +1161,8 @@ public final class MruVGroupsServiceGrpc {
      * Add a subgroup to a group.
      * </pre>
      */
-    public void addSubgroup(mruv.Groups.AddSubgroupRequest request,
-        io.grpc.stub.StreamObserver<mruv.Groups.AddSubgroupResponse> responseObserver) {
+    public void addSubgroup(mruv.groups.Groups.AddSubgroupRequest request,
+        io.grpc.stub.StreamObserver<mruv.groups.Groups.AddSubgroupResponse> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(getAddSubgroupMethod(), getCallOptions()), request, responseObserver);
     }
@@ -1172,8 +1172,8 @@ public final class MruVGroupsServiceGrpc {
      * Get all subgroups.
      * </pre>
      */
-    public void getSubgroups(mruv.Groups.GetSubgroupsRequest request,
-        io.grpc.stub.StreamObserver<mruv.Groups.GetSubgroupsResponse> responseObserver) {
+    public void getSubgroups(mruv.groups.Groups.GetSubgroupsRequest request,
+        io.grpc.stub.StreamObserver<mruv.groups.Groups.GetSubgroupsResponse> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(getGetSubgroupsMethod(), getCallOptions()), request, responseObserver);
     }
@@ -1183,8 +1183,8 @@ public final class MruVGroupsServiceGrpc {
      * Remove a subgroup from group.
      * </pre>
      */
-    public void removeSubgroup(mruv.Groups.RemoveSubgroupRequest request,
-        io.grpc.stub.StreamObserver<mruv.Groups.RemoveSubgroupResponse> responseObserver) {
+    public void removeSubgroup(mruv.groups.Groups.RemoveSubgroupRequest request,
+        io.grpc.stub.StreamObserver<mruv.groups.Groups.RemoveSubgroupResponse> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(getRemoveSubgroupMethod(), getCallOptions()), request, responseObserver);
     }
@@ -1194,8 +1194,8 @@ public final class MruVGroupsServiceGrpc {
      * Check is member of a group is permitted to do specific action.
      * </pre>
      */
-    public void isPermitted(mruv.Groups.IsPermittedRequest request,
-        io.grpc.stub.StreamObserver<mruv.Groups.IsPermittedResponse> responseObserver) {
+    public void isPermitted(mruv.groups.Groups.IsPermittedRequest request,
+        io.grpc.stub.StreamObserver<mruv.groups.Groups.IsPermittedResponse> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(getIsPermittedMethod(), getCallOptions()), request, responseObserver);
     }
@@ -1205,16 +1205,16 @@ public final class MruVGroupsServiceGrpc {
      *Service status
      * </pre>
      */
-    public void getServiceStatus(mruv.Health.ServiceStatusRequest request,
-        io.grpc.stub.StreamObserver<mruv.Health.ServiceStatusResponse> responseObserver) {
+    public void getServiceStatus(mruv.common.Health.ServiceStatusRequest request,
+        io.grpc.stub.StreamObserver<mruv.common.Health.ServiceStatusResponse> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(getGetServiceStatusMethod(), getCallOptions()), request, responseObserver);
     }
 
     /**
      */
-    public void getServiceVersion(mruv.Health.VersionRequest request,
-        io.grpc.stub.StreamObserver<mruv.Health.VersionResponse> responseObserver) {
+    public void getServiceVersion(mruv.common.Health.VersionRequest request,
+        io.grpc.stub.StreamObserver<mruv.common.Health.VersionResponse> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(getGetServiceVersionMethod(), getCallOptions()), request, responseObserver);
     }
@@ -1242,7 +1242,7 @@ public final class MruVGroupsServiceGrpc {
      * Create a group.
      * </pre>
      */
-    public mruv.Groups.CreateGroupResponse createGroup(mruv.Groups.CreateGroupRequest request) {
+    public mruv.groups.Groups.CreateGroupResponse createGroup(mruv.groups.Groups.CreateGroupRequest request) {
       return blockingUnaryCall(
           getChannel(), getCreateGroupMethod(), getCallOptions(), request);
     }
@@ -1252,7 +1252,7 @@ public final class MruVGroupsServiceGrpc {
      * Get a  group.
      * </pre>
      */
-    public mruv.Groups.GetGroupResponse getGroup(mruv.Groups.GetGroupRequest request) {
+    public mruv.groups.Groups.GetGroupResponse getGroup(mruv.groups.Groups.GetGroupRequest request) {
       return blockingUnaryCall(
           getChannel(), getGetGroupMethod(), getCallOptions(), request);
     }
@@ -1262,7 +1262,7 @@ public final class MruVGroupsServiceGrpc {
      * Update a group.
      * </pre>
      */
-    public mruv.Groups.UpdateGroupResponse updateGroup(mruv.Groups.UpdateGroupRequest request) {
+    public mruv.groups.Groups.UpdateGroupResponse updateGroup(mruv.groups.Groups.UpdateGroupRequest request) {
       return blockingUnaryCall(
           getChannel(), getUpdateGroupMethod(), getCallOptions(), request);
     }
@@ -1272,7 +1272,7 @@ public final class MruVGroupsServiceGrpc {
      * Delete a group.
      * </pre>
      */
-    public mruv.Groups.DeleteGroupResponse deleteGroup(mruv.Groups.DeleteGroupRequest request) {
+    public mruv.groups.Groups.DeleteGroupResponse deleteGroup(mruv.groups.Groups.DeleteGroupRequest request) {
       return blockingUnaryCall(
           getChannel(), getDeleteGroupMethod(), getCallOptions(), request);
     }
@@ -1282,7 +1282,7 @@ public final class MruVGroupsServiceGrpc {
      * Get all groups.
      * </pre>
      */
-    public mruv.Groups.GetGroupsResponse getGroups(mruv.Groups.GetGroupsRequest request) {
+    public mruv.groups.Groups.GetGroupsResponse getGroups(mruv.groups.Groups.GetGroupsRequest request) {
       return blockingUnaryCall(
           getChannel(), getGetGroupsMethod(), getCallOptions(), request);
     }
@@ -1292,7 +1292,7 @@ public final class MruVGroupsServiceGrpc {
      * Assign an owner. Group can have only one owner. Owner can be a player, a group or an account.
      * </pre>
      */
-    public mruv.Groups.AssignOwnerResponse assignOwner(mruv.Groups.AssignOwnerRequest request) {
+    public mruv.groups.Groups.AssignOwnerResponse assignOwner(mruv.groups.Groups.AssignOwnerRequest request) {
       return blockingUnaryCall(
           getChannel(), getAssignOwnerMethod(), getCallOptions(), request);
     }
@@ -1302,7 +1302,7 @@ public final class MruVGroupsServiceGrpc {
      * Get group owner.
      * </pre>
      */
-    public mruv.Groups.GetOwnerResponse getOwner(mruv.Groups.GetOwnerRequest request) {
+    public mruv.groups.Groups.GetOwnerResponse getOwner(mruv.groups.Groups.GetOwnerRequest request) {
       return blockingUnaryCall(
           getChannel(), getGetOwnerMethod(), getCallOptions(), request);
     }
@@ -1312,7 +1312,7 @@ public final class MruVGroupsServiceGrpc {
      * Add a group member.
      * </pre>
      */
-    public mruv.Groups.AddMemberResponse addMember(mruv.Groups.AddMemberRequest request) {
+    public mruv.groups.Groups.AddMemberResponse addMember(mruv.groups.Groups.AddMemberRequest request) {
       return blockingUnaryCall(
           getChannel(), getAddMemberMethod(), getCallOptions(), request);
     }
@@ -1322,7 +1322,7 @@ public final class MruVGroupsServiceGrpc {
      * Get a group member.
      * </pre>
      */
-    public mruv.Groups.GetMembersResponse getMembers(mruv.Groups.GetMembersRequest request) {
+    public mruv.groups.Groups.GetMembersResponse getMembers(mruv.groups.Groups.GetMembersRequest request) {
       return blockingUnaryCall(
           getChannel(), getGetMembersMethod(), getCallOptions(), request);
     }
@@ -1332,7 +1332,7 @@ public final class MruVGroupsServiceGrpc {
      * Remove a group member.
      * </pre>
      */
-    public mruv.Groups.RemoveMemberResponse removeMember(mruv.Groups.RemoveMemberRequest request) {
+    public mruv.groups.Groups.RemoveMemberResponse removeMember(mruv.groups.Groups.RemoveMemberRequest request) {
       return blockingUnaryCall(
           getChannel(), getRemoveMemberMethod(), getCallOptions(), request);
     }
@@ -1342,7 +1342,7 @@ public final class MruVGroupsServiceGrpc {
      * Add a permission to a group.
      * </pre>
      */
-    public mruv.Groups.AddPermissionResponse addPermission(mruv.Groups.AddPermissionRequest request) {
+    public mruv.groups.Groups.AddPermissionResponse addPermission(mruv.groups.Groups.AddPermissionRequest request) {
       return blockingUnaryCall(
           getChannel(), getAddPermissionMethod(), getCallOptions(), request);
     }
@@ -1352,7 +1352,7 @@ public final class MruVGroupsServiceGrpc {
      * Get all group permissions.
      * </pre>
      */
-    public mruv.Groups.GetPermissionsResponse getPermissions(mruv.Groups.GetPermissionsRequest request) {
+    public mruv.groups.Groups.GetPermissionsResponse getPermissions(mruv.groups.Groups.GetPermissionsRequest request) {
       return blockingUnaryCall(
           getChannel(), getGetPermissionsMethod(), getCallOptions(), request);
     }
@@ -1362,7 +1362,7 @@ public final class MruVGroupsServiceGrpc {
      * Remove group permission.
      * </pre>
      */
-    public mruv.Groups.RemovePermissionResponse removePermission(mruv.Groups.RemovePermissionRequest request) {
+    public mruv.groups.Groups.RemovePermissionResponse removePermission(mruv.groups.Groups.RemovePermissionRequest request) {
       return blockingUnaryCall(
           getChannel(), getRemovePermissionMethod(), getCallOptions(), request);
     }
@@ -1372,7 +1372,7 @@ public final class MruVGroupsServiceGrpc {
      * Add a subgroup to a group.
      * </pre>
      */
-    public mruv.Groups.AddSubgroupResponse addSubgroup(mruv.Groups.AddSubgroupRequest request) {
+    public mruv.groups.Groups.AddSubgroupResponse addSubgroup(mruv.groups.Groups.AddSubgroupRequest request) {
       return blockingUnaryCall(
           getChannel(), getAddSubgroupMethod(), getCallOptions(), request);
     }
@@ -1382,7 +1382,7 @@ public final class MruVGroupsServiceGrpc {
      * Get all subgroups.
      * </pre>
      */
-    public mruv.Groups.GetSubgroupsResponse getSubgroups(mruv.Groups.GetSubgroupsRequest request) {
+    public mruv.groups.Groups.GetSubgroupsResponse getSubgroups(mruv.groups.Groups.GetSubgroupsRequest request) {
       return blockingUnaryCall(
           getChannel(), getGetSubgroupsMethod(), getCallOptions(), request);
     }
@@ -1392,7 +1392,7 @@ public final class MruVGroupsServiceGrpc {
      * Remove a subgroup from group.
      * </pre>
      */
-    public mruv.Groups.RemoveSubgroupResponse removeSubgroup(mruv.Groups.RemoveSubgroupRequest request) {
+    public mruv.groups.Groups.RemoveSubgroupResponse removeSubgroup(mruv.groups.Groups.RemoveSubgroupRequest request) {
       return blockingUnaryCall(
           getChannel(), getRemoveSubgroupMethod(), getCallOptions(), request);
     }
@@ -1402,7 +1402,7 @@ public final class MruVGroupsServiceGrpc {
      * Check is member of a group is permitted to do specific action.
      * </pre>
      */
-    public mruv.Groups.IsPermittedResponse isPermitted(mruv.Groups.IsPermittedRequest request) {
+    public mruv.groups.Groups.IsPermittedResponse isPermitted(mruv.groups.Groups.IsPermittedRequest request) {
       return blockingUnaryCall(
           getChannel(), getIsPermittedMethod(), getCallOptions(), request);
     }
@@ -1412,14 +1412,14 @@ public final class MruVGroupsServiceGrpc {
      *Service status
      * </pre>
      */
-    public mruv.Health.ServiceStatusResponse getServiceStatus(mruv.Health.ServiceStatusRequest request) {
+    public mruv.common.Health.ServiceStatusResponse getServiceStatus(mruv.common.Health.ServiceStatusRequest request) {
       return blockingUnaryCall(
           getChannel(), getGetServiceStatusMethod(), getCallOptions(), request);
     }
 
     /**
      */
-    public mruv.Health.VersionResponse getServiceVersion(mruv.Health.VersionRequest request) {
+    public mruv.common.Health.VersionResponse getServiceVersion(mruv.common.Health.VersionRequest request) {
       return blockingUnaryCall(
           getChannel(), getGetServiceVersionMethod(), getCallOptions(), request);
     }
@@ -1447,8 +1447,8 @@ public final class MruVGroupsServiceGrpc {
      * Create a group.
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<mruv.Groups.CreateGroupResponse> createGroup(
-        mruv.Groups.CreateGroupRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<mruv.groups.Groups.CreateGroupResponse> createGroup(
+        mruv.groups.Groups.CreateGroupRequest request) {
       return futureUnaryCall(
           getChannel().newCall(getCreateGroupMethod(), getCallOptions()), request);
     }
@@ -1458,8 +1458,8 @@ public final class MruVGroupsServiceGrpc {
      * Get a  group.
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<mruv.Groups.GetGroupResponse> getGroup(
-        mruv.Groups.GetGroupRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<mruv.groups.Groups.GetGroupResponse> getGroup(
+        mruv.groups.Groups.GetGroupRequest request) {
       return futureUnaryCall(
           getChannel().newCall(getGetGroupMethod(), getCallOptions()), request);
     }
@@ -1469,8 +1469,8 @@ public final class MruVGroupsServiceGrpc {
      * Update a group.
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<mruv.Groups.UpdateGroupResponse> updateGroup(
-        mruv.Groups.UpdateGroupRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<mruv.groups.Groups.UpdateGroupResponse> updateGroup(
+        mruv.groups.Groups.UpdateGroupRequest request) {
       return futureUnaryCall(
           getChannel().newCall(getUpdateGroupMethod(), getCallOptions()), request);
     }
@@ -1480,8 +1480,8 @@ public final class MruVGroupsServiceGrpc {
      * Delete a group.
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<mruv.Groups.DeleteGroupResponse> deleteGroup(
-        mruv.Groups.DeleteGroupRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<mruv.groups.Groups.DeleteGroupResponse> deleteGroup(
+        mruv.groups.Groups.DeleteGroupRequest request) {
       return futureUnaryCall(
           getChannel().newCall(getDeleteGroupMethod(), getCallOptions()), request);
     }
@@ -1491,8 +1491,8 @@ public final class MruVGroupsServiceGrpc {
      * Get all groups.
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<mruv.Groups.GetGroupsResponse> getGroups(
-        mruv.Groups.GetGroupsRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<mruv.groups.Groups.GetGroupsResponse> getGroups(
+        mruv.groups.Groups.GetGroupsRequest request) {
       return futureUnaryCall(
           getChannel().newCall(getGetGroupsMethod(), getCallOptions()), request);
     }
@@ -1502,8 +1502,8 @@ public final class MruVGroupsServiceGrpc {
      * Assign an owner. Group can have only one owner. Owner can be a player, a group or an account.
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<mruv.Groups.AssignOwnerResponse> assignOwner(
-        mruv.Groups.AssignOwnerRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<mruv.groups.Groups.AssignOwnerResponse> assignOwner(
+        mruv.groups.Groups.AssignOwnerRequest request) {
       return futureUnaryCall(
           getChannel().newCall(getAssignOwnerMethod(), getCallOptions()), request);
     }
@@ -1513,8 +1513,8 @@ public final class MruVGroupsServiceGrpc {
      * Get group owner.
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<mruv.Groups.GetOwnerResponse> getOwner(
-        mruv.Groups.GetOwnerRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<mruv.groups.Groups.GetOwnerResponse> getOwner(
+        mruv.groups.Groups.GetOwnerRequest request) {
       return futureUnaryCall(
           getChannel().newCall(getGetOwnerMethod(), getCallOptions()), request);
     }
@@ -1524,8 +1524,8 @@ public final class MruVGroupsServiceGrpc {
      * Add a group member.
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<mruv.Groups.AddMemberResponse> addMember(
-        mruv.Groups.AddMemberRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<mruv.groups.Groups.AddMemberResponse> addMember(
+        mruv.groups.Groups.AddMemberRequest request) {
       return futureUnaryCall(
           getChannel().newCall(getAddMemberMethod(), getCallOptions()), request);
     }
@@ -1535,8 +1535,8 @@ public final class MruVGroupsServiceGrpc {
      * Get a group member.
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<mruv.Groups.GetMembersResponse> getMembers(
-        mruv.Groups.GetMembersRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<mruv.groups.Groups.GetMembersResponse> getMembers(
+        mruv.groups.Groups.GetMembersRequest request) {
       return futureUnaryCall(
           getChannel().newCall(getGetMembersMethod(), getCallOptions()), request);
     }
@@ -1546,8 +1546,8 @@ public final class MruVGroupsServiceGrpc {
      * Remove a group member.
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<mruv.Groups.RemoveMemberResponse> removeMember(
-        mruv.Groups.RemoveMemberRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<mruv.groups.Groups.RemoveMemberResponse> removeMember(
+        mruv.groups.Groups.RemoveMemberRequest request) {
       return futureUnaryCall(
           getChannel().newCall(getRemoveMemberMethod(), getCallOptions()), request);
     }
@@ -1557,8 +1557,8 @@ public final class MruVGroupsServiceGrpc {
      * Add a permission to a group.
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<mruv.Groups.AddPermissionResponse> addPermission(
-        mruv.Groups.AddPermissionRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<mruv.groups.Groups.AddPermissionResponse> addPermission(
+        mruv.groups.Groups.AddPermissionRequest request) {
       return futureUnaryCall(
           getChannel().newCall(getAddPermissionMethod(), getCallOptions()), request);
     }
@@ -1568,8 +1568,8 @@ public final class MruVGroupsServiceGrpc {
      * Get all group permissions.
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<mruv.Groups.GetPermissionsResponse> getPermissions(
-        mruv.Groups.GetPermissionsRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<mruv.groups.Groups.GetPermissionsResponse> getPermissions(
+        mruv.groups.Groups.GetPermissionsRequest request) {
       return futureUnaryCall(
           getChannel().newCall(getGetPermissionsMethod(), getCallOptions()), request);
     }
@@ -1579,8 +1579,8 @@ public final class MruVGroupsServiceGrpc {
      * Remove group permission.
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<mruv.Groups.RemovePermissionResponse> removePermission(
-        mruv.Groups.RemovePermissionRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<mruv.groups.Groups.RemovePermissionResponse> removePermission(
+        mruv.groups.Groups.RemovePermissionRequest request) {
       return futureUnaryCall(
           getChannel().newCall(getRemovePermissionMethod(), getCallOptions()), request);
     }
@@ -1590,8 +1590,8 @@ public final class MruVGroupsServiceGrpc {
      * Add a subgroup to a group.
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<mruv.Groups.AddSubgroupResponse> addSubgroup(
-        mruv.Groups.AddSubgroupRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<mruv.groups.Groups.AddSubgroupResponse> addSubgroup(
+        mruv.groups.Groups.AddSubgroupRequest request) {
       return futureUnaryCall(
           getChannel().newCall(getAddSubgroupMethod(), getCallOptions()), request);
     }
@@ -1601,8 +1601,8 @@ public final class MruVGroupsServiceGrpc {
      * Get all subgroups.
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<mruv.Groups.GetSubgroupsResponse> getSubgroups(
-        mruv.Groups.GetSubgroupsRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<mruv.groups.Groups.GetSubgroupsResponse> getSubgroups(
+        mruv.groups.Groups.GetSubgroupsRequest request) {
       return futureUnaryCall(
           getChannel().newCall(getGetSubgroupsMethod(), getCallOptions()), request);
     }
@@ -1612,8 +1612,8 @@ public final class MruVGroupsServiceGrpc {
      * Remove a subgroup from group.
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<mruv.Groups.RemoveSubgroupResponse> removeSubgroup(
-        mruv.Groups.RemoveSubgroupRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<mruv.groups.Groups.RemoveSubgroupResponse> removeSubgroup(
+        mruv.groups.Groups.RemoveSubgroupRequest request) {
       return futureUnaryCall(
           getChannel().newCall(getRemoveSubgroupMethod(), getCallOptions()), request);
     }
@@ -1623,8 +1623,8 @@ public final class MruVGroupsServiceGrpc {
      * Check is member of a group is permitted to do specific action.
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<mruv.Groups.IsPermittedResponse> isPermitted(
-        mruv.Groups.IsPermittedRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<mruv.groups.Groups.IsPermittedResponse> isPermitted(
+        mruv.groups.Groups.IsPermittedRequest request) {
       return futureUnaryCall(
           getChannel().newCall(getIsPermittedMethod(), getCallOptions()), request);
     }
@@ -1634,16 +1634,16 @@ public final class MruVGroupsServiceGrpc {
      *Service status
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<mruv.Health.ServiceStatusResponse> getServiceStatus(
-        mruv.Health.ServiceStatusRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<mruv.common.Health.ServiceStatusResponse> getServiceStatus(
+        mruv.common.Health.ServiceStatusRequest request) {
       return futureUnaryCall(
           getChannel().newCall(getGetServiceStatusMethod(), getCallOptions()), request);
     }
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<mruv.Health.VersionResponse> getServiceVersion(
-        mruv.Health.VersionRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<mruv.common.Health.VersionResponse> getServiceVersion(
+        mruv.common.Health.VersionRequest request) {
       return futureUnaryCall(
           getChannel().newCall(getGetServiceVersionMethod(), getCallOptions()), request);
     }
@@ -1687,80 +1687,80 @@ public final class MruVGroupsServiceGrpc {
     public void invoke(Req request, io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
         case METHODID_CREATE_GROUP:
-          serviceImpl.createGroup((mruv.Groups.CreateGroupRequest) request,
-              (io.grpc.stub.StreamObserver<mruv.Groups.CreateGroupResponse>) responseObserver);
+          serviceImpl.createGroup((mruv.groups.Groups.CreateGroupRequest) request,
+              (io.grpc.stub.StreamObserver<mruv.groups.Groups.CreateGroupResponse>) responseObserver);
           break;
         case METHODID_GET_GROUP:
-          serviceImpl.getGroup((mruv.Groups.GetGroupRequest) request,
-              (io.grpc.stub.StreamObserver<mruv.Groups.GetGroupResponse>) responseObserver);
+          serviceImpl.getGroup((mruv.groups.Groups.GetGroupRequest) request,
+              (io.grpc.stub.StreamObserver<mruv.groups.Groups.GetGroupResponse>) responseObserver);
           break;
         case METHODID_UPDATE_GROUP:
-          serviceImpl.updateGroup((mruv.Groups.UpdateGroupRequest) request,
-              (io.grpc.stub.StreamObserver<mruv.Groups.UpdateGroupResponse>) responseObserver);
+          serviceImpl.updateGroup((mruv.groups.Groups.UpdateGroupRequest) request,
+              (io.grpc.stub.StreamObserver<mruv.groups.Groups.UpdateGroupResponse>) responseObserver);
           break;
         case METHODID_DELETE_GROUP:
-          serviceImpl.deleteGroup((mruv.Groups.DeleteGroupRequest) request,
-              (io.grpc.stub.StreamObserver<mruv.Groups.DeleteGroupResponse>) responseObserver);
+          serviceImpl.deleteGroup((mruv.groups.Groups.DeleteGroupRequest) request,
+              (io.grpc.stub.StreamObserver<mruv.groups.Groups.DeleteGroupResponse>) responseObserver);
           break;
         case METHODID_GET_GROUPS:
-          serviceImpl.getGroups((mruv.Groups.GetGroupsRequest) request,
-              (io.grpc.stub.StreamObserver<mruv.Groups.GetGroupsResponse>) responseObserver);
+          serviceImpl.getGroups((mruv.groups.Groups.GetGroupsRequest) request,
+              (io.grpc.stub.StreamObserver<mruv.groups.Groups.GetGroupsResponse>) responseObserver);
           break;
         case METHODID_ASSIGN_OWNER:
-          serviceImpl.assignOwner((mruv.Groups.AssignOwnerRequest) request,
-              (io.grpc.stub.StreamObserver<mruv.Groups.AssignOwnerResponse>) responseObserver);
+          serviceImpl.assignOwner((mruv.groups.Groups.AssignOwnerRequest) request,
+              (io.grpc.stub.StreamObserver<mruv.groups.Groups.AssignOwnerResponse>) responseObserver);
           break;
         case METHODID_GET_OWNER:
-          serviceImpl.getOwner((mruv.Groups.GetOwnerRequest) request,
-              (io.grpc.stub.StreamObserver<mruv.Groups.GetOwnerResponse>) responseObserver);
+          serviceImpl.getOwner((mruv.groups.Groups.GetOwnerRequest) request,
+              (io.grpc.stub.StreamObserver<mruv.groups.Groups.GetOwnerResponse>) responseObserver);
           break;
         case METHODID_ADD_MEMBER:
-          serviceImpl.addMember((mruv.Groups.AddMemberRequest) request,
-              (io.grpc.stub.StreamObserver<mruv.Groups.AddMemberResponse>) responseObserver);
+          serviceImpl.addMember((mruv.groups.Groups.AddMemberRequest) request,
+              (io.grpc.stub.StreamObserver<mruv.groups.Groups.AddMemberResponse>) responseObserver);
           break;
         case METHODID_GET_MEMBERS:
-          serviceImpl.getMembers((mruv.Groups.GetMembersRequest) request,
-              (io.grpc.stub.StreamObserver<mruv.Groups.GetMembersResponse>) responseObserver);
+          serviceImpl.getMembers((mruv.groups.Groups.GetMembersRequest) request,
+              (io.grpc.stub.StreamObserver<mruv.groups.Groups.GetMembersResponse>) responseObserver);
           break;
         case METHODID_REMOVE_MEMBER:
-          serviceImpl.removeMember((mruv.Groups.RemoveMemberRequest) request,
-              (io.grpc.stub.StreamObserver<mruv.Groups.RemoveMemberResponse>) responseObserver);
+          serviceImpl.removeMember((mruv.groups.Groups.RemoveMemberRequest) request,
+              (io.grpc.stub.StreamObserver<mruv.groups.Groups.RemoveMemberResponse>) responseObserver);
           break;
         case METHODID_ADD_PERMISSION:
-          serviceImpl.addPermission((mruv.Groups.AddPermissionRequest) request,
-              (io.grpc.stub.StreamObserver<mruv.Groups.AddPermissionResponse>) responseObserver);
+          serviceImpl.addPermission((mruv.groups.Groups.AddPermissionRequest) request,
+              (io.grpc.stub.StreamObserver<mruv.groups.Groups.AddPermissionResponse>) responseObserver);
           break;
         case METHODID_GET_PERMISSIONS:
-          serviceImpl.getPermissions((mruv.Groups.GetPermissionsRequest) request,
-              (io.grpc.stub.StreamObserver<mruv.Groups.GetPermissionsResponse>) responseObserver);
+          serviceImpl.getPermissions((mruv.groups.Groups.GetPermissionsRequest) request,
+              (io.grpc.stub.StreamObserver<mruv.groups.Groups.GetPermissionsResponse>) responseObserver);
           break;
         case METHODID_REMOVE_PERMISSION:
-          serviceImpl.removePermission((mruv.Groups.RemovePermissionRequest) request,
-              (io.grpc.stub.StreamObserver<mruv.Groups.RemovePermissionResponse>) responseObserver);
+          serviceImpl.removePermission((mruv.groups.Groups.RemovePermissionRequest) request,
+              (io.grpc.stub.StreamObserver<mruv.groups.Groups.RemovePermissionResponse>) responseObserver);
           break;
         case METHODID_ADD_SUBGROUP:
-          serviceImpl.addSubgroup((mruv.Groups.AddSubgroupRequest) request,
-              (io.grpc.stub.StreamObserver<mruv.Groups.AddSubgroupResponse>) responseObserver);
+          serviceImpl.addSubgroup((mruv.groups.Groups.AddSubgroupRequest) request,
+              (io.grpc.stub.StreamObserver<mruv.groups.Groups.AddSubgroupResponse>) responseObserver);
           break;
         case METHODID_GET_SUBGROUPS:
-          serviceImpl.getSubgroups((mruv.Groups.GetSubgroupsRequest) request,
-              (io.grpc.stub.StreamObserver<mruv.Groups.GetSubgroupsResponse>) responseObserver);
+          serviceImpl.getSubgroups((mruv.groups.Groups.GetSubgroupsRequest) request,
+              (io.grpc.stub.StreamObserver<mruv.groups.Groups.GetSubgroupsResponse>) responseObserver);
           break;
         case METHODID_REMOVE_SUBGROUP:
-          serviceImpl.removeSubgroup((mruv.Groups.RemoveSubgroupRequest) request,
-              (io.grpc.stub.StreamObserver<mruv.Groups.RemoveSubgroupResponse>) responseObserver);
+          serviceImpl.removeSubgroup((mruv.groups.Groups.RemoveSubgroupRequest) request,
+              (io.grpc.stub.StreamObserver<mruv.groups.Groups.RemoveSubgroupResponse>) responseObserver);
           break;
         case METHODID_IS_PERMITTED:
-          serviceImpl.isPermitted((mruv.Groups.IsPermittedRequest) request,
-              (io.grpc.stub.StreamObserver<mruv.Groups.IsPermittedResponse>) responseObserver);
+          serviceImpl.isPermitted((mruv.groups.Groups.IsPermittedRequest) request,
+              (io.grpc.stub.StreamObserver<mruv.groups.Groups.IsPermittedResponse>) responseObserver);
           break;
         case METHODID_GET_SERVICE_STATUS:
-          serviceImpl.getServiceStatus((mruv.Health.ServiceStatusRequest) request,
-              (io.grpc.stub.StreamObserver<mruv.Health.ServiceStatusResponse>) responseObserver);
+          serviceImpl.getServiceStatus((mruv.common.Health.ServiceStatusRequest) request,
+              (io.grpc.stub.StreamObserver<mruv.common.Health.ServiceStatusResponse>) responseObserver);
           break;
         case METHODID_GET_SERVICE_VERSION:
-          serviceImpl.getServiceVersion((mruv.Health.VersionRequest) request,
-              (io.grpc.stub.StreamObserver<mruv.Health.VersionResponse>) responseObserver);
+          serviceImpl.getServiceVersion((mruv.common.Health.VersionRequest) request,
+              (io.grpc.stub.StreamObserver<mruv.common.Health.VersionResponse>) responseObserver);
           break;
         default:
           throw new AssertionError();
@@ -1784,7 +1784,7 @@ public final class MruVGroupsServiceGrpc {
 
     @java.lang.Override
     public com.google.protobuf.Descriptors.FileDescriptor getFileDescriptor() {
-      return mruv.Groups.getDescriptor();
+      return mruv.groups.Groups.getDescriptor();
     }
 
     @java.lang.Override

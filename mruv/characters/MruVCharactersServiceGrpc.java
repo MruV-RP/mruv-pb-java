@@ -1,4 +1,4 @@
-package mruv;
+package mruv.characters;
 
 import static io.grpc.MethodDescriptor.generateFullMethodName;
 import static io.grpc.stub.ClientCalls.asyncBidiStreamingCall;
@@ -24,32 +24,32 @@ public final class MruVCharactersServiceGrpc {
 
   private MruVCharactersServiceGrpc() {}
 
-  public static final String SERVICE_NAME = "mruv.MruVCharactersService";
+  public static final String SERVICE_NAME = "mruv.characters.MruVCharactersService";
 
   // Static method descriptors that strictly reflect the proto.
-  private static volatile io.grpc.MethodDescriptor<mruv.Characters.CreateCharacterRequest,
-      mruv.Characters.CreateCharacterResponse> getCreateCharacterMethod;
+  private static volatile io.grpc.MethodDescriptor<mruv.characters.Characters.CreateCharacterRequest,
+      mruv.characters.Characters.CreateCharacterResponse> getCreateCharacterMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "CreateCharacter",
-      requestType = mruv.Characters.CreateCharacterRequest.class,
-      responseType = mruv.Characters.CreateCharacterResponse.class,
+      requestType = mruv.characters.Characters.CreateCharacterRequest.class,
+      responseType = mruv.characters.Characters.CreateCharacterResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<mruv.Characters.CreateCharacterRequest,
-      mruv.Characters.CreateCharacterResponse> getCreateCharacterMethod() {
-    io.grpc.MethodDescriptor<mruv.Characters.CreateCharacterRequest, mruv.Characters.CreateCharacterResponse> getCreateCharacterMethod;
+  public static io.grpc.MethodDescriptor<mruv.characters.Characters.CreateCharacterRequest,
+      mruv.characters.Characters.CreateCharacterResponse> getCreateCharacterMethod() {
+    io.grpc.MethodDescriptor<mruv.characters.Characters.CreateCharacterRequest, mruv.characters.Characters.CreateCharacterResponse> getCreateCharacterMethod;
     if ((getCreateCharacterMethod = MruVCharactersServiceGrpc.getCreateCharacterMethod) == null) {
       synchronized (MruVCharactersServiceGrpc.class) {
         if ((getCreateCharacterMethod = MruVCharactersServiceGrpc.getCreateCharacterMethod) == null) {
           MruVCharactersServiceGrpc.getCreateCharacterMethod = getCreateCharacterMethod =
-              io.grpc.MethodDescriptor.<mruv.Characters.CreateCharacterRequest, mruv.Characters.CreateCharacterResponse>newBuilder()
+              io.grpc.MethodDescriptor.<mruv.characters.Characters.CreateCharacterRequest, mruv.characters.Characters.CreateCharacterResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "CreateCharacter"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  mruv.Characters.CreateCharacterRequest.getDefaultInstance()))
+                  mruv.characters.Characters.CreateCharacterRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  mruv.Characters.CreateCharacterResponse.getDefaultInstance()))
+                  mruv.characters.Characters.CreateCharacterResponse.getDefaultInstance()))
               .setSchemaDescriptor(new MruVCharactersServiceMethodDescriptorSupplier("CreateCharacter"))
               .build();
         }
@@ -58,29 +58,29 @@ public final class MruVCharactersServiceGrpc {
     return getCreateCharacterMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<mruv.Characters.GetCharacterRequest,
-      mruv.Characters.GetCharacterResponse> getGetCharacterMethod;
+  private static volatile io.grpc.MethodDescriptor<mruv.characters.Characters.GetCharacterRequest,
+      mruv.characters.Characters.GetCharacterResponse> getGetCharacterMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "GetCharacter",
-      requestType = mruv.Characters.GetCharacterRequest.class,
-      responseType = mruv.Characters.GetCharacterResponse.class,
+      requestType = mruv.characters.Characters.GetCharacterRequest.class,
+      responseType = mruv.characters.Characters.GetCharacterResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<mruv.Characters.GetCharacterRequest,
-      mruv.Characters.GetCharacterResponse> getGetCharacterMethod() {
-    io.grpc.MethodDescriptor<mruv.Characters.GetCharacterRequest, mruv.Characters.GetCharacterResponse> getGetCharacterMethod;
+  public static io.grpc.MethodDescriptor<mruv.characters.Characters.GetCharacterRequest,
+      mruv.characters.Characters.GetCharacterResponse> getGetCharacterMethod() {
+    io.grpc.MethodDescriptor<mruv.characters.Characters.GetCharacterRequest, mruv.characters.Characters.GetCharacterResponse> getGetCharacterMethod;
     if ((getGetCharacterMethod = MruVCharactersServiceGrpc.getGetCharacterMethod) == null) {
       synchronized (MruVCharactersServiceGrpc.class) {
         if ((getGetCharacterMethod = MruVCharactersServiceGrpc.getGetCharacterMethod) == null) {
           MruVCharactersServiceGrpc.getGetCharacterMethod = getGetCharacterMethod =
-              io.grpc.MethodDescriptor.<mruv.Characters.GetCharacterRequest, mruv.Characters.GetCharacterResponse>newBuilder()
+              io.grpc.MethodDescriptor.<mruv.characters.Characters.GetCharacterRequest, mruv.characters.Characters.GetCharacterResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "GetCharacter"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  mruv.Characters.GetCharacterRequest.getDefaultInstance()))
+                  mruv.characters.Characters.GetCharacterRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  mruv.Characters.GetCharacterResponse.getDefaultInstance()))
+                  mruv.characters.Characters.GetCharacterResponse.getDefaultInstance()))
               .setSchemaDescriptor(new MruVCharactersServiceMethodDescriptorSupplier("GetCharacter"))
               .build();
         }
@@ -89,29 +89,29 @@ public final class MruVCharactersServiceGrpc {
     return getGetCharacterMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<mruv.Characters.UpdateCharacterRequest,
-      mruv.Characters.UpdateCharacterResponse> getUpdateCharacterMethod;
+  private static volatile io.grpc.MethodDescriptor<mruv.characters.Characters.UpdateCharacterRequest,
+      mruv.characters.Characters.UpdateCharacterResponse> getUpdateCharacterMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "UpdateCharacter",
-      requestType = mruv.Characters.UpdateCharacterRequest.class,
-      responseType = mruv.Characters.UpdateCharacterResponse.class,
+      requestType = mruv.characters.Characters.UpdateCharacterRequest.class,
+      responseType = mruv.characters.Characters.UpdateCharacterResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<mruv.Characters.UpdateCharacterRequest,
-      mruv.Characters.UpdateCharacterResponse> getUpdateCharacterMethod() {
-    io.grpc.MethodDescriptor<mruv.Characters.UpdateCharacterRequest, mruv.Characters.UpdateCharacterResponse> getUpdateCharacterMethod;
+  public static io.grpc.MethodDescriptor<mruv.characters.Characters.UpdateCharacterRequest,
+      mruv.characters.Characters.UpdateCharacterResponse> getUpdateCharacterMethod() {
+    io.grpc.MethodDescriptor<mruv.characters.Characters.UpdateCharacterRequest, mruv.characters.Characters.UpdateCharacterResponse> getUpdateCharacterMethod;
     if ((getUpdateCharacterMethod = MruVCharactersServiceGrpc.getUpdateCharacterMethod) == null) {
       synchronized (MruVCharactersServiceGrpc.class) {
         if ((getUpdateCharacterMethod = MruVCharactersServiceGrpc.getUpdateCharacterMethod) == null) {
           MruVCharactersServiceGrpc.getUpdateCharacterMethod = getUpdateCharacterMethod =
-              io.grpc.MethodDescriptor.<mruv.Characters.UpdateCharacterRequest, mruv.Characters.UpdateCharacterResponse>newBuilder()
+              io.grpc.MethodDescriptor.<mruv.characters.Characters.UpdateCharacterRequest, mruv.characters.Characters.UpdateCharacterResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "UpdateCharacter"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  mruv.Characters.UpdateCharacterRequest.getDefaultInstance()))
+                  mruv.characters.Characters.UpdateCharacterRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  mruv.Characters.UpdateCharacterResponse.getDefaultInstance()))
+                  mruv.characters.Characters.UpdateCharacterResponse.getDefaultInstance()))
               .setSchemaDescriptor(new MruVCharactersServiceMethodDescriptorSupplier("UpdateCharacter"))
               .build();
         }
@@ -120,29 +120,29 @@ public final class MruVCharactersServiceGrpc {
     return getUpdateCharacterMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<mruv.Characters.DeleteCharacterRequest,
-      mruv.Characters.DeleteCharacterResponse> getDeleteCharacterMethod;
+  private static volatile io.grpc.MethodDescriptor<mruv.characters.Characters.DeleteCharacterRequest,
+      mruv.characters.Characters.DeleteCharacterResponse> getDeleteCharacterMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "DeleteCharacter",
-      requestType = mruv.Characters.DeleteCharacterRequest.class,
-      responseType = mruv.Characters.DeleteCharacterResponse.class,
+      requestType = mruv.characters.Characters.DeleteCharacterRequest.class,
+      responseType = mruv.characters.Characters.DeleteCharacterResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<mruv.Characters.DeleteCharacterRequest,
-      mruv.Characters.DeleteCharacterResponse> getDeleteCharacterMethod() {
-    io.grpc.MethodDescriptor<mruv.Characters.DeleteCharacterRequest, mruv.Characters.DeleteCharacterResponse> getDeleteCharacterMethod;
+  public static io.grpc.MethodDescriptor<mruv.characters.Characters.DeleteCharacterRequest,
+      mruv.characters.Characters.DeleteCharacterResponse> getDeleteCharacterMethod() {
+    io.grpc.MethodDescriptor<mruv.characters.Characters.DeleteCharacterRequest, mruv.characters.Characters.DeleteCharacterResponse> getDeleteCharacterMethod;
     if ((getDeleteCharacterMethod = MruVCharactersServiceGrpc.getDeleteCharacterMethod) == null) {
       synchronized (MruVCharactersServiceGrpc.class) {
         if ((getDeleteCharacterMethod = MruVCharactersServiceGrpc.getDeleteCharacterMethod) == null) {
           MruVCharactersServiceGrpc.getDeleteCharacterMethod = getDeleteCharacterMethod =
-              io.grpc.MethodDescriptor.<mruv.Characters.DeleteCharacterRequest, mruv.Characters.DeleteCharacterResponse>newBuilder()
+              io.grpc.MethodDescriptor.<mruv.characters.Characters.DeleteCharacterRequest, mruv.characters.Characters.DeleteCharacterResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "DeleteCharacter"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  mruv.Characters.DeleteCharacterRequest.getDefaultInstance()))
+                  mruv.characters.Characters.DeleteCharacterRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  mruv.Characters.DeleteCharacterResponse.getDefaultInstance()))
+                  mruv.characters.Characters.DeleteCharacterResponse.getDefaultInstance()))
               .setSchemaDescriptor(new MruVCharactersServiceMethodDescriptorSupplier("DeleteCharacter"))
               .build();
         }
@@ -151,29 +151,29 @@ public final class MruVCharactersServiceGrpc {
     return getDeleteCharacterMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<mruv.Characters.CharacterID,
-      mruv.Characters.CharacterID> getPermanentCharacterKillMethod;
+  private static volatile io.grpc.MethodDescriptor<mruv.characters.Characters.CharacterID,
+      mruv.characters.Characters.CharacterID> getPermanentCharacterKillMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "PermanentCharacterKill",
-      requestType = mruv.Characters.CharacterID.class,
-      responseType = mruv.Characters.CharacterID.class,
+      requestType = mruv.characters.Characters.CharacterID.class,
+      responseType = mruv.characters.Characters.CharacterID.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<mruv.Characters.CharacterID,
-      mruv.Characters.CharacterID> getPermanentCharacterKillMethod() {
-    io.grpc.MethodDescriptor<mruv.Characters.CharacterID, mruv.Characters.CharacterID> getPermanentCharacterKillMethod;
+  public static io.grpc.MethodDescriptor<mruv.characters.Characters.CharacterID,
+      mruv.characters.Characters.CharacterID> getPermanentCharacterKillMethod() {
+    io.grpc.MethodDescriptor<mruv.characters.Characters.CharacterID, mruv.characters.Characters.CharacterID> getPermanentCharacterKillMethod;
     if ((getPermanentCharacterKillMethod = MruVCharactersServiceGrpc.getPermanentCharacterKillMethod) == null) {
       synchronized (MruVCharactersServiceGrpc.class) {
         if ((getPermanentCharacterKillMethod = MruVCharactersServiceGrpc.getPermanentCharacterKillMethod) == null) {
           MruVCharactersServiceGrpc.getPermanentCharacterKillMethod = getPermanentCharacterKillMethod =
-              io.grpc.MethodDescriptor.<mruv.Characters.CharacterID, mruv.Characters.CharacterID>newBuilder()
+              io.grpc.MethodDescriptor.<mruv.characters.Characters.CharacterID, mruv.characters.Characters.CharacterID>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "PermanentCharacterKill"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  mruv.Characters.CharacterID.getDefaultInstance()))
+                  mruv.characters.Characters.CharacterID.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  mruv.Characters.CharacterID.getDefaultInstance()))
+                  mruv.characters.Characters.CharacterID.getDefaultInstance()))
               .setSchemaDescriptor(new MruVCharactersServiceMethodDescriptorSupplier("PermanentCharacterKill"))
               .build();
         }
@@ -182,29 +182,29 @@ public final class MruVCharactersServiceGrpc {
     return getPermanentCharacterKillMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<mruv.Characters.ChangeClothesRequest,
-      mruv.Characters.ChangeClothesResponse> getChangeClothesMethod;
+  private static volatile io.grpc.MethodDescriptor<mruv.characters.Characters.ChangeClothesRequest,
+      mruv.characters.Characters.ChangeClothesResponse> getChangeClothesMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "ChangeClothes",
-      requestType = mruv.Characters.ChangeClothesRequest.class,
-      responseType = mruv.Characters.ChangeClothesResponse.class,
+      requestType = mruv.characters.Characters.ChangeClothesRequest.class,
+      responseType = mruv.characters.Characters.ChangeClothesResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<mruv.Characters.ChangeClothesRequest,
-      mruv.Characters.ChangeClothesResponse> getChangeClothesMethod() {
-    io.grpc.MethodDescriptor<mruv.Characters.ChangeClothesRequest, mruv.Characters.ChangeClothesResponse> getChangeClothesMethod;
+  public static io.grpc.MethodDescriptor<mruv.characters.Characters.ChangeClothesRequest,
+      mruv.characters.Characters.ChangeClothesResponse> getChangeClothesMethod() {
+    io.grpc.MethodDescriptor<mruv.characters.Characters.ChangeClothesRequest, mruv.characters.Characters.ChangeClothesResponse> getChangeClothesMethod;
     if ((getChangeClothesMethod = MruVCharactersServiceGrpc.getChangeClothesMethod) == null) {
       synchronized (MruVCharactersServiceGrpc.class) {
         if ((getChangeClothesMethod = MruVCharactersServiceGrpc.getChangeClothesMethod) == null) {
           MruVCharactersServiceGrpc.getChangeClothesMethod = getChangeClothesMethod =
-              io.grpc.MethodDescriptor.<mruv.Characters.ChangeClothesRequest, mruv.Characters.ChangeClothesResponse>newBuilder()
+              io.grpc.MethodDescriptor.<mruv.characters.Characters.ChangeClothesRequest, mruv.characters.Characters.ChangeClothesResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "ChangeClothes"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  mruv.Characters.ChangeClothesRequest.getDefaultInstance()))
+                  mruv.characters.Characters.ChangeClothesRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  mruv.Characters.ChangeClothesResponse.getDefaultInstance()))
+                  mruv.characters.Characters.ChangeClothesResponse.getDefaultInstance()))
               .setSchemaDescriptor(new MruVCharactersServiceMethodDescriptorSupplier("ChangeClothes"))
               .build();
         }
@@ -213,29 +213,29 @@ public final class MruVCharactersServiceGrpc {
     return getChangeClothesMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<mruv.Characters.DeathStreamRequest,
-      mruv.Characters.DeathStreamResponse> getDeathsStreamMethod;
+  private static volatile io.grpc.MethodDescriptor<mruv.characters.Characters.DeathStreamRequest,
+      mruv.characters.Characters.DeathStreamResponse> getDeathsStreamMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "DeathsStream",
-      requestType = mruv.Characters.DeathStreamRequest.class,
-      responseType = mruv.Characters.DeathStreamResponse.class,
+      requestType = mruv.characters.Characters.DeathStreamRequest.class,
+      responseType = mruv.characters.Characters.DeathStreamResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.SERVER_STREAMING)
-  public static io.grpc.MethodDescriptor<mruv.Characters.DeathStreamRequest,
-      mruv.Characters.DeathStreamResponse> getDeathsStreamMethod() {
-    io.grpc.MethodDescriptor<mruv.Characters.DeathStreamRequest, mruv.Characters.DeathStreamResponse> getDeathsStreamMethod;
+  public static io.grpc.MethodDescriptor<mruv.characters.Characters.DeathStreamRequest,
+      mruv.characters.Characters.DeathStreamResponse> getDeathsStreamMethod() {
+    io.grpc.MethodDescriptor<mruv.characters.Characters.DeathStreamRequest, mruv.characters.Characters.DeathStreamResponse> getDeathsStreamMethod;
     if ((getDeathsStreamMethod = MruVCharactersServiceGrpc.getDeathsStreamMethod) == null) {
       synchronized (MruVCharactersServiceGrpc.class) {
         if ((getDeathsStreamMethod = MruVCharactersServiceGrpc.getDeathsStreamMethod) == null) {
           MruVCharactersServiceGrpc.getDeathsStreamMethod = getDeathsStreamMethod =
-              io.grpc.MethodDescriptor.<mruv.Characters.DeathStreamRequest, mruv.Characters.DeathStreamResponse>newBuilder()
+              io.grpc.MethodDescriptor.<mruv.characters.Characters.DeathStreamRequest, mruv.characters.Characters.DeathStreamResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.SERVER_STREAMING)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "DeathsStream"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  mruv.Characters.DeathStreamRequest.getDefaultInstance()))
+                  mruv.characters.Characters.DeathStreamRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  mruv.Characters.DeathStreamResponse.getDefaultInstance()))
+                  mruv.characters.Characters.DeathStreamResponse.getDefaultInstance()))
               .setSchemaDescriptor(new MruVCharactersServiceMethodDescriptorSupplier("DeathsStream"))
               .build();
         }
@@ -244,29 +244,29 @@ public final class MruVCharactersServiceGrpc {
     return getDeathsStreamMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<mruv.Health.ServiceStatusRequest,
-      mruv.Health.ServiceStatusResponse> getGetServiceStatusMethod;
+  private static volatile io.grpc.MethodDescriptor<mruv.common.Health.ServiceStatusRequest,
+      mruv.common.Health.ServiceStatusResponse> getGetServiceStatusMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "GetServiceStatus",
-      requestType = mruv.Health.ServiceStatusRequest.class,
-      responseType = mruv.Health.ServiceStatusResponse.class,
+      requestType = mruv.common.Health.ServiceStatusRequest.class,
+      responseType = mruv.common.Health.ServiceStatusResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<mruv.Health.ServiceStatusRequest,
-      mruv.Health.ServiceStatusResponse> getGetServiceStatusMethod() {
-    io.grpc.MethodDescriptor<mruv.Health.ServiceStatusRequest, mruv.Health.ServiceStatusResponse> getGetServiceStatusMethod;
+  public static io.grpc.MethodDescriptor<mruv.common.Health.ServiceStatusRequest,
+      mruv.common.Health.ServiceStatusResponse> getGetServiceStatusMethod() {
+    io.grpc.MethodDescriptor<mruv.common.Health.ServiceStatusRequest, mruv.common.Health.ServiceStatusResponse> getGetServiceStatusMethod;
     if ((getGetServiceStatusMethod = MruVCharactersServiceGrpc.getGetServiceStatusMethod) == null) {
       synchronized (MruVCharactersServiceGrpc.class) {
         if ((getGetServiceStatusMethod = MruVCharactersServiceGrpc.getGetServiceStatusMethod) == null) {
           MruVCharactersServiceGrpc.getGetServiceStatusMethod = getGetServiceStatusMethod =
-              io.grpc.MethodDescriptor.<mruv.Health.ServiceStatusRequest, mruv.Health.ServiceStatusResponse>newBuilder()
+              io.grpc.MethodDescriptor.<mruv.common.Health.ServiceStatusRequest, mruv.common.Health.ServiceStatusResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "GetServiceStatus"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  mruv.Health.ServiceStatusRequest.getDefaultInstance()))
+                  mruv.common.Health.ServiceStatusRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  mruv.Health.ServiceStatusResponse.getDefaultInstance()))
+                  mruv.common.Health.ServiceStatusResponse.getDefaultInstance()))
               .setSchemaDescriptor(new MruVCharactersServiceMethodDescriptorSupplier("GetServiceStatus"))
               .build();
         }
@@ -275,29 +275,29 @@ public final class MruVCharactersServiceGrpc {
     return getGetServiceStatusMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<mruv.Health.VersionRequest,
-      mruv.Health.VersionResponse> getGetServiceVersionMethod;
+  private static volatile io.grpc.MethodDescriptor<mruv.common.Health.VersionRequest,
+      mruv.common.Health.VersionResponse> getGetServiceVersionMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "GetServiceVersion",
-      requestType = mruv.Health.VersionRequest.class,
-      responseType = mruv.Health.VersionResponse.class,
+      requestType = mruv.common.Health.VersionRequest.class,
+      responseType = mruv.common.Health.VersionResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<mruv.Health.VersionRequest,
-      mruv.Health.VersionResponse> getGetServiceVersionMethod() {
-    io.grpc.MethodDescriptor<mruv.Health.VersionRequest, mruv.Health.VersionResponse> getGetServiceVersionMethod;
+  public static io.grpc.MethodDescriptor<mruv.common.Health.VersionRequest,
+      mruv.common.Health.VersionResponse> getGetServiceVersionMethod() {
+    io.grpc.MethodDescriptor<mruv.common.Health.VersionRequest, mruv.common.Health.VersionResponse> getGetServiceVersionMethod;
     if ((getGetServiceVersionMethod = MruVCharactersServiceGrpc.getGetServiceVersionMethod) == null) {
       synchronized (MruVCharactersServiceGrpc.class) {
         if ((getGetServiceVersionMethod = MruVCharactersServiceGrpc.getGetServiceVersionMethod) == null) {
           MruVCharactersServiceGrpc.getGetServiceVersionMethod = getGetServiceVersionMethod =
-              io.grpc.MethodDescriptor.<mruv.Health.VersionRequest, mruv.Health.VersionResponse>newBuilder()
+              io.grpc.MethodDescriptor.<mruv.common.Health.VersionRequest, mruv.common.Health.VersionResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "GetServiceVersion"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  mruv.Health.VersionRequest.getDefaultInstance()))
+                  mruv.common.Health.VersionRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  mruv.Health.VersionResponse.getDefaultInstance()))
+                  mruv.common.Health.VersionResponse.getDefaultInstance()))
               .setSchemaDescriptor(new MruVCharactersServiceMethodDescriptorSupplier("GetServiceVersion"))
               .build();
         }
@@ -359,8 +359,8 @@ public final class MruVCharactersServiceGrpc {
      * Create a character.
      * </pre>
      */
-    public void createCharacter(mruv.Characters.CreateCharacterRequest request,
-        io.grpc.stub.StreamObserver<mruv.Characters.CreateCharacterResponse> responseObserver) {
+    public void createCharacter(mruv.characters.Characters.CreateCharacterRequest request,
+        io.grpc.stub.StreamObserver<mruv.characters.Characters.CreateCharacterResponse> responseObserver) {
       asyncUnimplementedUnaryCall(getCreateCharacterMethod(), responseObserver);
     }
 
@@ -369,8 +369,8 @@ public final class MruVCharactersServiceGrpc {
      * Get a character.
      * </pre>
      */
-    public void getCharacter(mruv.Characters.GetCharacterRequest request,
-        io.grpc.stub.StreamObserver<mruv.Characters.GetCharacterResponse> responseObserver) {
+    public void getCharacter(mruv.characters.Characters.GetCharacterRequest request,
+        io.grpc.stub.StreamObserver<mruv.characters.Characters.GetCharacterResponse> responseObserver) {
       asyncUnimplementedUnaryCall(getGetCharacterMethod(), responseObserver);
     }
 
@@ -379,8 +379,8 @@ public final class MruVCharactersServiceGrpc {
      * Update a character.
      * </pre>
      */
-    public void updateCharacter(mruv.Characters.UpdateCharacterRequest request,
-        io.grpc.stub.StreamObserver<mruv.Characters.UpdateCharacterResponse> responseObserver) {
+    public void updateCharacter(mruv.characters.Characters.UpdateCharacterRequest request,
+        io.grpc.stub.StreamObserver<mruv.characters.Characters.UpdateCharacterResponse> responseObserver) {
       asyncUnimplementedUnaryCall(getUpdateCharacterMethod(), responseObserver);
     }
 
@@ -389,8 +389,8 @@ public final class MruVCharactersServiceGrpc {
      * Delete a character.
      * </pre>
      */
-    public void deleteCharacter(mruv.Characters.DeleteCharacterRequest request,
-        io.grpc.stub.StreamObserver<mruv.Characters.DeleteCharacterResponse> responseObserver) {
+    public void deleteCharacter(mruv.characters.Characters.DeleteCharacterRequest request,
+        io.grpc.stub.StreamObserver<mruv.characters.Characters.DeleteCharacterResponse> responseObserver) {
       asyncUnimplementedUnaryCall(getDeleteCharacterMethod(), responseObserver);
     }
 
@@ -399,8 +399,8 @@ public final class MruVCharactersServiceGrpc {
      * Kill a character. A character that is killed cannot be played anymore.
      * </pre>
      */
-    public void permanentCharacterKill(mruv.Characters.CharacterID request,
-        io.grpc.stub.StreamObserver<mruv.Characters.CharacterID> responseObserver) {
+    public void permanentCharacterKill(mruv.characters.Characters.CharacterID request,
+        io.grpc.stub.StreamObserver<mruv.characters.Characters.CharacterID> responseObserver) {
       asyncUnimplementedUnaryCall(getPermanentCharacterKillMethod(), responseObserver);
     }
 
@@ -409,8 +409,8 @@ public final class MruVCharactersServiceGrpc {
      * Change player clothes.
      * </pre>
      */
-    public void changeClothes(mruv.Characters.ChangeClothesRequest request,
-        io.grpc.stub.StreamObserver<mruv.Characters.ChangeClothesResponse> responseObserver) {
+    public void changeClothes(mruv.characters.Characters.ChangeClothesRequest request,
+        io.grpc.stub.StreamObserver<mruv.characters.Characters.ChangeClothesResponse> responseObserver) {
       asyncUnimplementedUnaryCall(getChangeClothesMethod(), responseObserver);
     }
 
@@ -419,8 +419,8 @@ public final class MruVCharactersServiceGrpc {
      * Stream of deaths.
      * </pre>
      */
-    public void deathsStream(mruv.Characters.DeathStreamRequest request,
-        io.grpc.stub.StreamObserver<mruv.Characters.DeathStreamResponse> responseObserver) {
+    public void deathsStream(mruv.characters.Characters.DeathStreamRequest request,
+        io.grpc.stub.StreamObserver<mruv.characters.Characters.DeathStreamResponse> responseObserver) {
       asyncUnimplementedUnaryCall(getDeathsStreamMethod(), responseObserver);
     }
 
@@ -429,15 +429,15 @@ public final class MruVCharactersServiceGrpc {
      *Service status
      * </pre>
      */
-    public void getServiceStatus(mruv.Health.ServiceStatusRequest request,
-        io.grpc.stub.StreamObserver<mruv.Health.ServiceStatusResponse> responseObserver) {
+    public void getServiceStatus(mruv.common.Health.ServiceStatusRequest request,
+        io.grpc.stub.StreamObserver<mruv.common.Health.ServiceStatusResponse> responseObserver) {
       asyncUnimplementedUnaryCall(getGetServiceStatusMethod(), responseObserver);
     }
 
     /**
      */
-    public void getServiceVersion(mruv.Health.VersionRequest request,
-        io.grpc.stub.StreamObserver<mruv.Health.VersionResponse> responseObserver) {
+    public void getServiceVersion(mruv.common.Health.VersionRequest request,
+        io.grpc.stub.StreamObserver<mruv.common.Health.VersionResponse> responseObserver) {
       asyncUnimplementedUnaryCall(getGetServiceVersionMethod(), responseObserver);
     }
 
@@ -447,64 +447,64 @@ public final class MruVCharactersServiceGrpc {
             getCreateCharacterMethod(),
             asyncUnaryCall(
               new MethodHandlers<
-                mruv.Characters.CreateCharacterRequest,
-                mruv.Characters.CreateCharacterResponse>(
+                mruv.characters.Characters.CreateCharacterRequest,
+                mruv.characters.Characters.CreateCharacterResponse>(
                   this, METHODID_CREATE_CHARACTER)))
           .addMethod(
             getGetCharacterMethod(),
             asyncUnaryCall(
               new MethodHandlers<
-                mruv.Characters.GetCharacterRequest,
-                mruv.Characters.GetCharacterResponse>(
+                mruv.characters.Characters.GetCharacterRequest,
+                mruv.characters.Characters.GetCharacterResponse>(
                   this, METHODID_GET_CHARACTER)))
           .addMethod(
             getUpdateCharacterMethod(),
             asyncUnaryCall(
               new MethodHandlers<
-                mruv.Characters.UpdateCharacterRequest,
-                mruv.Characters.UpdateCharacterResponse>(
+                mruv.characters.Characters.UpdateCharacterRequest,
+                mruv.characters.Characters.UpdateCharacterResponse>(
                   this, METHODID_UPDATE_CHARACTER)))
           .addMethod(
             getDeleteCharacterMethod(),
             asyncUnaryCall(
               new MethodHandlers<
-                mruv.Characters.DeleteCharacterRequest,
-                mruv.Characters.DeleteCharacterResponse>(
+                mruv.characters.Characters.DeleteCharacterRequest,
+                mruv.characters.Characters.DeleteCharacterResponse>(
                   this, METHODID_DELETE_CHARACTER)))
           .addMethod(
             getPermanentCharacterKillMethod(),
             asyncUnaryCall(
               new MethodHandlers<
-                mruv.Characters.CharacterID,
-                mruv.Characters.CharacterID>(
+                mruv.characters.Characters.CharacterID,
+                mruv.characters.Characters.CharacterID>(
                   this, METHODID_PERMANENT_CHARACTER_KILL)))
           .addMethod(
             getChangeClothesMethod(),
             asyncUnaryCall(
               new MethodHandlers<
-                mruv.Characters.ChangeClothesRequest,
-                mruv.Characters.ChangeClothesResponse>(
+                mruv.characters.Characters.ChangeClothesRequest,
+                mruv.characters.Characters.ChangeClothesResponse>(
                   this, METHODID_CHANGE_CLOTHES)))
           .addMethod(
             getDeathsStreamMethod(),
             asyncServerStreamingCall(
               new MethodHandlers<
-                mruv.Characters.DeathStreamRequest,
-                mruv.Characters.DeathStreamResponse>(
+                mruv.characters.Characters.DeathStreamRequest,
+                mruv.characters.Characters.DeathStreamResponse>(
                   this, METHODID_DEATHS_STREAM)))
           .addMethod(
             getGetServiceStatusMethod(),
             asyncUnaryCall(
               new MethodHandlers<
-                mruv.Health.ServiceStatusRequest,
-                mruv.Health.ServiceStatusResponse>(
+                mruv.common.Health.ServiceStatusRequest,
+                mruv.common.Health.ServiceStatusResponse>(
                   this, METHODID_GET_SERVICE_STATUS)))
           .addMethod(
             getGetServiceVersionMethod(),
             asyncUnaryCall(
               new MethodHandlers<
-                mruv.Health.VersionRequest,
-                mruv.Health.VersionResponse>(
+                mruv.common.Health.VersionRequest,
+                mruv.common.Health.VersionResponse>(
                   this, METHODID_GET_SERVICE_VERSION)))
           .build();
     }
@@ -529,8 +529,8 @@ public final class MruVCharactersServiceGrpc {
      * Create a character.
      * </pre>
      */
-    public void createCharacter(mruv.Characters.CreateCharacterRequest request,
-        io.grpc.stub.StreamObserver<mruv.Characters.CreateCharacterResponse> responseObserver) {
+    public void createCharacter(mruv.characters.Characters.CreateCharacterRequest request,
+        io.grpc.stub.StreamObserver<mruv.characters.Characters.CreateCharacterResponse> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(getCreateCharacterMethod(), getCallOptions()), request, responseObserver);
     }
@@ -540,8 +540,8 @@ public final class MruVCharactersServiceGrpc {
      * Get a character.
      * </pre>
      */
-    public void getCharacter(mruv.Characters.GetCharacterRequest request,
-        io.grpc.stub.StreamObserver<mruv.Characters.GetCharacterResponse> responseObserver) {
+    public void getCharacter(mruv.characters.Characters.GetCharacterRequest request,
+        io.grpc.stub.StreamObserver<mruv.characters.Characters.GetCharacterResponse> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(getGetCharacterMethod(), getCallOptions()), request, responseObserver);
     }
@@ -551,8 +551,8 @@ public final class MruVCharactersServiceGrpc {
      * Update a character.
      * </pre>
      */
-    public void updateCharacter(mruv.Characters.UpdateCharacterRequest request,
-        io.grpc.stub.StreamObserver<mruv.Characters.UpdateCharacterResponse> responseObserver) {
+    public void updateCharacter(mruv.characters.Characters.UpdateCharacterRequest request,
+        io.grpc.stub.StreamObserver<mruv.characters.Characters.UpdateCharacterResponse> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(getUpdateCharacterMethod(), getCallOptions()), request, responseObserver);
     }
@@ -562,8 +562,8 @@ public final class MruVCharactersServiceGrpc {
      * Delete a character.
      * </pre>
      */
-    public void deleteCharacter(mruv.Characters.DeleteCharacterRequest request,
-        io.grpc.stub.StreamObserver<mruv.Characters.DeleteCharacterResponse> responseObserver) {
+    public void deleteCharacter(mruv.characters.Characters.DeleteCharacterRequest request,
+        io.grpc.stub.StreamObserver<mruv.characters.Characters.DeleteCharacterResponse> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(getDeleteCharacterMethod(), getCallOptions()), request, responseObserver);
     }
@@ -573,8 +573,8 @@ public final class MruVCharactersServiceGrpc {
      * Kill a character. A character that is killed cannot be played anymore.
      * </pre>
      */
-    public void permanentCharacterKill(mruv.Characters.CharacterID request,
-        io.grpc.stub.StreamObserver<mruv.Characters.CharacterID> responseObserver) {
+    public void permanentCharacterKill(mruv.characters.Characters.CharacterID request,
+        io.grpc.stub.StreamObserver<mruv.characters.Characters.CharacterID> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(getPermanentCharacterKillMethod(), getCallOptions()), request, responseObserver);
     }
@@ -584,8 +584,8 @@ public final class MruVCharactersServiceGrpc {
      * Change player clothes.
      * </pre>
      */
-    public void changeClothes(mruv.Characters.ChangeClothesRequest request,
-        io.grpc.stub.StreamObserver<mruv.Characters.ChangeClothesResponse> responseObserver) {
+    public void changeClothes(mruv.characters.Characters.ChangeClothesRequest request,
+        io.grpc.stub.StreamObserver<mruv.characters.Characters.ChangeClothesResponse> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(getChangeClothesMethod(), getCallOptions()), request, responseObserver);
     }
@@ -595,8 +595,8 @@ public final class MruVCharactersServiceGrpc {
      * Stream of deaths.
      * </pre>
      */
-    public void deathsStream(mruv.Characters.DeathStreamRequest request,
-        io.grpc.stub.StreamObserver<mruv.Characters.DeathStreamResponse> responseObserver) {
+    public void deathsStream(mruv.characters.Characters.DeathStreamRequest request,
+        io.grpc.stub.StreamObserver<mruv.characters.Characters.DeathStreamResponse> responseObserver) {
       asyncServerStreamingCall(
           getChannel().newCall(getDeathsStreamMethod(), getCallOptions()), request, responseObserver);
     }
@@ -606,16 +606,16 @@ public final class MruVCharactersServiceGrpc {
      *Service status
      * </pre>
      */
-    public void getServiceStatus(mruv.Health.ServiceStatusRequest request,
-        io.grpc.stub.StreamObserver<mruv.Health.ServiceStatusResponse> responseObserver) {
+    public void getServiceStatus(mruv.common.Health.ServiceStatusRequest request,
+        io.grpc.stub.StreamObserver<mruv.common.Health.ServiceStatusResponse> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(getGetServiceStatusMethod(), getCallOptions()), request, responseObserver);
     }
 
     /**
      */
-    public void getServiceVersion(mruv.Health.VersionRequest request,
-        io.grpc.stub.StreamObserver<mruv.Health.VersionResponse> responseObserver) {
+    public void getServiceVersion(mruv.common.Health.VersionRequest request,
+        io.grpc.stub.StreamObserver<mruv.common.Health.VersionResponse> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(getGetServiceVersionMethod(), getCallOptions()), request, responseObserver);
     }
@@ -640,7 +640,7 @@ public final class MruVCharactersServiceGrpc {
      * Create a character.
      * </pre>
      */
-    public mruv.Characters.CreateCharacterResponse createCharacter(mruv.Characters.CreateCharacterRequest request) {
+    public mruv.characters.Characters.CreateCharacterResponse createCharacter(mruv.characters.Characters.CreateCharacterRequest request) {
       return blockingUnaryCall(
           getChannel(), getCreateCharacterMethod(), getCallOptions(), request);
     }
@@ -650,7 +650,7 @@ public final class MruVCharactersServiceGrpc {
      * Get a character.
      * </pre>
      */
-    public mruv.Characters.GetCharacterResponse getCharacter(mruv.Characters.GetCharacterRequest request) {
+    public mruv.characters.Characters.GetCharacterResponse getCharacter(mruv.characters.Characters.GetCharacterRequest request) {
       return blockingUnaryCall(
           getChannel(), getGetCharacterMethod(), getCallOptions(), request);
     }
@@ -660,7 +660,7 @@ public final class MruVCharactersServiceGrpc {
      * Update a character.
      * </pre>
      */
-    public mruv.Characters.UpdateCharacterResponse updateCharacter(mruv.Characters.UpdateCharacterRequest request) {
+    public mruv.characters.Characters.UpdateCharacterResponse updateCharacter(mruv.characters.Characters.UpdateCharacterRequest request) {
       return blockingUnaryCall(
           getChannel(), getUpdateCharacterMethod(), getCallOptions(), request);
     }
@@ -670,7 +670,7 @@ public final class MruVCharactersServiceGrpc {
      * Delete a character.
      * </pre>
      */
-    public mruv.Characters.DeleteCharacterResponse deleteCharacter(mruv.Characters.DeleteCharacterRequest request) {
+    public mruv.characters.Characters.DeleteCharacterResponse deleteCharacter(mruv.characters.Characters.DeleteCharacterRequest request) {
       return blockingUnaryCall(
           getChannel(), getDeleteCharacterMethod(), getCallOptions(), request);
     }
@@ -680,7 +680,7 @@ public final class MruVCharactersServiceGrpc {
      * Kill a character. A character that is killed cannot be played anymore.
      * </pre>
      */
-    public mruv.Characters.CharacterID permanentCharacterKill(mruv.Characters.CharacterID request) {
+    public mruv.characters.Characters.CharacterID permanentCharacterKill(mruv.characters.Characters.CharacterID request) {
       return blockingUnaryCall(
           getChannel(), getPermanentCharacterKillMethod(), getCallOptions(), request);
     }
@@ -690,7 +690,7 @@ public final class MruVCharactersServiceGrpc {
      * Change player clothes.
      * </pre>
      */
-    public mruv.Characters.ChangeClothesResponse changeClothes(mruv.Characters.ChangeClothesRequest request) {
+    public mruv.characters.Characters.ChangeClothesResponse changeClothes(mruv.characters.Characters.ChangeClothesRequest request) {
       return blockingUnaryCall(
           getChannel(), getChangeClothesMethod(), getCallOptions(), request);
     }
@@ -700,8 +700,8 @@ public final class MruVCharactersServiceGrpc {
      * Stream of deaths.
      * </pre>
      */
-    public java.util.Iterator<mruv.Characters.DeathStreamResponse> deathsStream(
-        mruv.Characters.DeathStreamRequest request) {
+    public java.util.Iterator<mruv.characters.Characters.DeathStreamResponse> deathsStream(
+        mruv.characters.Characters.DeathStreamRequest request) {
       return blockingServerStreamingCall(
           getChannel(), getDeathsStreamMethod(), getCallOptions(), request);
     }
@@ -711,14 +711,14 @@ public final class MruVCharactersServiceGrpc {
      *Service status
      * </pre>
      */
-    public mruv.Health.ServiceStatusResponse getServiceStatus(mruv.Health.ServiceStatusRequest request) {
+    public mruv.common.Health.ServiceStatusResponse getServiceStatus(mruv.common.Health.ServiceStatusRequest request) {
       return blockingUnaryCall(
           getChannel(), getGetServiceStatusMethod(), getCallOptions(), request);
     }
 
     /**
      */
-    public mruv.Health.VersionResponse getServiceVersion(mruv.Health.VersionRequest request) {
+    public mruv.common.Health.VersionResponse getServiceVersion(mruv.common.Health.VersionRequest request) {
       return blockingUnaryCall(
           getChannel(), getGetServiceVersionMethod(), getCallOptions(), request);
     }
@@ -743,8 +743,8 @@ public final class MruVCharactersServiceGrpc {
      * Create a character.
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<mruv.Characters.CreateCharacterResponse> createCharacter(
-        mruv.Characters.CreateCharacterRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<mruv.characters.Characters.CreateCharacterResponse> createCharacter(
+        mruv.characters.Characters.CreateCharacterRequest request) {
       return futureUnaryCall(
           getChannel().newCall(getCreateCharacterMethod(), getCallOptions()), request);
     }
@@ -754,8 +754,8 @@ public final class MruVCharactersServiceGrpc {
      * Get a character.
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<mruv.Characters.GetCharacterResponse> getCharacter(
-        mruv.Characters.GetCharacterRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<mruv.characters.Characters.GetCharacterResponse> getCharacter(
+        mruv.characters.Characters.GetCharacterRequest request) {
       return futureUnaryCall(
           getChannel().newCall(getGetCharacterMethod(), getCallOptions()), request);
     }
@@ -765,8 +765,8 @@ public final class MruVCharactersServiceGrpc {
      * Update a character.
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<mruv.Characters.UpdateCharacterResponse> updateCharacter(
-        mruv.Characters.UpdateCharacterRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<mruv.characters.Characters.UpdateCharacterResponse> updateCharacter(
+        mruv.characters.Characters.UpdateCharacterRequest request) {
       return futureUnaryCall(
           getChannel().newCall(getUpdateCharacterMethod(), getCallOptions()), request);
     }
@@ -776,8 +776,8 @@ public final class MruVCharactersServiceGrpc {
      * Delete a character.
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<mruv.Characters.DeleteCharacterResponse> deleteCharacter(
-        mruv.Characters.DeleteCharacterRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<mruv.characters.Characters.DeleteCharacterResponse> deleteCharacter(
+        mruv.characters.Characters.DeleteCharacterRequest request) {
       return futureUnaryCall(
           getChannel().newCall(getDeleteCharacterMethod(), getCallOptions()), request);
     }
@@ -787,8 +787,8 @@ public final class MruVCharactersServiceGrpc {
      * Kill a character. A character that is killed cannot be played anymore.
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<mruv.Characters.CharacterID> permanentCharacterKill(
-        mruv.Characters.CharacterID request) {
+    public com.google.common.util.concurrent.ListenableFuture<mruv.characters.Characters.CharacterID> permanentCharacterKill(
+        mruv.characters.Characters.CharacterID request) {
       return futureUnaryCall(
           getChannel().newCall(getPermanentCharacterKillMethod(), getCallOptions()), request);
     }
@@ -798,8 +798,8 @@ public final class MruVCharactersServiceGrpc {
      * Change player clothes.
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<mruv.Characters.ChangeClothesResponse> changeClothes(
-        mruv.Characters.ChangeClothesRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<mruv.characters.Characters.ChangeClothesResponse> changeClothes(
+        mruv.characters.Characters.ChangeClothesRequest request) {
       return futureUnaryCall(
           getChannel().newCall(getChangeClothesMethod(), getCallOptions()), request);
     }
@@ -809,16 +809,16 @@ public final class MruVCharactersServiceGrpc {
      *Service status
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<mruv.Health.ServiceStatusResponse> getServiceStatus(
-        mruv.Health.ServiceStatusRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<mruv.common.Health.ServiceStatusResponse> getServiceStatus(
+        mruv.common.Health.ServiceStatusRequest request) {
       return futureUnaryCall(
           getChannel().newCall(getGetServiceStatusMethod(), getCallOptions()), request);
     }
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<mruv.Health.VersionResponse> getServiceVersion(
-        mruv.Health.VersionRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<mruv.common.Health.VersionResponse> getServiceVersion(
+        mruv.common.Health.VersionRequest request) {
       return futureUnaryCall(
           getChannel().newCall(getGetServiceVersionMethod(), getCallOptions()), request);
     }
@@ -852,40 +852,40 @@ public final class MruVCharactersServiceGrpc {
     public void invoke(Req request, io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
         case METHODID_CREATE_CHARACTER:
-          serviceImpl.createCharacter((mruv.Characters.CreateCharacterRequest) request,
-              (io.grpc.stub.StreamObserver<mruv.Characters.CreateCharacterResponse>) responseObserver);
+          serviceImpl.createCharacter((mruv.characters.Characters.CreateCharacterRequest) request,
+              (io.grpc.stub.StreamObserver<mruv.characters.Characters.CreateCharacterResponse>) responseObserver);
           break;
         case METHODID_GET_CHARACTER:
-          serviceImpl.getCharacter((mruv.Characters.GetCharacterRequest) request,
-              (io.grpc.stub.StreamObserver<mruv.Characters.GetCharacterResponse>) responseObserver);
+          serviceImpl.getCharacter((mruv.characters.Characters.GetCharacterRequest) request,
+              (io.grpc.stub.StreamObserver<mruv.characters.Characters.GetCharacterResponse>) responseObserver);
           break;
         case METHODID_UPDATE_CHARACTER:
-          serviceImpl.updateCharacter((mruv.Characters.UpdateCharacterRequest) request,
-              (io.grpc.stub.StreamObserver<mruv.Characters.UpdateCharacterResponse>) responseObserver);
+          serviceImpl.updateCharacter((mruv.characters.Characters.UpdateCharacterRequest) request,
+              (io.grpc.stub.StreamObserver<mruv.characters.Characters.UpdateCharacterResponse>) responseObserver);
           break;
         case METHODID_DELETE_CHARACTER:
-          serviceImpl.deleteCharacter((mruv.Characters.DeleteCharacterRequest) request,
-              (io.grpc.stub.StreamObserver<mruv.Characters.DeleteCharacterResponse>) responseObserver);
+          serviceImpl.deleteCharacter((mruv.characters.Characters.DeleteCharacterRequest) request,
+              (io.grpc.stub.StreamObserver<mruv.characters.Characters.DeleteCharacterResponse>) responseObserver);
           break;
         case METHODID_PERMANENT_CHARACTER_KILL:
-          serviceImpl.permanentCharacterKill((mruv.Characters.CharacterID) request,
-              (io.grpc.stub.StreamObserver<mruv.Characters.CharacterID>) responseObserver);
+          serviceImpl.permanentCharacterKill((mruv.characters.Characters.CharacterID) request,
+              (io.grpc.stub.StreamObserver<mruv.characters.Characters.CharacterID>) responseObserver);
           break;
         case METHODID_CHANGE_CLOTHES:
-          serviceImpl.changeClothes((mruv.Characters.ChangeClothesRequest) request,
-              (io.grpc.stub.StreamObserver<mruv.Characters.ChangeClothesResponse>) responseObserver);
+          serviceImpl.changeClothes((mruv.characters.Characters.ChangeClothesRequest) request,
+              (io.grpc.stub.StreamObserver<mruv.characters.Characters.ChangeClothesResponse>) responseObserver);
           break;
         case METHODID_DEATHS_STREAM:
-          serviceImpl.deathsStream((mruv.Characters.DeathStreamRequest) request,
-              (io.grpc.stub.StreamObserver<mruv.Characters.DeathStreamResponse>) responseObserver);
+          serviceImpl.deathsStream((mruv.characters.Characters.DeathStreamRequest) request,
+              (io.grpc.stub.StreamObserver<mruv.characters.Characters.DeathStreamResponse>) responseObserver);
           break;
         case METHODID_GET_SERVICE_STATUS:
-          serviceImpl.getServiceStatus((mruv.Health.ServiceStatusRequest) request,
-              (io.grpc.stub.StreamObserver<mruv.Health.ServiceStatusResponse>) responseObserver);
+          serviceImpl.getServiceStatus((mruv.common.Health.ServiceStatusRequest) request,
+              (io.grpc.stub.StreamObserver<mruv.common.Health.ServiceStatusResponse>) responseObserver);
           break;
         case METHODID_GET_SERVICE_VERSION:
-          serviceImpl.getServiceVersion((mruv.Health.VersionRequest) request,
-              (io.grpc.stub.StreamObserver<mruv.Health.VersionResponse>) responseObserver);
+          serviceImpl.getServiceVersion((mruv.common.Health.VersionRequest) request,
+              (io.grpc.stub.StreamObserver<mruv.common.Health.VersionResponse>) responseObserver);
           break;
         default:
           throw new AssertionError();
@@ -909,7 +909,7 @@ public final class MruVCharactersServiceGrpc {
 
     @java.lang.Override
     public com.google.protobuf.Descriptors.FileDescriptor getFileDescriptor() {
-      return mruv.Characters.getDescriptor();
+      return mruv.characters.Characters.getDescriptor();
     }
 
     @java.lang.Override

@@ -13612,7 +13612,7 @@ public final class Devtools {
       "\001(\0132\025.mruv.devtools.Player\"C\n\024SaveAnimat" +
       "ionRequest\022+\n\tanimation\030\001 \001(\0132\030.mruv.dev" +
       "tools.Animation\"(\n\025SaveAnimationResponse" +
-      "\022\017\n\007success\030\001 \001(\0102\254\t\n\023MruVDevToolsServic" +
+      "\022\017\n\007success\030\001 \001(\0102\310\t\n\023MruVDevToolsServic" +
       "e\022w\n\014GetPositions\022\".mruv.devtools.GetPos" +
       "itionsRequest\032#.mruv.devtools.GetPositio" +
       "nsResponse\"\036\202\323\344\223\002\030\022\026/v1/devtools/positio" +
@@ -13637,19 +13637,20 @@ public final class Devtools {
       "ns/{name}\022{\n\rSaveAnimation\022#.mruv.devtoo" +
       "ls.SaveAnimationRequest\032$.mruv.devtools." +
       "SaveAnimationResponse\"\037\202\323\344\223\002\031\"\027/v1/devto" +
-      "ols/animations\022h\n\020GetServiceStatus\022\032.mru" +
-      "v.ServiceStatusRequest\032\033.mruv.ServiceSta" +
-      "tusResponse\"\033\202\323\344\223\002\025\022\023/v1/devtools/status" +
-      "\022^\n\021GetServiceVersion\022\024.mruv.VersionRequ" +
-      "est\032\025.mruv.VersionResponse\"\034\202\323\344\223\002\026\022\024/v1/" +
-      "devtools/versionB(Z&github.com/MruV-RP/m" +
-      "ruv-pb-go/devtoolsb\006proto3"
+      "ols/animations\022v\n\020GetServiceStatus\022!.mru" +
+      "v.common.ServiceStatusRequest\032\".mruv.com" +
+      "mon.ServiceStatusResponse\"\033\202\323\344\223\002\025\022\023/v1/d" +
+      "evtools/status\022l\n\021GetServiceVersion\022\033.mr" +
+      "uv.common.VersionRequest\032\034.mruv.common.V" +
+      "ersionResponse\"\034\202\323\344\223\002\026\022\024/v1/devtools/ver" +
+      "sionB(Z&github.com/MruV-RP/mruv-pb-go/de" +
+      "vtoolsb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
           com.google.api.AnnotationsProto.getDescriptor(),
-          mruv.Health.getDescriptor(),
+          mruv.common.Health.getDescriptor(),
           mruv.devtools.DevtoolsModel.getDescriptor(),
         });
     internal_static_mruv_devtools_GetPositionsRequest_descriptor =
@@ -13772,7 +13773,7 @@ public final class Devtools {
     com.google.protobuf.Descriptors.FileDescriptor
         .internalUpdateFileDescriptor(descriptor, registry);
     com.google.api.AnnotationsProto.getDescriptor();
-    mruv.Health.getDescriptor();
+    mruv.common.Health.getDescriptor();
     mruv.devtools.DevtoolsModel.getDescriptor();
   }
 
