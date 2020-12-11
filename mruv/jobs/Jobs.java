@@ -3687,18 +3687,18 @@ public final class Jobs {
       "id\030\001 \001(\r\"\020\n\016GetJobResponse\"\036\n\020UpdateJobR" +
       "equest\022\n\n\002id\030\001 \001(\r\"\023\n\021UpdateJobResponse\"" +
       "\036\n\020DeleteJobRequest\022\n\n\002id\030\001 \001(\r\"\023\n\021Delet" +
-      "eJobResponse2\377\002\n\017MruVJobsService\022X\n\tCrea" +
+      "eJobResponse2\205\003\n\017MruVJobsService\022[\n\tCrea" +
       "teJob\022\033.mruv.jobs.CreateJobRequest\032\034.mru" +
-      "v.jobs.CreateJobResponse\"\020\202\323\344\223\002\n\"\010/v1/jo" +
-      "bs\022T\n\006GetJob\022\030.mruv.jobs.GetJobRequest\032\031" +
-      ".mruv.jobs.GetJobResponse\"\025\202\323\344\223\002\017\022\r/v1/j" +
-      "obs/{id}\022]\n\tUpdateJob\022\033.mruv.jobs.Update" +
-      "JobRequest\032\034.mruv.jobs.UpdateJobResponse" +
-      "\"\025\202\323\344\223\002\0172\r/v1/jobs/{id}\022]\n\tDeleteJob\022\033.m" +
-      "ruv.jobs.DeleteJobRequest\032\034.mruv.jobs.De" +
-      "leteJobResponse\"\025\202\323\344\223\002\017*\r/v1/jobs/{id}B$" +
-      "Z\"github.com/MruV-RP/mruv-pb-go/jobsb\006pr" +
-      "oto3"
+      "v.jobs.CreateJobResponse\"\023\202\323\344\223\002\r\"\010/v1/jo" +
+      "bs:\001*\022T\n\006GetJob\022\030.mruv.jobs.GetJobReques" +
+      "t\032\031.mruv.jobs.GetJobResponse\"\025\202\323\344\223\002\017\022\r/v" +
+      "1/jobs/{id}\022`\n\tUpdateJob\022\033.mruv.jobs.Upd" +
+      "ateJobRequest\032\034.mruv.jobs.UpdateJobRespo" +
+      "nse\"\030\202\323\344\223\002\0222\r/v1/jobs/{id}:\001*\022]\n\tDeleteJ" +
+      "ob\022\033.mruv.jobs.DeleteJobRequest\032\034.mruv.j" +
+      "obs.DeleteJobResponse\"\025\202\323\344\223\002\017*\r/v1/jobs/" +
+      "{id}B$Z\"github.com/MruV-RP/mruv-pb-go/jo" +
+      "bsb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

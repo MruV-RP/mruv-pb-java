@@ -3687,19 +3687,20 @@ public final class Houses {
       "eRequest\022\n\n\002id\030\001 \001(\r\"\022\n\020GetHouseResponse" +
       "\" \n\022UpdateHouseRequest\022\n\n\002id\030\001 \001(\r\"\025\n\023Up" +
       "dateHouseResponse\" \n\022DeleteHouseRequest\022" +
-      "\n\n\002id\030\001 \001(\r\"\025\n\023DeleteHouseResponse2\261\003\n\021M" +
-      "ruVHousesService\022d\n\013CreateHouse\022\037.mruv.h" +
+      "\n\n\002id\030\001 \001(\r\"\025\n\023DeleteHouseResponse2\267\003\n\021M" +
+      "ruVHousesService\022g\n\013CreateHouse\022\037.mruv.h" +
       "ouses.CreateHouseRequest\032 .mruv.houses.C" +
-      "reateHouseResponse\"\022\202\323\344\223\002\014\"\n/v1/houses\022`" +
-      "\n\010GetHouse\022\034.mruv.houses.GetHouseRequest" +
-      "\032\035.mruv.houses.GetHouseResponse\"\027\202\323\344\223\002\021\022" +
-      "\017/v1/houses/{id}\022i\n\013UpdateHouse\022\037.mruv.h" +
-      "ouses.UpdateHouseRequest\032 .mruv.houses.U" +
-      "pdateHouseResponse\"\027\202\323\344\223\002\0212\017/v1/houses/{" +
-      "id}\022i\n\013DeleteHouse\022\037.mruv.houses.DeleteH" +
-      "ouseRequest\032 .mruv.houses.DeleteHouseRes" +
-      "ponse\"\027\202\323\344\223\002\021*\017/v1/houses/{id}B&Z$github" +
-      ".com/MruV-RP/mruv-pb-go/housesb\006proto3"
+      "reateHouseResponse\"\025\202\323\344\223\002\017\"\n/v1/houses:\001" +
+      "*\022`\n\010GetHouse\022\034.mruv.houses.GetHouseRequ" +
+      "est\032\035.mruv.houses.GetHouseResponse\"\027\202\323\344\223" +
+      "\002\021\022\017/v1/houses/{id}\022l\n\013UpdateHouse\022\037.mru" +
+      "v.houses.UpdateHouseRequest\032 .mruv.house" +
+      "s.UpdateHouseResponse\"\032\202\323\344\223\002\0242\017/v1/house" +
+      "s/{id}:\001*\022i\n\013DeleteHouse\022\037.mruv.houses.D" +
+      "eleteHouseRequest\032 .mruv.houses.DeleteHo" +
+      "useResponse\"\027\202\323\344\223\002\021*\017/v1/houses/{id}B&Z$" +
+      "github.com/MruV-RP/mruv-pb-go/housesb\006pr" +
+      "oto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

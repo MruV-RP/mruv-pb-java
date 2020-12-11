@@ -5030,26 +5030,26 @@ public final class TexturestudioManage {
       "\001 \001(\r\"?\n\030TransferOwnershipRequest\022\021\n\tser" +
       "ver_id\030\001 \001(\r\022\020\n\010owner_id\030\002 \001(\r\"\033\n\031Transf" +
       "erOwnershipResponse\"!\n\023DeleteServerReque" +
-      "st\022\n\n\002id\030\001 \001(\r\"\026\n\024DeleteServerResponse2\246" +
-      "\005\n\033TextureStudioManagerService\022|\n\014Create" +
+      "st\022\n\n\002id\030\001 \001(\r\"\026\n\024DeleteServerResponse2\254" +
+      "\005\n\033TextureStudioManagerService\022\177\n\014Create" +
       "Server\022#.texture_studio.CreateServerRequ" +
       "est\032$.texture_studio.CreateServerRespons" +
-      "e\"!\202\323\344\223\002\033\"\031/v1/texturestudio/servers\022v\n\n" +
-      "GetServers\022!.texture_studio.GetServersRe" +
-      "quest\032\".texture_studio.GetServersRespons" +
-      "e\"!\202\323\344\223\002\033\022\031/v1/texturestudio/servers\022s\n\010" +
-      "MyServer\022\037.texture_studio.MyServerReques" +
-      "t\032 .texture_studio.MyServerResponse\"$\202\323\344" +
-      "\223\002\036\022\034/v1/texturestudio/servers/my\022\227\001\n\021Tr" +
-      "ansferOwnership\022(.texture_studio.Transfe" +
-      "rOwnershipRequest\032).texture_studio.Trans" +
-      "ferOwnershipResponse\"-\202\323\344\223\002\'2%/v1/textur" +
-      "estudio/servers/{server_id}\022\201\001\n\014DeleteSe" +
-      "rver\022#.texture_studio.DeleteServerReques" +
-      "t\032$.texture_studio.DeleteServerResponse\"" +
-      "&\202\323\344\223\002 *\036/v1/texturestudio/servers/{id}B" +
-      "-Z+github.com/MruV-RP/mruv-pb-go/texture" +
-      "studiob\006proto3"
+      "e\"$\202\323\344\223\002\036\"\031/v1/texturestudio/servers:\001*\022" +
+      "v\n\nGetServers\022!.texture_studio.GetServer" +
+      "sRequest\032\".texture_studio.GetServersResp" +
+      "onse\"!\202\323\344\223\002\033\022\031/v1/texturestudio/servers\022" +
+      "s\n\010MyServer\022\037.texture_studio.MyServerReq" +
+      "uest\032 .texture_studio.MyServerResponse\"$" +
+      "\202\323\344\223\002\036\022\034/v1/texturestudio/servers/my\022\232\001\n" +
+      "\021TransferOwnership\022(.texture_studio.Tran" +
+      "sferOwnershipRequest\032).texture_studio.Tr" +
+      "ansferOwnershipResponse\"0\202\323\344\223\002*2%/v1/tex" +
+      "turestudio/servers/{server_id}:\001*\022\201\001\n\014De" +
+      "leteServer\022#.texture_studio.DeleteServer" +
+      "Request\032$.texture_studio.DeleteServerRes" +
+      "ponse\"&\202\323\344\223\002 *\036/v1/texturestudio/servers" +
+      "/{id}B-Z+github.com/MruV-RP/mruv-pb-go/t" +
+      "exturestudiob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

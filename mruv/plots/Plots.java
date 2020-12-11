@@ -6585,18 +6585,18 @@ public final class Plots {
       "ePlotRequest\022\n\n\002id\030\001 \001(\r\022\014\n\004name\030\002 \001(\t\022\023" +
       "\n\013description\030\003 \001(\t\"\024\n\022UpdatePlotRespons" +
       "e\"\037\n\021DeletePlotRequest\022\n\n\002id\030\001 \001(\r\"\024\n\022De" +
-      "letePlotResponse2\230\003\n\020MruVPlotsService\022^\n" +
+      "letePlotResponse2\236\003\n\020MruVPlotsService\022a\n" +
       "\nCreatePlot\022\035.mruv.plots.CreatePlotReque" +
-      "st\032\036.mruv.plots.CreatePlotResponse\"\021\202\323\344\223" +
-      "\002\013\"\t/v1/plots\022Z\n\007GetPlot\022\032.mruv.plots.Ge" +
-      "tPlotRequest\032\033.mruv.plots.GetPlotRespons" +
-      "e\"\026\202\323\344\223\002\020\022\016/v1/plots/{id}\022c\n\nUpdatePlot\022" +
-      "\035.mruv.plots.UpdatePlotRequest\032\036.mruv.pl" +
-      "ots.UpdatePlotResponse\"\026\202\323\344\223\002\0202\016/v1/plot" +
-      "s/{id}\022c\n\nDeletePlot\022\035.mruv.plots.Delete" +
-      "PlotRequest\032\036.mruv.plots.DeletePlotRespo" +
-      "nse\"\026\202\323\344\223\002\020*\016/v1/plots/{id}B%Z#github.co" +
-      "m/MruV-RP/mruv-pb-go/plotsb\006proto3"
+      "st\032\036.mruv.plots.CreatePlotResponse\"\024\202\323\344\223" +
+      "\002\016\"\t/v1/plots:\001*\022Z\n\007GetPlot\022\032.mruv.plots" +
+      ".GetPlotRequest\032\033.mruv.plots.GetPlotResp" +
+      "onse\"\026\202\323\344\223\002\020\022\016/v1/plots/{id}\022f\n\nUpdatePl" +
+      "ot\022\035.mruv.plots.UpdatePlotRequest\032\036.mruv" +
+      ".plots.UpdatePlotResponse\"\031\202\323\344\223\002\0232\016/v1/p" +
+      "lots/{id}:\001*\022c\n\nDeletePlot\022\035.mruv.plots." +
+      "DeletePlotRequest\032\036.mruv.plots.DeletePlo" +
+      "tResponse\"\026\202\323\344\223\002\020*\016/v1/plots/{id}B%Z#git" +
+      "hub.com/MruV-RP/mruv-pb-go/plotsb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

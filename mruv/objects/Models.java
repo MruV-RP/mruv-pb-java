@@ -7474,25 +7474,26 @@ public final class Models {
       "\022@\n\006models\030\001 \003(\01320.mruv.objects.FetchAll" +
       "ModelsResponse.ModelsEntry\032H\n\013ModelsEntr" +
       "y\022\013\n\003key\030\001 \001(\005\022(\n\005value\030\002 \001(\0132\031.mruv.obj" +
-      "ects.ObjectModel:\0028\0012\252\005\n\027MruVObjectModel" +
-      "sService\022}\n\021CreateObjectModel\022&.mruv.obj" +
-      "ects.CreateObjectModelRequest\032\'.mruv.obj" +
-      "ects.CreateObjectModelResponse\"\027\202\323\344\223\002\021\"\017" +
-      "/v1/objectTypes\022|\n\016GetObjectModel\022#.mruv" +
-      ".objects.GetObjectModelRequest\032$.mruv.ob" +
-      "jects.GetObjectModelResponse\"\037\202\323\344\223\002\031\022\027/v" +
-      "1/objectTypes/{model}\022\221\001\n\021UpdateObjectMo" +
-      "del\022&.mruv.objects.UpdateObjectModelRequ" +
-      "est\032\'.mruv.objects.UpdateObjectModelResp" +
-      "onse\"+\202\323\344\223\002%2#/v1/objectTypes/{object_ty" +
-      "pe.model}\022\205\001\n\021DeleteObjectModel\022&.mruv.o" +
-      "bjects.DeleteObjectModelRequest\032\'.mruv.o" +
-      "bjects.DeleteObjectModelResponse\"\037\202\323\344\223\002\031" +
-      "*\027/v1/objectTypes/{model}\022v\n\016FetchAllMod" +
-      "els\022#.mruv.objects.FetchAllModelsRequest" +
-      "\032$.mruv.objects.FetchAllModelsResponse\"\027" +
-      "\202\323\344\223\002\021\022\017/v1/objectTypes0\001B\'Z%github.com/" +
-      "MruV-RP/mruv-pb-go/objectsb\006proto3"
+      "ects.ObjectModel:\0028\0012\261\005\n\027MruVObjectModel" +
+      "sService\022\200\001\n\021CreateObjectModel\022&.mruv.ob" +
+      "jects.CreateObjectModelRequest\032\'.mruv.ob" +
+      "jects.CreateObjectModelResponse\"\032\202\323\344\223\002\024\"" +
+      "\017/v1/objectTypes:\001*\022|\n\016GetObjectModel\022#." +
+      "mruv.objects.GetObjectModelRequest\032$.mru" +
+      "v.objects.GetObjectModelResponse\"\037\202\323\344\223\002\031" +
+      "\022\027/v1/objectTypes/{model}\022\224\001\n\021UpdateObje" +
+      "ctModel\022&.mruv.objects.UpdateObjectModel" +
+      "Request\032\'.mruv.objects.UpdateObjectModel" +
+      "Response\".\202\323\344\223\002(2#/v1/objectTypes/{objec" +
+      "t_type.model}:\001*\022\205\001\n\021DeleteObjectModel\022&" +
+      ".mruv.objects.DeleteObjectModelRequest\032\'" +
+      ".mruv.objects.DeleteObjectModelResponse\"" +
+      "\037\202\323\344\223\002\031*\027/v1/objectTypes/{model}\022v\n\016Fetc" +
+      "hAllModels\022#.mruv.objects.FetchAllModels" +
+      "Request\032$.mruv.objects.FetchAllModelsRes" +
+      "ponse\"\027\202\323\344\223\002\021\022\017/v1/objectTypes0\001B\'Z%gith" +
+      "ub.com/MruV-RP/mruv-pb-go/objectsb\006proto" +
+      "3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

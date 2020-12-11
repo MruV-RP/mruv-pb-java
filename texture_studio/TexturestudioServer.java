@@ -8949,37 +8949,37 @@ public final class TexturestudioServer {
       "\021\n\tserver_id\030\001 \001(\r\"2\n\"SubscribeToProject" +
       "sChangesResponse\022\014\n\004name\030\001 \001(\t*3\n\014Server" +
       "Status\022\022\n\016UNKNOWN_STATUS\020\000\022\006\n\002ON\020\001\022\007\n\003OF" +
-      "F\020\0022\202\t\n\032TextureStudioServerService\022\203\001\n\013S" +
+      "F\020\0022\214\t\n\032TextureStudioServerService\022\206\001\n\013S" +
       "tartServer\022\".texture_studio.StartServerR" +
       "equest\032#.texture_studio.StartServerRespo" +
-      "nse\"+\202\323\344\223\002%\"#/v1/texturestudio/server/{i" +
-      "d}/start\022\177\n\nStopServer\022!.texture_studio." +
-      "StopServerRequest\032\".texture_studio.StopS" +
-      "erverResponse\"*\202\323\344\223\002$\"\"/v1/texturestudio" +
-      "/server/{id}/stop\022\213\001\n\rRestartServer\022$.te" +
-      "xture_studio.RestartServerRequest\032%.text" +
-      "ure_studio.RestartServerResponse\"-\202\323\344\223\002\'" +
-      "\"%/v1/texturestudio/server/{id}/restart\022" +
-      "\207\001\n\014ServerStatus\022#.texture_studio.Server" +
-      "StatusRequest\032$.texture_studio.ServerSta" +
-      "tusResponse\",\202\323\344\223\002&\022$/v1/texturestudio/s" +
-      "erver/{id}/status\022\226\001\n\rUploadProject\022$.te" +
-      "xture_studio.UploadProjectRequest\032%.text" +
-      "ure_studio.UploadProjectResponse\"8\202\323\344\223\0022" +
-      "\"-/v1/texturestudio/server/{server_id}/p" +
-      "rojects:\001*\022\221\001\n\nGetProject\022!.texture_stud" +
-      "io.GetProjectRequest\032\".texture_studio.Ge" +
-      "tProjectResponse\"<\202\323\344\223\0026\0224/v1/texturestu" +
-      "dio/server/{server_id}/projects/{name}\022\215" +
-      "\001\n\013GetProjects\022\".texture_studio.GetProje" +
-      "ctsRequest\032#.texture_studio.GetProjectsR" +
-      "esponse\"5\202\323\344\223\002/\022-/v1/texturestudio/serve" +
-      "r/{server_id}/projects\022\207\001\n\032SubscribeToPr" +
-      "ojectsChanges\0221.texture_studio.Subscribe" +
-      "ToProjectsChangesRequest\0322.texture_studi" +
-      "o.SubscribeToProjectsChangesResponse\"\0000\001" +
-      "B-Z+github.com/MruV-RP/mruv-pb-go/textur" +
-      "estudiob\006proto3"
+      "nse\".\202\323\344\223\002(\"#/v1/texturestudio/server/{i" +
+      "d}/start:\001*\022\202\001\n\nStopServer\022!.texture_stu" +
+      "dio.StopServerRequest\032\".texture_studio.S" +
+      "topServerResponse\"-\202\323\344\223\002\'\"\"/v1/texturest" +
+      "udio/server/{id}/stop:\001*\022\216\001\n\rRestartServ" +
+      "er\022$.texture_studio.RestartServerRequest" +
+      "\032%.texture_studio.RestartServerResponse\"" +
+      "0\202\323\344\223\002*\"%/v1/texturestudio/server/{id}/r" +
+      "estart:\001*\022\207\001\n\014ServerStatus\022#.texture_stu" +
+      "dio.ServerStatusRequest\032$.texture_studio" +
+      ".ServerStatusResponse\",\202\323\344\223\002&\022$/v1/textu" +
+      "restudio/server/{id}/status\022\226\001\n\rUploadPr" +
+      "oject\022$.texture_studio.UploadProjectRequ" +
+      "est\032%.texture_studio.UploadProjectRespon" +
+      "se\"8\202\323\344\223\0022\"-/v1/texturestudio/server/{se" +
+      "rver_id}/projects:\001*\022\221\001\n\nGetProject\022!.te" +
+      "xture_studio.GetProjectRequest\032\".texture" +
+      "_studio.GetProjectResponse\"<\202\323\344\223\0026\0224/v1/" +
+      "texturestudio/server/{server_id}/project" +
+      "s/{name}\022\215\001\n\013GetProjects\022\".texture_studi" +
+      "o.GetProjectsRequest\032#.texture_studio.Ge" +
+      "tProjectsResponse\"5\202\323\344\223\002/\022-/v1/texturest" +
+      "udio/server/{server_id}/projects\022\207\001\n\032Sub" +
+      "scribeToProjectsChanges\0221.texture_studio" +
+      ".SubscribeToProjectsChangesRequest\0322.tex" +
+      "ture_studio.SubscribeToProjectsChangesRe" +
+      "sponse\"\0000\001B-Z+github.com/MruV-RP/mruv-pb" +
+      "-go/texturestudiob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

@@ -3694,22 +3694,22 @@ public final class Server {
       ".mruv.server.ServerEvent.ServerEventType" +
       "\"c\n\017ServerEventType\022\013\n\007UNKNOWN\020\000\022\016\n\nREGI" +
       "STERED\020\001\022\017\n\013SERVER_DOWN\020\002\022\r\n\tSERVER_UP\020\003" +
-      "\022\023\n\017PLAYERS_CHANGED\020\0042\255\004\n\021MruVServerServ" +
-      "ice\022U\n\016RegisterServer\022\027.mruv.server.Serv" +
-      "erInfo\032\025.mruv.server.ServerID\"\023\202\323\344\223\002\r\"\013/" +
-      "v1/servers\022\200\001\n\024GetRegisteredServers\022(.mr" +
-      "uv.server.GetRegisteredServersRequest\032)." +
-      "mruv.server.GetRegisteredServersResponse" +
-      "\"\023\202\323\344\223\002\r\022\013/v1/servers\022Y\n\rGetServerInfo\022\025" +
-      ".mruv.server.ServerID\032\027.mruv.server.Serv" +
-      "erInfo\"\030\202\323\344\223\002\022\022\020/v1/servers/{id}\022\206\001\n\022Upd" +
-      "ateServerStatus\022&.mruv.server.UpdateServ" +
-      "erStatusRequest\032\'.mruv.server.UpdateServ" +
-      "erStatusResponse\"\037\202\323\344\223\002\0312\027/v1/servers/{i" +
-      "d}/status\022Z\n\022ServerEventsStream\022&.mruv.s" +
-      "erver.ServerEventsStreamRequest\032\030.mruv.s" +
-      "erver.ServerEvent\"\0000\001B&Z$github.com/MruV" +
-      "-RP/mruv-pb-go/serverb\006proto3"
+      "\022\023\n\017PLAYERS_CHANGED\020\0042\263\004\n\021MruVServerServ" +
+      "ice\022X\n\016RegisterServer\022\027.mruv.server.Serv" +
+      "erInfo\032\025.mruv.server.ServerID\"\026\202\323\344\223\002\020\"\013/" +
+      "v1/servers:\001*\022\200\001\n\024GetRegisteredServers\022(" +
+      ".mruv.server.GetRegisteredServersRequest" +
+      "\032).mruv.server.GetRegisteredServersRespo" +
+      "nse\"\023\202\323\344\223\002\r\022\013/v1/servers\022Y\n\rGetServerInf" +
+      "o\022\025.mruv.server.ServerID\032\027.mruv.server.S" +
+      "erverInfo\"\030\202\323\344\223\002\022\022\020/v1/servers/{id}\022\211\001\n\022" +
+      "UpdateServerStatus\022&.mruv.server.UpdateS" +
+      "erverStatusRequest\032\'.mruv.server.UpdateS" +
+      "erverStatusResponse\"\"\202\323\344\223\002\0342\027/v1/servers" +
+      "/{id}/status:\001*\022Z\n\022ServerEventsStream\022&." +
+      "mruv.server.ServerEventsStreamRequest\032\030." +
+      "mruv.server.ServerEvent\"\0000\001B&Z$github.co" +
+      "m/MruV-RP/mruv-pb-go/serverb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
